@@ -21,7 +21,9 @@
 6. You must include a `Makefile` that builds your final report by
    connecting all dependencies.
 
-7. There will be project "check-ins" that must be completed. This will count
+7. Modify this README so that it provides a brief overview of your project.
+
+8. There will be project "check-ins" that must be completed. This will count
    towards the participation component of your course grade.
 
 | **Project check-in** | **Date** |
