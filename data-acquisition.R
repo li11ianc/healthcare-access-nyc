@@ -6,6 +6,7 @@ urgent_care <- read.csv("data/Urgent_Care_Facilities.csv")
 
 ipps <- read.csv("data/Inpatient_Prospective_Payment_System__2017.csv")
 
-insurance <- read.csv("data/states.csv")
+insurance <- read.csv("data/raw/states.csv")
 
-medicare <- read.csv("data/medicare.csv")
+medicare <- read.csv("data/raw/medicare.csv")
+
