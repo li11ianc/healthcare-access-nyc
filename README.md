@@ -1,5 +1,20 @@
 # STA 323 :: Project
 
+## Project Overview
+
+Update as of 4/3:
+
+Raw data downloaded from the Department of Homeland Security and Centers for Medicare & Medicaid Services is located in /data/raw. Parsed data is located in /data. Scripts to parse data are located in /R. 
+
+Significant datasets:
+   
+   all_health_facilities : combines hospitals, medicare providers, nursing homes, pharmacies, and urgent care locations
+   
+   insurance : provides health insurance information by state
+   
+   medicare_inpatients : provides data on inpatient discharges for Medicare fee-for-service beneficiaries
+
+
 ## Requirements
 
 1. Your project must be reproducible.
