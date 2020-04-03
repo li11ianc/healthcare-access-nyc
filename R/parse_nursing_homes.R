@@ -5,7 +5,7 @@ nursing <- read.csv("data/raw/Nursing_Homes.csv")
 nursing_clean <- nursing %>%
   janitor::clean_names(case = "snake") %>%
   select(-x, -y, -zip4, -objectid, -countyfips, -val_method, -website) %>%
-  rename(lat = latitude, long = longitude) %>%
+  rename(lat = latitude, long = longitude, owner = ownership) %>%
   mutate(name = str_to_title(name), 
          address = str_to_title(address), 
          city = str_to_title(city),
@@ -13,7 +13,7 @@ nursing_clean <- nursing %>%
          status = str_to_lower(status), 
          county = str_to_title(county),
          naics_desc = str_to_title(naics_desc),
-         ownership = str_to_title(ownership),
+         owner = str_to_title(owner),
          sourcetype = str_to_title(sourcetype),
          population = case_when(
            population == -999 ~ as.integer(NA),

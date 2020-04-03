@@ -1,9 +1,11 @@
+ipps <- read.csv("data/raw/Inpatient_Prospective_Payment_System__2017.csv")
 
-# Chose not to use trauma_centers because of insufficient variables in the dataset
-trauma_centers <- read.csv("data/raw/Trauma_Levels.csv")
+hospitals <- read.csv("data/hospitals.csv")
+pharmacies <- read.csv("data/pharmacies.csv")
+nursing <- read.csv("data/nursing.csv")
+urgent_care <- read.csv("data/urgent_care.csv")
+medicare <- read.csv("data/medicare.csv")
 
-ipps <- read.csv("data/Inpatient_Prospective_Payment_System__2017.csv")
+all_facilities <- bind_rows(hospitals, pharmacies, nursing, urgent_care, medicare)
 
-insurance <- read.csv("data/raw/states.csv")
-
-medicare <- read.csv("data/raw/medicare.csv")
+write_csv(all_facilities, "data/all_health_facilities.csv")
