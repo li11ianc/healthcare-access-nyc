@@ -9,9 +9,10 @@ pharmacies_clean <- pharmacies %>%
          lat = as.numeric(lat), 
          long = as.numeric(long), 
          address = as.character(address),
-         name = str_to_lower(name),
+         name = str_to_title(name),
          address = str_to_title(address),
-         city = str_to_title(city)) %>%
+         city = str_to_title(city),
+         overall_type = "pharmacy") %>%
   select(-icon, -formated_phone)
 
 write_csv(pharmacies_clean, "data/pharmacies.csv")

@@ -1,12 +1,9 @@
-nursing_homes <- read.csv("data/raw/Nursing_Homes.csv")
 
-trauma_centers <- read.csv("data/Trauma_Levels.csv")
-
-urgent_care <- read.csv("data/Urgent_Care_Facilities.csv")
+# Chose not to use trauma_centers because of insufficient variables in the dataset
+trauma_centers <- read.csv("data/raw/Trauma_Levels.csv")
 
 ipps <- read.csv("data/Inpatient_Prospective_Payment_System__2017.csv")
 
 insurance <- read.csv("data/raw/states.csv")
 
 medicare <- read.csv("data/raw/medicare.csv")
-
