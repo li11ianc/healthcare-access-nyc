@@ -6,7 +6,7 @@ hospitals_clean <- hospitals %>%
   janitor::clean_names(case = "snake") %>%
   select(-x, -y, -zip4, -objectid, -countyfips, -val_method, -state_id, -st_fips, -ttl_staff) %>%
   rename(lat = latitude, long = longitude) %>%
-  mutate(name = str_to_lower(name), 
+  mutate(name = str_to_title(name), 
          address = str_to_title(address), 
          city = str_to_title(city),
          type = str_to_title(type), 
