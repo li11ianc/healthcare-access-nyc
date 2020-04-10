@@ -1,5 +1,7 @@
 library(tidyverse)
 
+insurance <- read.csv("data/states.csv")
+
 insurance$Uninsured.Rate..2010. <- as.numeric(str_replace_all(insurance$Uninsured.Rate..2010., "%", ""))
 
 insurance$Uninsured.Rate..2015. <- as.numeric(str_replace_all(insurance$Uninsured.Rate..2015., "%", ""))
