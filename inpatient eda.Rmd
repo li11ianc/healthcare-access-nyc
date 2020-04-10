@@ -120,6 +120,10 @@ same_timely <- medicare_ratings %>%
 ```
 
 ```{r}
+cols <- c("Below the national average" = "red", "Above the national average" = "lightblue", "Same as the national average" = "black")
+```
+
+```{r}
 medicare_ratings_map <- medicare_ratings %>%
     filter(state != "HI", state != "AK", long > -140, lat > 22,
          !is.na(effectiveness_of_care_national_comparison))
@@ -128,9 +132,16 @@ medicare_ratings_map %>%
   ggplot() +
   geom_polygon(data = us_map, aes(x=long, y=lat, group=group),
                    color="#9EA5A9", fill = "#CED5DA") +
-  geom_point(data = subset(medicare_ratings_map, effectiveness_of_care_national_comparison == "Same as the national average"), aes(x = long, y = lat, color = effectiveness_of_care_national_comparison)) +
-  geom_point(data = subset(medicare_ratings_map, effectiveness_of_care_national_comparison == "Above the national average"), aes(x = long, y = lat, color = effectiveness_of_care_national_comparison)) +
-  geom_point(data = subset(medicare_ratings_map, effectiveness_of_care_national_comparison == "Below the national average"), aes(x = long, y = lat, color = effectiveness_of_care_national_comparison)) +
+  geom_point(data = subset(medicare_ratings_map, 
+                           effectiveness_of_care_national_comparison == "Same as the national average"),
+             aes(x = long, y = lat, color = effectiveness_of_care_national_comparison), alpha = .2) +
+  geom_point(data = subset(medicare_ratings_map, 
+                           effectiveness_of_care_national_comparison == "Above the national average"),
+             aes(x = long, y = lat, color = effectiveness_of_care_national_comparison), alpha = .6) +
+  geom_point(data = subset(medicare_ratings_map, 
+                           effectiveness_of_care_national_comparison == "Below the national average"),
+             aes(x = long, y = lat, color = effectiveness_of_care_national_comparison), alpha = .6) +
+  scale_color_manual(values = cols) +
   coord_map() +
   theme_void() +
   theme(plot.caption = element_text(hjust = .5)) +
