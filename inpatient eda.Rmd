@@ -12,8 +12,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r load-packages}
 library(tidyverse)
 library(maps)
-library(plotly)
 library(viridis)
+library(patchwork)
 ```
 
 ```{r load-data}
@@ -30,9 +30,6 @@ inpatients <- inpatients %>%
          drg_definition = as.factor(str_remove(drg_definition, "\\d{3} - ")),
          average_outofpocket = average_total_payments - average_medicare_payments,
          city = as.factor(city))
-
-inpatients %>%
-  distinct(name)
 ```
 
 ```{r}
@@ -57,18 +54,9 @@ cities <- left_join(cities, cities_loc, by = "city.x") %>%
 ```{r}
 inpatients %>%
   group_by(drg_definition) %>%
-  summarize(mean = mean(average_outofpocket)) %>%
-  arrange(desc(mean))
-
-inpatients %>%
-  group_by(state) %>%
-  summarize(mean = mean(average_outofpocket)) %>%
-  arrange(desc(mean))
-
-inpatients %>%
-  group_by(city) %>%
-  summarize(mean = mean(average_outofpocket)) %>%
-  arrange(desc(mean))
+  summarize(mean_outofpocket_costs = mean(average_outofpocket)) %>%
+  arrange(desc(mean_outofpocket_costs)) %>%
+  head(10)
 ```
 
 ```{r}
@@ -83,7 +71,13 @@ medicare_ratings <- medicare %>%
     timeliness_of_care_national_comparison = as.factor(timeliness_of_care_national_comparison),
     effectiveness_of_care_national_comparison = as.factor(effectiveness_of_care_national_comparison),
     effectiveness_of_care_national_comparison = fct_relevel(effectiveness_of_care_national_comparison,
-                                                            c("Below the national average", "Above the national average", "Same as the national average"))
+                                                            c("Below the national average", 
+                                                              "Same as the national average", 
+                                                              "Above the national average")),
+    timeliness_of_care_national_comparison = fct_relevel(timeliness_of_care_national_comparison,
+                                                            c("Below the national average", 
+                                                              "Same as the national average", 
+                                                              "Above the national average"))
   )
 ```
 
@@ -92,7 +86,11 @@ us_map <- map_data("state")
 ```
 
 ```{r}
-medicare %>%
+cols <- c("Below the national average" = "red", "Above the national average" = "#0A97F0", "Same as the national average" = "black")
+```
+
+```{r}
+medicare_locations_plot <- medicare %>%
   filter(state != "HI", state != "AK", long > -140, lat > 22) %>%
   ggplot() +
   geom_polygon(data = us_map, aes(x=long, y=lat, group=group),
@@ -101,70 +99,76 @@ medicare %>%
   coord_map() +
   theme_void() +
   theme(plot.caption = element_text(hjust = .5)) +
-  labs(title = "Locations of Medicare Providers", subtitle = "in 2017", caption = "Medicare providers are spread thin in some Midwestern states.")
+  labs(title = "Locations of Medicare Providers", subtitle = "Medicare providers are spread thin in some Midwestern states.")
 ```
 
 ```{r}
-above_effective <- medicare_ratings %>%
-  filter(effectiveness_of_care_national_comparison == "Above the national average")
-below_effective <- medicare_ratings %>%
-  filter(effectiveness_of_care_national_comparison == "Below the national average")
-same_effective <- medicare_ratings %>%
-  filter(effectiveness_of_care_national_comparison == "Same as the national average")
-above_timely <- medicare_ratings %>%
-  filter(timeliness_of_care_national_comparison == "Above the national average")
-below_timely <- medicare_ratings %>%
-  filter(timeliness_of_care_national_comparison == "Below the national average")
-same_timely <- medicare_ratings %>%
-  filter(timeliness_of_care_national_comparison == "Same as the national average")
-```
-
-```{r}
-cols <- c("Below the national average" = "red", "Above the national average" = "lightblue", "Same as the national average" = "black")
-```
-
-```{r}
-medicare_ratings_map <- medicare_ratings %>%
+medicare_ratings_map1 <- medicare_ratings %>%
     filter(state != "HI", state != "AK", long > -140, lat > 22,
          !is.na(effectiveness_of_care_national_comparison))
 
-medicare_ratings_map %>%
+effectiveness_plot <- medicare_ratings_map1 %>%
   ggplot() +
   geom_polygon(data = us_map, aes(x=long, y=lat, group=group),
                    color="#9EA5A9", fill = "#CED5DA") +
-  geom_point(data = subset(medicare_ratings_map, 
+  geom_point(data = subset(medicare_ratings_map1, 
                            effectiveness_of_care_national_comparison == "Same as the national average"),
-             aes(x = long, y = lat, color = effectiveness_of_care_national_comparison), alpha = .2) +
-  geom_point(data = subset(medicare_ratings_map, 
+             aes(x = long, y = lat, color = effectiveness_of_care_national_comparison), 
+             alpha = .2) +
+  geom_point(data = subset(medicare_ratings_map1, 
                            effectiveness_of_care_national_comparison == "Above the national average"),
-             aes(x = long, y = lat, color = effectiveness_of_care_national_comparison), alpha = .6) +
-  geom_point(data = subset(medicare_ratings_map, 
+             aes(x = long, y = lat, color = effectiveness_of_care_national_comparison), 
+             alpha = .6) +
+  geom_point(data = subset(medicare_ratings_map1, 
                            effectiveness_of_care_national_comparison == "Below the national average"),
-             aes(x = long, y = lat, color = effectiveness_of_care_national_comparison), alpha = .6) +
+             aes(x = long, y = lat, color = effectiveness_of_care_national_comparison), 
+             alpha = .4) +
   scale_color_manual(values = cols) +
   coord_map() +
   theme_void() +
   theme(plot.caption = element_text(hjust = .5)) +
-  labs(title = "Locations of Medicare Providers", subtitle = "in 2017", caption = "Medicare providers are spread thin in some Midwestern states.")
+  labs(title = "National Comparison of Effectiveness of Care for Medicare Providers", 
+       subtitle = "Apparent clusters of ineffective providers in New York and Chicago areas.",
+       color = "Effectiveness of care")
 ```
 
+```{r}
+medicare_ratings_map2 <- medicare_ratings %>%
+    filter(state != "HI", state != "AK", long > -140, lat > 22,
+         !is.na(timeliness_of_care_national_comparison))
 
-medicare_ratings %>%
-  filter(state != "HI", state != "AK", long > -140, lat > 22) %>%
+timeliness_plot <- medicare_ratings_map2 %>%
   ggplot() +
   geom_polygon(data = us_map, aes(x=long, y=lat, group=group),
                    color="#9EA5A9", fill = "#CED5DA") +
-  geom_point(same_effective, aes(x = long, y = lat, color = effectiveness_of_care_national_comparison)) +
-  geom_point(above_effective, aes(x = long, y = lat, color = effectiveness_of_care_national_comparison)) +
-  geom_point(below_effective, aes(x = long, y = lat, color = effectiveness_of_care_national_comparison)) +
+  geom_point(data = subset(medicare_ratings_map2, 
+                           timeliness_of_care_national_comparison == "Same as the national average"),
+             aes(x = long, y = lat, color = timeliness_of_care_national_comparison), 
+             alpha = .2) +
+  geom_point(data = subset(medicare_ratings_map2, 
+                           timeliness_of_care_national_comparison == "Above the national average"),
+             aes(x = long, y = lat, color = timeliness_of_care_national_comparison), 
+             alpha = .6) +
+  geom_point(data = subset(medicare_ratings_map2, 
+                           timeliness_of_care_national_comparison == "Below the national average"),
+             aes(x = long, y = lat, color = timeliness_of_care_national_comparison), 
+             alpha = .4) +
+  scale_color_manual(values = cols) +
   coord_map() +
   theme_void() +
   theme(plot.caption = element_text(hjust = .5)) +
-  labs(title = "Locations of Medicare Providers", subtitle = "in 2017", caption = "Medicare providers are spread thin in some Midwestern states.")
+  labs(title = "National Comparison of Timeliness of Care for Medicare Providers", 
+       subtitle = "Timeliness suffers in East Coast and California cities.",
+       color = "Timeliness of care")
+```
+
+```{r fig.width = 8, fig.height = 12}
+medicare_locations_plot / effectiveness_plot / timeliness_plot +
+  plot_layout(widths = 5, heights = 20)
+```
 
 
-
-```{r}
+```{r fig.width = 8, fig.height = 6}
 cities %>%
   arrange(mean) %>%
   filter(state.x != "HI", state.x != "AK", long > -140) %>%
@@ -177,11 +181,6 @@ cities %>%
   scale_color_viridis(trans="log") +
   theme_void() +
   theme(plot.caption = element_text(hjust = .5)) +
-  labs(title = "Costs Not Covered By Medicare for Inpatient Procedures", color = "Mean out-of-pocket costs ($)", subtitle = "in 2017", caption = "Average out of pocket costs for Medicare-covered procedures signicantly higher in some California and East Coast cities.")
-```
-
-```{r}
-cities %>%
-  filter(state.x != "HI", lat < 25)
+  labs(title = "Costs Not Covered By Medicare for Inpatient Procedures", color = "Mean out-of-pocket costs ($)", subtitle = "in 2017", caption = "Average personal costs for procedures signicantly higher in some California and East Coast cities.")
 ```
 
