@@ -226,8 +226,8 @@ ggplot(data = medicaid_clean, mapping = aes(x = state_medicaid_expansion_2016, y
 # filter for hospitals in the contiguous US
 hospitals <- facilities %>% 
   filter(overall_type == "hospital") %>% 
-  filter(long > -130 & long < -60) %>% 
-  filter(lat > 20 & lat < 50) %>% 
+  #filter(long > -130 & long < -60) %>% 
+  #filter(lat > 20 & lat < 50) %>% 
   mutate(owner = as.character(owner)) %>% 
   mutate(general_owner = case_when(owner %in% c("Government - District/Authority", "Government - Federal",
                                              "Government - Local", "Government - State") ~ "Government",
@@ -285,10 +285,6 @@ hospitals %>%
   mutate(freq = n / sum(n)) %>% 
   filter(general_owner == "For-Profit") %>% 
   arrange((freq))
-
-
-facilities %>% 
-  filter(state == "AK")
 
 # population adjusted density of hospitals / pharmacies 
 
