@@ -12,13 +12,14 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, message=FALSE)
 ```
 
 ```{r load-packages}
 library(tidyverse)
 library(tidyverse)
 library(maps)
+library(usmap)
 library(viridis)
 library(patchwork)
 ```
@@ -195,10 +196,6 @@ cities %>%
 
 
 
-
-
-
-
 ## Insurance
 ```{r}
 insurance$uninsured_rate_2010 <- as.numeric(str_replace_all(insurance$uninsured_rate_2010, "%", ""))
@@ -219,5 +216,86 @@ ggplot(data = medicaid_clean, mapping = aes(x = state_medicaid_expansion_2016, y
   ylim(-4000, 4500000) +
   labs(x = "Did the state expand funding for Medicaid in 2016?", y = "Medicaid Enrollment Change between 2013 and 2016")
   
+```
+
+
+
+
+## Healthcare Facilities
+```{r facilities-data}
+# filter for hospitals in the contiguous US
+hospitals <- facilities %>% 
+  filter(overall_type == "hospital") %>% 
+  filter(long > -130 & long < -60) %>% 
+  filter(lat > 20 & lat < 50) %>% 
+  mutate(owner = as.character(owner)) %>% 
+  mutate(general_owner = case_when(owner %in% c("Government - District/Authority", "Government - Federal",
+                                             "Government - Local", "Government - State") ~ "Government",
+                                   owner == "Proprietary" ~ "For-Profit",
+                                   TRUE ~ owner))
+  
+# filter for pharmacies 
+pharmacies <- facilities %>% 
+  filter(overall_type == "pharmacy")
+```
+
+```{r hospitals-viz}
+### ADJUST THESE BY POPULATION??? ###
+# map of hospitals
+hospital_cnt <- hospitals %>% 
+  group_by(state) %>% 
+  summarize(total_hospitals = n(),
+            total_beds = sum(beds, na.rm = TRUE),
+            avg_beds = total_beds / total_hospitals)
+
+plot_usmap(data = hospital_cnt, values = "total_hospitals") + 
+  scale_fill_continuous(low = "white", high = "dark red", name = "# Hospitals", label = scales::comma) + theme(legend.position = "right")
+
+plot_usmap(data = hospital_cnt, values = "total_beds") + 
+  scale_fill_continuous(low = "white", high = "dark red", name = "# Beds", label = scales::comma) + theme(legend.position = "right")
+
+plot_usmap(data = hospital_cnt, values = "avg_beds") + 
+  scale_fill_continuous(low = "white", high = "dark red", name = "# Avg. Beds \nPer Hospital", label = scales::comma) + theme(legend.position = "right")
+
+# map of pharmacies
+pharmacy_cnt <- pharmacies %>% 
+  group_by(state) %>% 
+  summarize(total_pharmacies = n())
+
+plot_usmap(data = pharmacy_cnt, values = "total_pharmacies") + 
+  scale_fill_continuous(low = "white", high = "dark red", name = "# Pharmacies", label = scales::comma) + theme(legend.position = "right")
+
+# proportion of owner type by state bar graph
+hospitals %>% 
+  filter(general_owner != "Not Available") %>% 
+  filter(state %in% c("NY", "CA", "TX", "NC")) %>% 
+  ggplot(aes(x = state, fill = general_owner)) +
+  geom_bar(position = "fill") +
+  scale_fill_brewer(palette = "Set2") +
+  theme_light() +
+  labs(x = "State", y = "Proportion", fill = "Owner type",
+       title = "Proportion of Hospital Owner Types Differ Largely by State")
+```
+
+```{r tables}
+# proportion of owner type by state table
+hospitals %>% 
+  group_by(state, general_owner) %>%
+  summarise(n = n()) %>%
+  mutate(freq = n / sum(n)) %>% 
+  filter(general_owner == "For-Profit") %>% 
+  arrange((freq))
+
+
+facilities %>% 
+  filter(state == "AK")
+
+# population adjusted density of hospitals / pharmacies 
+
+# density of hospitals vs mean SES by county
+
+# shinyapp hospital / pharmacy finder
+# - name, address, website, number
+# - map
 ```
 
