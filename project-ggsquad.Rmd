@@ -66,6 +66,16 @@ plot_usmap(data = hospital_cnt, values = 'hospital_ratio') +
                         name = "Avg. # people served \nper hospital", label = scales::comma) + theme(legend.position = "right")
 ```
 
+```{r hospital-test}
+library(maps)
+library(sf)
+usa = st_as_sf(map('usa'))
+               
+ggplot() + geom_sf(data = usa)
+
+```
+
+
 ```{r hospital-owner}
 # proportion of owner type by state bar graph
 hospitals %>% 
