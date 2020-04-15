@@ -69,10 +69,42 @@ plot_usmap(data = hospital_cnt, values = 'hospital_ratio') +
 ```{r hospital-test}
 library(maps)
 library(sf)
-usa = st_as_sf(map('usa'))
-               
-ggplot() + geom_sf(data = usa)
+library(ggiraph)
 
+us_map <- st_read("map_data2/cb_2018_us_state_500k.shp")
+
+mapdata <- left_join(hospital_cnt, us_map, by = c("state" = "STUSPS"))
+
+ggplot(mapdata) +
+  geom_sf_interactive(aes(geometry = geometry, fill = states_pop, data_id = states_pop, tooltip = states_pop), color = "white") +
+  theme(rect = element_blank(), 
+        axis.ticks = element_blank(),
+        axis.text.x = element_blank(), 
+        axis.text.y = element_blank()) +
+  scale_fill_gradient(low = "#fef0d9", high = "#b30000")
+
+
+borough_map <- girafe(code = {print(gg_hover)}, height_svg = 6, width_svg = 9)
+
+# Final Map
+leaflet(world_spdf) %>% 
+  addTiles()  %>% 
+  setView( lat=10, lng=0 , zoom=2) %>%
+  addPolygons( 
+    fillColor = ~mypalette(POP2005), 
+    stroke=TRUE, 
+    fillOpacity = 0.9, 
+    color="white", 
+    weight=0.3,
+    label = mytext,
+    labelOptions = labelOptions( 
+      style = list("font-weight" = "normal", padding = "3px 8px"), 
+      textsize = "13px", 
+      direction = "auto"
+    )
+  )
+
+girafe_options(borough_map, opts_hover(css = "stroke:black;r:5pt;"))
 ```
 
 
