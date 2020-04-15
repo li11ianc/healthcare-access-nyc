@@ -17,7 +17,6 @@ knitr::opts_chunk$set(echo = TRUE, message=FALSE)
 
 ```{r load-packages}
 library(tidyverse)
-library(tidyverse)
 library(maps)
 library(usmap)
 library(viridis)
@@ -27,11 +26,101 @@ library(patchwork)
 ```{r load-data}
 facilities <- read.csv("data/all_health_facilities.csv")
 insurance <- read.csv("data/insurance.csv")
-inpatients <- read_csv("data/medicare_inpatients.csv")
-medicare <- read_csv("data/medicare.csv")
+inpatients <- read.csv("data/medicare_inpatients.csv")
+medicare <- read.csv("data/medicare.csv")
+states_pop <- read.csv("data/states_pop.csv")
 ```
 
 ## Section 1
+```{r us-hospitals}
+facilities <- left_join(facilities, states_pop, by = c("state" = "states_abb"))
+
+# filter for hospitals in the contiguous US
+hospitals <- facilities %>% 
+  filter(overall_type == "hospital") %>% 
+  #filter(long > -130 & long < -60) %>% 
+  #filter(lat > 20 & lat < 50) %>% 
+  mutate(owner = as.character(owner)) %>% 
+  mutate(general_owner = case_when(owner %in% c("Government - District/Authority", "Government - Federal",
+                                             "Government - Local", "Government - State") ~ "Government",
+                                   owner == "Proprietary" ~ "For-Profit",
+                                   TRUE ~ owner))
+
+# map of hospitals
+hospital_cnt <- hospitals %>% 
+  group_by(state) %>% 
+  summarize(total_hospitals = n(),
+            total_beds = sum(beds, na.rm = TRUE))
+
+hospital_cnt <- left_join(hospital_cnt, states_pop, by = c("state" = "states_abb"))
+
+hospital_cnt <- hospital_cnt %>% 
+  mutate(hospital_ratio = states_pop / total_hospitals)
+
+plot_usmap(data = hospital_cnt, values = 'total_hospitals') + 
+  scale_fill_continuous(low = "white", high = "brown",
+                        name = "# Hospitals", label = scales::comma) + theme(legend.position = "right")
+
+plot_usmap(data = hospital_cnt, values = 'hospital_ratio') + 
+  scale_fill_continuous(low = "white", high = "brown",
+                        name = "Avg. # people served \nper hospital", label = scales::comma) + theme(legend.position = "right")
+```
+
+```{r hospital-test}
+library(maps)
+library(sf)
+library(ggiraph)
+
+us_map <- st_read("map_data2/cb_2018_us_state_500k.shp")
+
+mapdata <- left_join(hospital_cnt, us_map, by = c("state" = "STUSPS"))
+
+ggplot(mapdata) +
+  geom_sf_interactive(aes(geometry = geometry, fill = states_pop, data_id = states_pop, tooltip = states_pop), color = "white") +
+  theme(rect = element_blank(), 
+        axis.ticks = element_blank(),
+        axis.text.x = element_blank(), 
+        axis.text.y = element_blank()) +
+  scale_fill_gradient(low = "#fef0d9", high = "#b30000")
+
+
+borough_map <- girafe(code = {print(gg_hover)}, height_svg = 6, width_svg = 9)
+
+# Final Map
+leaflet(world_spdf) %>% 
+  addTiles()  %>% 
+  setView( lat=10, lng=0 , zoom=2) %>%
+  addPolygons( 
+    fillColor = ~mypalette(POP2005), 
+    stroke=TRUE, 
+    fillOpacity = 0.9, 
+    color="white", 
+    weight=0.3,
+    label = mytext,
+    labelOptions = labelOptions( 
+      style = list("font-weight" = "normal", padding = "3px 8px"), 
+      textsize = "13px", 
+      direction = "auto"
+    )
+  )
+
+girafe_options(borough_map, opts_hover(css = "stroke:black;r:5pt;"))
+```
+
+
+```{r hospital-owner}
+# proportion of owner type by state bar graph
+hospitals %>% 
+  filter(general_owner != "Not Available") %>% 
+  filter(state %in% c("NY", "CA", "TX", "NC")) %>% 
+  ggplot(aes(x = state, fill = general_owner)) +
+  geom_bar(position = "fill") +
+  scale_fill_brewer(palette = "Set2") +
+  theme_light() +
+  labs(x = "State", y = "Proportion", fill = "Owner type",
+       title = "Proportion of Hospital Owner Types Differ Largely by State")
+```
+
 
 ## Section 2
 
