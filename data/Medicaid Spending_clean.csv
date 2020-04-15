@@ -1,0 +1,601 @@
+Code,Item,Group,Region_Number,Region_Name,State_Name,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,Average_Annual_Percent_Growth
+1,Medicaid/Personal Health Care (Millions of Dollars),United States,0,United States,,88921,103417,116453,126856,136250,144510,151334,158293,171259,186920,208405,230060,249418,270729,287552,283306,301114,317858,346200,365756,373888,388450,406423,446703,7.3
+1,Medicaid/Personal Health Care (Millions of Dollars),Region,1,New England,,6676,7418,7768,8896,9917,9893,11035,11792,12517,13199,14340,15925,16223,17818,18902,18473,19681,21006,23201,23281,23738,25439,26001,28084,6.4
+1,Medicaid/Personal Health Care (Millions of Dollars),Region,2,Mideast,,24821,28301,30979,33776,36246,39010,40094,42249,45627,49111,51658,57697,63156,66950,71082,71537,73411,76226,81163,84424,88853,87562,89037,96430,6.1
+1,Medicaid/Personal Health Care (Millions of Dollars),Region,3,Great Lakes,,13820,16525,18627,19492,20502,21889,23159,22560,24675,26925,29992,32311,34763,36955,40149,37738,41673,43225,49223,51889,49721,52409,56988,62010,6.7
+1,Medicaid/Personal Health Care (Millions of Dollars),Region,4,Plains,,5548,6569,7205,7910,8380,8867,9075,9870,10487,12048,13162,14994,15817,17503,18404,18407,19460,20511,22277,23121,24138,25630,26311,28065,7.3
+1,Medicaid/Personal Health Care (Millions of Dollars),Region,5,Southeast,,17662,21016,24393,26765,28885,29684,31317,32793,34806,39843,46340,50232,54493,61422,63139,60961,64879,68525,73671,78432,78795,81259,83817,90775,7.4
+1,Medicaid/Personal Health Care (Millions of Dollars),Region,6,Southwest,,6828,8380,9596,10587,11171,12026,12273,12657,13690,14528,16757,19581,21767,24077,26917,27547,30529,32854,37152,40173,40642,40160,42035,47073,8.8
+1,Medicaid/Personal Health Care (Millions of Dollars),Region,7,Rocky Mountains,,1751,2034,2255,2448,2663,2849,2945,3256,3503,3966,4350,4746,5164,5681,6126,6194,6420,6883,7608,8516,8544,9421,10058,11093,8.4
+1,Medicaid/Personal Health Care (Millions of Dollars),Region,8,Far West,,11815,13173,15630,16982,18487,20291,21435,23116,25953,27300,31806,34574,38034,40323,42832,42449,45062,48627,51905,55920,59457,66570,72175,83172,8.9
+1,Medicaid/Personal Health Care (Millions of Dollars),State,5,Southeast,Alabama,871,1157,1303,1426,1556,1647,1829,1956,2077,2503,2608,2855,3176,3360,3689,3578,3559,3863,4164,5001,4426,4771,4673,4983,7.9
+1,Medicaid/Personal Health Care (Millions of Dollars),State,8,Far West,Alaska,190,220,277,270,285,320,343,358,388,479,582,704,845,838,923,928,919,941,1062,1160,1279,1349,1315,1359,8.9
+1,Medicaid/Personal Health Care (Millions of Dollars),State,6,Southwest,Arizona,778,1048,1184,1334,1349,1426,1515,1608,1908,1869,2513,3159,3761,4354,4976,5426,5888,6566,7569,7920,7177,7103,7348,8371,10.9
+1,Medicaid/Personal Health Care (Millions of Dollars),State,5,Southeast,Arkansas,804,941,1023,1069,1159,1234,1268,1338,1442,1566,1888,2211,2231,2591,2724,2758,2982,3119,3387,3733,3821,3930,4043,4960,8.2
+1,Medicaid/Personal Health Care (Millions of Dollars),State,8,Far West,California,8751,9629,11521,12419,13275,14765,15736,16993,19197,19898,23473,25419,28393,30045,31871,31821,33766,36512,38972,41772,44634,50959,55744,61761,8.9
+1,Medicaid/Personal Health Care (Millions of Dollars),State,7,Rocky Mountains,Colorado,750,926,1003,1119,1252,1283,1387,1528,1725,1889,2028,2263,2391,2500,2699,2678,2845,3059,3415,3952,4198,4595,4937,6038,9.5
+1,Medicaid/Personal Health Care (Millions of Dollars),State,1,New England,Connecticut,1663,1722,1882,2169,2467,2538,2813,2840,3005,3139,3221,3562,3442,3897,3923,4042,4134,4743,5514,5561,5703,6599,6524,6994,6.4
+1,Medicaid/Personal Health Care (Millions of Dollars),State,2,Mideast,Delaware,200,227,257,288,337,392,364,422,432,508,558,603,677,757,810,881,935,1035,1108,1168,1277,1450,1423,1506,9.2
+1,Medicaid/Personal Health Care (Millions of Dollars),State,2,Mideast,District of Columbia,530,583,676,745,717,731,801,853,809,885,862,969,1015,1155,1209,1208,1328,1424,1580,1774,1952,1983,2185,2178,6.3
+1,Medicaid/Personal Health Care (Millions of Dollars),State,5,Southeast,Florida,3235,3851,4473,4858,5285,5360,5594,5945,6300,7193,8138,9484,10778,11876,12178,11758,12386,13239,14331,15904,16160,16594,16896,18285,7.8
+1,Medicaid/Personal Health Care (Millions of Dollars),State,5,Southeast,Georgia,1975,2170,2536,2947,3148,3253,3284,3420,3574,4339,5517,6197,6786,7393,6909,6252,7027,6804,6699,7248,7575,7806,8137,8761,6.7
+1,Medicaid/Personal Health Care (Millions of Dollars),State,8,Far West,Hawaii,250,270,336,459,620,543,568,536,567,589,599,685,738,875,981,889,1041,1115,1125,1362,1416,1280,1470,1770,8.9
+1,Medicaid/Personal Health Care (Millions of Dollars),State,7,Rocky Mountains,Idaho,246,277,305,322,346,398,390,444,500,598,706,750,812,963,987,1006,1091,1153,1253,1468,1287,1506,1609,1540,8.3
+1,Medicaid/Personal Health Care (Millions of Dollars),State,3,Great Lakes,Illinois,2947,4223,4929,5236,5703,6260,6307,6292,6292,7207,7508,8586,9304,9604,11034,9607,11599,11602,13945,15326,12808,13210,15506,15397,7.5
+1,Medicaid/Personal Health Care (Millions of Dollars),State,3,Great Lakes,Indiana,1944,2367,2759,2535,2311,2518,2365,2593,2909,3419,3783,4066,3984,4759,5246,4766,5183,5914,5809,5888,5760,7112,7183,8868,6.8
+1,Medicaid/Personal Health Care (Millions of Dollars),State,4,Plains,Iowa,893,965,1064,1145,1208,1289,1205,1323,1331,1572,1584,1850,2062,2200,2311,2476,2489,2730,2885,2991,3220,3470,3517,4059,6.8
+1,Medicaid/Personal Health Care (Millions of Dollars),State,4,Plains,Kansas,654,764,866,912,902,944,1030,1081,1143,1401,1461,1656,1541,1808,1952,2018,2072,2150,2299,2244,2494,2446,2364,2372,5.8
+1,Medicaid/Personal Health Care (Millions of Dollars),State,5,Southeast,Kentucky,1191,1540,1690,1793,1886,2047,2355,2451,2591,3075,3264,3573,3511,4160,4024,4063,4403,4472,5192,5236,5229,5102,5176,7425,8.3
+1,Medicaid/Personal Health Care (Millions of Dollars),State,5,Southeast,Louisiana,1992,2338,3073,3317,3080,2674,2790,2625,2685,2821,3430,3406,3896,4473,4940,4886,5332,5773,6248,6487,6334,6629,7042,7082,5.7
+1,Medicaid/Personal Health Care (Millions of Dollars),State,1,New England,Maine,521,632,750,801,822,893,977,1117,1142,1199,1321,1499,1787,1980,2033,2017,2013,2128,2445,1986,2284,2315,2506,2362,6.8
+1,Medicaid/Personal Health Care (Millions of Dollars),State,2,Mideast,Maryland,1516,1738,1875,2074,2196,2305,2387,2452,2814,2853,3136,3449,4247,4538,4823,4795,5043,5269,6076,6649,6901,6990,7269,8771,7.9
+1,Medicaid/Personal Health Care (Millions of Dollars),State,1,New England,Massachusetts,3463,3747,3724,4418,4963,4800,5336,5788,6170,6518,7114,7970,7984,8397,9310,8783,9794,10237,11072,11462,11604,12402,12608,13758,6.2
+1,Medicaid/Personal Health Care (Millions of Dollars),State,3,Great Lakes,Michigan,3066,3327,3849,4220,4587,4921,5922,4826,6239,5605,6514,6094,6923,7203,7518,7577,8535,8978,9386,10506,10675,11000,11536,12481,6.3
+1,Medicaid/Personal Health Care (Millions of Dollars),State,4,Plains,Minnesota,1857,1973,2197,2414,2592,2668,2657,2806,2987,3297,3792,4436,4630,5148,5306,5369,5917,6208,6792,7252,7672,8131,8715,9665,7.4
+1,Medicaid/Personal Health Care (Millions of Dollars),State,5,Southeast,Mississippi,818,924,1055,1206,1364,1500,1520,1594,1697,1949,2473,2702,2804,3423,3143,3157,3392,3430,3638,4110,4181,4254,4410,4569,7.8
+1,Medicaid/Personal Health Care (Millions of Dollars),State,4,Plains,Missouri,1225,1885,1973,2267,2451,2628,2807,3056,3358,3947,4308,4791,5310,5940,6309,6065,6389,6758,7411,7590,7793,8408,8519,8566,8.8
+1,Medicaid/Personal Health Care (Millions of Dollars),State,7,Rocky Mountains,Montana,249,274,316,332,343,371,365,409,350,481,532,494,542,635,686,691,704,769,846,986,820,954,996,1061,6.5
+1,Medicaid/Personal Health Care (Millions of Dollars),State,4,Plains,Nebraska,409,479,556,592,616,692,739,927,969,1028,1214,1283,1320,1365,1451,1418,1496,1504,1607,1627,1574,1716,1665,1700,6.4
+1,Medicaid/Personal Health Care (Millions of Dollars),State,8,Far West,Nevada,232,309,349,365,408,425,415,480,494,557,655,800,883,1049,1103,1110,1175,1236,1315,1389,1421,1733,1632,2348,10.6
+1,Medicaid/Personal Health Care (Millions of Dollars),State,1,New England,New Hampshire,283,372,442,510,583,596,635,730,736,814,832,911,952,1155,1130,1091,1181,1217,1321,1296,1124,1143,1194,1319,6.9
+1,Medicaid/Personal Health Care (Millions of Dollars),State,2,Mideast,New Jersey,2961,3285,3743,4130,4474,4697,4943,4911,5100,5407,5583,6206,6791,7167,8401,8720,8396,8902,9186,9402,9821,9479,9572,11934,6.2
+1,Medicaid/Personal Health Care (Millions of Dollars),State,6,Southwest,New Mexico,426,503,583,658,743,883,912,977,1036,1191,1409,1695,1916,2059,2147,2220,2524,2775,2917,3097,2956,3001,3039,3822,10
+1,Medicaid/Personal Health Care (Millions of Dollars),State,2,Mideast,New York,15985,17651,19472,20863,22349,23936,23727,25903,27495,29393,30987,35180,38425,40265,40964,42204,43228,44576,47480,48064,50720,49305,49477,51821,5.2
+1,Medicaid/Personal Health Care (Millions of Dollars),State,5,Southeast,North Carolina,1967,2300,2690,2987,3602,3970,4217,4375,4694,5336,6265,6513,6863,8028,8766,8767,8874,9876,10943,10041,10630,10919,11184,11911,8.1
+1,Medicaid/Personal Health Care (Millions of Dollars),State,4,Plains,North Dakota,252,263,281,292,308,331,312,330,331,385,374,439,439,479,499,480,492,519,584,675,688,739,778,939,5.9
+1,Medicaid/Personal Health Care (Millions of Dollars),State,3,Great Lakes,Ohio,4079,4650,5024,5336,5659,5815,6012,6184,6433,7381,8293,9226,10318,11121,11750,11436,11792,12032,13363,13939,14393,14575,15897,17935,6.7
+1,Medicaid/Personal Health Care (Millions of Dollars),State,6,Southwest,Oklahoma,906,1041,1071,1017,1069,1119,1174,1298,1449,1624,2051,2223,2276,2443,2686,2909,3215,3491,3782,3928,4031,4569,4622,4799,7.5
+1,Medicaid/Personal Health Care (Millions of Dollars),State,8,Far West,Oregon,734,838,978,1142,1363,1443,1434,1640,1904,2037,2315,2495,2350,2561,2673,2576,2698,2987,3453,3698,3992,4137,4716,6929,10.3
+1,Medicaid/Personal Health Care (Millions of Dollars),State,2,Mideast,Pennsylvania,3629,4817,4955,5675,6173,6948,7871,7707,8977,10065,10532,11291,12002,13068,14876,13729,14482,15020,15732,17366,18183,18355,19111,20221,7.8
+1,Medicaid/Personal Health Care (Millions of Dollars),State,1,New England,Rhode Island,540,724,736,734,786,748,926,931,1019,1017,1270,1339,1355,1614,1650,1648,1569,1712,1780,1864,1897,1758,1802,2261,6.4
+1,Medicaid/Personal Health Care (Millions of Dollars),State,5,Southeast,South Carolina,1238,1447,1615,1738,1808,1819,1798,1986,2180,2497,2905,3167,3190,3810,3994,3868,3890,4322,4790,4856,4466,4488,4579,5061,6.3
+1,Medicaid/Personal Health Care (Millions of Dollars),State,4,Plains,South Dakota,259,241,267,288,302,316,325,348,367,418,430,538,516,564,576,581,604,643,699,742,696,720,752,763,4.8
+1,Medicaid/Personal Health Care (Millions of Dollars),State,5,Southeast,Tennessee,1545,2003,2181,2538,2967,3012,3293,3544,3902,4458,5078,5394,5942,6589,6596,5509,6359,6469,6471,7397,7107,7670,7999,7655,7.2
+1,Medicaid/Personal Health Care (Millions of Dollars),State,6,Southwest,Texas,4718,5788,6759,7578,8009,8598,8671,8774,9297,9844,10784,12504,13814,15220,17107,16991,18903,20022,22884,25227,26478,25487,27026,30080,8.4
+1,Medicaid/Personal Health Care (Millions of Dollars),State,7,Rocky Mountains,Utah,412,441,494,520,556,608,609,679,730,782,839,956,1091,1208,1361,1395,1346,1425,1584,1601,1727,1830,1970,1920,6.9
+1,Medicaid/Personal Health Care (Millions of Dollars),State,1,New England,Vermont,206,221,235,264,295,318,348,387,446,512,583,643,702,774,857,892,990,969,1068,1113,1126,1222,1366,1390,8.6
+1,Medicaid/Personal Health Care (Millions of Dollars),State,5,Southeast,Virginia,1371,1465,1682,1773,1897,2013,2150,2218,2379,2736,3301,3157,3495,3741,4162,4321,4604,5048,5481,5997,6364,6373,6865,6834,7.2
+1,Medicaid/Personal Health Care (Millions of Dollars),State,8,Far West,Washington,1658,1907,2169,2328,2536,2795,2939,3109,3404,3741,4182,4470,4824,4954,5282,5125,5463,5837,5977,6538,6715,7112,7297,9005,7.6
+1,Medicaid/Personal Health Care (Millions of Dollars),State,5,Southeast,West Virginia,655,881,1071,1115,1133,1157,1220,1343,1284,1369,1472,1572,1823,1978,2014,2045,2071,2110,2328,2422,2503,2724,2814,3249,7.2
+1,Medicaid/Personal Health Care (Millions of Dollars),State,3,Great Lakes,Wisconsin,1784,1958,2065,2165,2243,2376,2553,2664,2803,3312,3894,4339,4235,4268,4600,4352,4563,4699,6719,6229,6085,6512,6866,7329,6.3
+1,Medicaid/Personal Health Care (Millions of Dollars),State,7,Rocky Mountains,Wyoming,94,117,136,154,165,189,193,196,199,217,246,283,329,374,394,424,435,478,510,508,513,535,547,534,7.8
+2,Medicaid/Hospital Care (Millions of Dollars),United States,0,United States,,36545,43940,49458,53671,56800,58871,59597,61674,66778,70906,77323,84376,90225,96750,103754,108828,117188,122673,133437,141756,143861,149807,155712,169103,6.9
+2,Medicaid/Hospital Care (Millions of Dollars),Region,1,New England,,2073,2430,2553,2984,3292,3380,4024,4095,4181,4179,4541,5090,4994,5779,6458,6241,6630,7122,7836,7579,7847,8835,8386,9245,6.7
+2,Medicaid/Hospital Care (Millions of Dollars),Region,2,Mideast,,10844,12725,13212,14502,15283,15640,14925,15827,16855,17499,17828,20647,21972,22830,24041,26482,27424,27717,29341,30446,31946,31647,31941,33884,5.1
+2,Medicaid/Hospital Care (Millions of Dollars),Region,3,Great Lakes,,5335,6591,7878,8131,8473,8945,9433,8672,10350,11157,11207,11677,12648,13242,14492,14985,17688,18088,21283,21657,19394,19999,21858,22886,6.5
+2,Medicaid/Hospital Care (Millions of Dollars),Region,4,Plains,,1867,2500,2729,2888,2984,3130,3221,3528,3752,4342,4677,5472,5332,5863,6263,7133,7592,7916,8651,9013,9187,9987,9855,10363,7.7
+2,Medicaid/Hospital Care (Millions of Dollars),Region,5,Southeast,,6962,8375,9942,10997,11529,11539,12057,12481,12807,14918,17262,18625,19092,21449,22231,23712,25151,25951,27931,31531,31893,32483,34096,36591,7.5
+2,Medicaid/Hospital Care (Millions of Dollars),Region,6,Southwest,,2927,4148,4742,5219,5327,5512,5295,5542,5808,6040,6816,7846,8476,9513,11037,11452,13212,13915,15677,16794,16744,16958,17375,19428,8.6
+2,Medicaid/Hospital Care (Millions of Dollars),Region,7,Rocky Mountains,,669,843,943,1022,1079,1072,1063,1178,1168,1312,1387,1535,1648,1912,1966,2192,2215,2399,2690,3370,3411,3911,4067,4332,8.5
+2,Medicaid/Hospital Care (Millions of Dollars),Region,8,Far West,,5868,6328,7460,7928,8833,9652,9578,10351,11858,11459,13605,13484,16061,16163,17267,16631,17276,19565,20028,21367,23439,25987,28135,32373,7.7
+2,Medicaid/Hospital Care (Millions of Dollars),State,5,Southeast,Alabama,261,429,486,533,595,623,419,566,599,792,711,778,875,946,1138,1046,897,1089,1246,2140,1687,2101,1959,2115,9.5
+2,Medicaid/Hospital Care (Millions of Dollars),State,8,Far West,Alaska,74,91,128,107,110,132,129,129,132,177,213,251,332,283,283,333,327,316,367,366,386,400,363,372,7.3
+2,Medicaid/Hospital Care (Millions of Dollars),State,6,Southwest,Arizona,608,850,854,951,937,938,944,981,1119,1107,1422,1729,1982,2249,2457,2611,2763,2952,3263,3251,3148,3161,3311,3495,7.9
+2,Medicaid/Hospital Care (Millions of Dollars),State,5,Southeast,Arkansas,343,376,408,391,396,409,429,439,450,487,643,810,753,822,820,848,1003,973,1038,1311,1261,1304,1334,1565,6.8
+2,Medicaid/Hospital Care (Millions of Dollars),State,8,Far West,California,4880,5176,6100,6369,6951,7704,7519,8130,9595,9054,10804,10453,12850,12559,13412,12771,13159,15217,15533,16557,18160,20237,22734,24761,7.3
+2,Medicaid/Hospital Care (Millions of Dollars),State,7,Rocky Mountains,Colorado,290,427,473,543,596,548,547,599,633,703,729,800,816,877,912,968,1014,1101,1202,1669,1780,1976,2119,2460,9.7
+2,Medicaid/Hospital Care (Millions of Dollars),State,1,New England,Connecticut,477,456,526,667,785,880,967,837,791,780,766,844,862,946,942,1024,1084,1191,1283,1330,1582,2274,2103,2236,6.9
+2,Medicaid/Hospital Care (Millions of Dollars),State,2,Mideast,Delaware,77,83,91,98,112,125,97,124,111,130,141,155,187,215,259,302,323,320,334,378,424,523,491,549,8.9
+2,Medicaid/Hospital Care (Millions of Dollars),State,2,Mideast,District of Columbia,272,284,345,396,367,386,440,482,423,447,418,448,477,483,565,542,596,556,588,599,652,677,727,681,4.1
+2,Medicaid/Hospital Care (Millions of Dollars),State,5,Southeast,Florida,1388,1631,1865,1936,2046,2022,1955,2115,2098,2337,2546,3037,3403,4091,4123,4624,4893,5418,5746,6796,6833,6817,6999,7833,7.8
+2,Medicaid/Hospital Care (Millions of Dollars),State,5,Southeast,Georgia,836,874,1064,1241,1295,1387,1352,1438,1476,2017,2793,3162,3399,2916,3035,2790,3217,3102,2965,3188,3547,3356,3755,3730,6.7
+2,Medicaid/Hospital Care (Millions of Dollars),State,8,Far West,Hawaii,104,110,149,210,307,263,288,244,256,251,245,284,284,347,373,372,407,389,389,487,568,406,511,614,8
+2,Medicaid/Hospital Care (Millions of Dollars),State,7,Rocky Mountains,Idaho,78,82,87,91,97,117,113,129,140,157,182,199,210,257,230,250,286,305,341,408,414,548,571,530,8.7
+2,Medicaid/Hospital Care (Millions of Dollars),State,3,Great Lakes,Illinois,1119,1767,2343,2516,2691,3021,3069,3027,3019,3486,3409,3628,4137,4257,4823,4826,6108,5913,7369,7753,5995,5772,7575,7121,8.4
+2,Medicaid/Hospital Care (Millions of Dollars),State,3,Great Lakes,Indiana,685,824,1114,890,804,955,914,1049,1203,1492,1536,1423,1330,1634,1435,1632,1981,2387,2007,1849,1630,2591,2164,3113,6.8
+2,Medicaid/Hospital Care (Millions of Dollars),State,4,Plains,Iowa,296,333,391,415,421,451,418,491,484,606,598,785,690,691,690,863,854,924,933,988,1103,1244,1177,1409,7
+2,Medicaid/Hospital Care (Millions of Dollars),State,4,Plains,Kansas,223,296,337,326,297,288,304,291,307,412,421,479,390,486,548,665,697,762,799,814,954,945,796,708,5.2
+2,Medicaid/Hospital Care (Millions of Dollars),State,5,Southeast,Kentucky,395,582,637,712,790,860,951,1038,1025,1240,1175,1303,1219,1595,1378,1536,1665,1617,2101,1946,1990,1617,1474,2629,8.6
+2,Medicaid/Hospital Care (Millions of Dollars),State,5,Southeast,Louisiana,819,970,1472,1676,1455,1071,1351,1150,1119,1132,1617,1570,1497,1771,2047,2235,2349,2333,2582,2624,2643,2658,3211,2957,5.7
+2,Medicaid/Hospital Care (Millions of Dollars),State,1,New England,Maine,133,197,269,301,283,290,349,379,290,282,299,295,404,488,567,513,556,573,894,541,780,732,924,715,7.6
+2,Medicaid/Hospital Care (Millions of Dollars),State,2,Mideast,Maryland,736,832,988,1080,1081,1076,1063,1127,1268,1167,1293,1418,1646,1779,1848,1902,2051,2139,2387,2703,2704,2724,2834,3753,7.3
+2,Medicaid/Hospital Care (Millions of Dollars),State,1,New England,Massachusetts,1146,1314,1315,1504,1667,1739,2122,2294,2481,2496,2675,3115,2856,3278,3845,3426,3774,4005,4193,4211,4109,4541,4019,4537,6.2
+2,Medicaid/Hospital Care (Millions of Dollars),State,3,Great Lakes,Michigan,1214,1414,1607,1743,1941,1956,2397,1633,3242,2891,2676,2670,2898,2888,3278,3334,3932,4070,4469,4832,4638,4635,4556,4954,6.3
+2,Medicaid/Hospital Care (Millions of Dollars),State,4,Plains,Minnesota,567,591,619,617,654,673,679,708,723,803,920,1204,1023,1260,1230,1435,1683,1739,1998,2271,2298,2546,2703,3053,7.6
+2,Medicaid/Hospital Care (Millions of Dollars),State,5,Southeast,Mississippi,373,385,463,544,650,739,751,760,736,783,986,1129,1135,1400,1204,1411,1561,1517,1574,2008,2009,2071,2258,2313,8.3
+2,Medicaid/Hospital Care (Millions of Dollars),State,4,Plains,Missouri,457,951,980,1106,1169,1228,1325,1460,1663,1908,2085,2231,2465,2644,2986,3318,3463,3582,3917,3872,3851,4175,4101,4004,9.9
+2,Medicaid/Hospital Care (Millions of Dollars),State,7,Rocky Mountains,Montana,109,117,138,142,138,145,147,187,139,179,180,171,185,240,260,288,294,308,339,439,285,375,392,413,6
+2,Medicaid/Hospital Care (Millions of Dollars),State,4,Plains,Nebraska,130,166,219,233,235,264,262,333,341,336,383,415,423,421,456,475,506,499,539,563,515,561,533,558,6.5
+2,Medicaid/Hospital Care (Millions of Dollars),State,8,Far West,Nevada,109,136,150,174,202,209,204,217,215,231,275,314,382,439,449,464,502,500,525,523,536,803,674,928,9.8
+2,Medicaid/Hospital Care (Millions of Dollars),State,1,New England,New Hampshire,70,132,160,178,206,168,141,172,188,214,227,261,309,365,354,347,408,398,425,420,250,261,280,313,6.7
+2,Medicaid/Hospital Care (Millions of Dollars),State,2,Mideast,New Jersey,1218,1462,1667,1840,1988,1995,2033,2020,2089,2143,2298,2503,2722,2656,2985,3413,3449,3462,3390,3457,3557,3838,3773,4661,6
+2,Medicaid/Hospital Care (Millions of Dollars),State,6,Southwest,New Mexico,167,191,223,253,278,324,331,405,408,545,643,761,797,941,1014,1101,1350,1505,1541,1622,1496,1381,1289,1934,11.2
+2,Medicaid/Hospital Care (Millions of Dollars),State,2,Mideast,New York,7391,8148,8236,8951,9483,9560,8506,9568,10130,10679,10753,12876,13798,14257,14384,15894,15915,16169,17173,17397,17851,17503,17445,17436,3.8
+2,Medicaid/Hospital Care (Millions of Dollars),State,5,Southeast,North Carolina,696,823,950,1030,1319,1434,1508,1499,1605,1811,2114,2065,2005,2462,2622,2985,2899,3094,3476,3304,3976,4266,4556,4946,8.9
+2,Medicaid/Hospital Care (Millions of Dollars),State,4,Plains,North Dakota,80,87,98,103,118,130,129,131,120,146,135,161,160,162,163,177,175,189,216,230,226,264,277,365,6.8
+2,Medicaid/Hospital Care (Millions of Dollars),State,3,Great Lakes,Ohio,1824,2082,2278,2399,2429,2388,2410,2346,2274,2569,2764,3038,3333,3496,3956,4128,4533,4548,5070,5146,5196,4955,5479,5608,5
+2,Medicaid/Hospital Care (Millions of Dollars),State,6,Southwest,Oklahoma,350,429,414,379,389,411,418,439,495,624,790,812,826,757,800,999,1161,1241,1334,1449,1472,1922,1839,1952,7.8
+2,Medicaid/Hospital Care (Millions of Dollars),State,8,Far West,Oregon,190,228,263,319,449,471,533,676,695,706,768,850,762,887,937,908,965,1117,1148,1193,1336,1637,1596,2736,12.3
+2,Medicaid/Hospital Care (Millions of Dollars),State,2,Mideast,Pennsylvania,1150,1915,1886,2138,2252,2500,2787,2506,2835,2933,2925,3246,3141,3440,4000,4429,5090,5072,5469,5911,6757,6383,6672,6803,8
+2,Medicaid/Hospital Care (Millions of Dollars),State,1,New England,Rhode Island,190,275,225,264,277,230,372,325,338,297,455,441,421,545,546,620,481,644,715,742,788,670,652,1035,7.6
+2,Medicaid/Hospital Care (Millions of Dollars),State,5,Southeast,South Carolina,537,651,716,728,707,638,609,691,720,865,932,1071,889,1309,1498,1598,1550,1750,2142,2056,1841,1759,1827,1972,5.8
+2,Medicaid/Hospital Care (Millions of Dollars),State,4,Plains,South Dakota,113,76,86,89,91,96,105,113,114,131,135,196,181,198,190,199,214,222,247,273,238,252,267,266,3.8
+2,Medicaid/Hospital Care (Millions of Dollars),State,5,Southeast,Tennessee,538,839,913,1149,1199,1246,1505,1504,1706,2055,2180,2094,2094,2166,2241,2102,2442,2569,2456,3247,3034,3347,3447,3197,8.1
+2,Medicaid/Hospital Care (Millions of Dollars),State,6,Southwest,Texas,1802,2679,3251,3636,3723,3839,3602,3717,3787,3763,3960,4545,4873,5565,6766,6741,7938,8217,9540,10472,10628,10494,10936,12047,8.6
+2,Medicaid/Hospital Care (Millions of Dollars),State,7,Rocky Mountains,Utah,152,168,190,198,201,214,215,218,207,221,224,298,352,426,440,549,480,526,632,682,766,844,805,754,7.2
+2,Medicaid/Hospital Care (Millions of Dollars),State,1,New England,Vermont,56,56,60,68,73,73,73,88,93,108,118,134,142,157,205,309,327,311,327,335,339,356,409,409,9
+2,Medicaid/Hospital Care (Millions of Dollars),State,5,Southeast,Virginia,507,506,620,660,708,722,784,805,828,944,1081,1110,1245,1332,1524,1868,1994,1830,1855,2098,2264,2235,2283,2178,6.5
+2,Medicaid/Hospital Care (Millions of Dollars),State,8,Far West,Washington,511,588,670,749,814,873,905,955,965,1041,1301,1332,1450,1649,1813,1784,1916,2025,2066,2241,2453,2504,2256,2962,7.9
+2,Medicaid/Hospital Care (Millions of Dollars),State,5,Southeast,West Virginia,269,309,349,396,369,389,443,477,444,456,484,495,578,639,600,668,684,659,749,814,808,955,994,1156,6.6
+2,Medicaid/Hospital Care (Millions of Dollars),State,3,Great Lakes,Wisconsin,493,504,536,584,608,625,642,618,613,718,822,919,950,966,1000,1066,1135,1170,2367,2078,1936,2046,2084,2090,6.5
+2,Medicaid/Hospital Care (Millions of Dollars),State,7,Rocky Mountains,Wyoming,40,49,54,47,46,48,41,45,48,52,72,65,86,112,124,136,141,159,175,171,165,168,180,175,6.6
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),United States,0,United States,,9113,11152,12683,13695,14788,15241,16309,16766,17477,19294,21431,24022,25185,27986,30072,31778,33524,35912,40164,43258,45184,46972,52012,63600,8.8
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),Region,1,New England,,472,554,574,637,712,712,822,940,1043,1134,1256,1340,1397,1437,1449,1704,1806,1953,2136,2381,2643,2723,2909,3411,9
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),Region,2,Mideast,,1489,1807,2114,2308,2600,2797,2839,2882,3172,3486,3608,3864,4195,4647,5060,5460,5424,5644,6534,6991,7159,7858,8966,11223,9.2
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),Region,3,Great Lakes,,1337,1704,1906,2053,2102,2158,2279,2181,2010,2237,2292,2749,2819,3236,3834,4052,4486,4951,5449,5863,6296,6232,6985,8909,8.6
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),Region,4,Plains,,474,550,610,610,627,620,621,650,714,792,916,1090,1184,1408,1551,1637,1764,1881,2195,2154,2367,2604,2833,3123,8.5
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),Region,5,Southeast,,2649,3368,3838,4087,4389,4281,4565,4925,5005,5562,6402,7146,7600,8796,9091,9060,9316,10220,11085,11411,11523,12252,13082,15319,7.9
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),Region,6,Southwest,,901,1001,1152,1298,1391,1459,1400,1443,1564,1589,1901,2141,2488,3091,3350,3573,3914,4248,4955,5248,5652,5694,6082,6801,9.2
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),Region,7,Rocky Mountains,,252,306,334,354,410,457,469,502,552,616,675,736,832,904,999,1041,1030,1049,1193,1150,1217,1219,1497,1819,9
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),Region,8,Far West,,1539,1863,2155,2348,2556,2757,3313,3241,3419,3879,4382,4955,4670,4468,4738,5250,5785,5966,6617,8060,8326,8389,9657,12995,9.7
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,5,Southeast,Alabama,110,141,170,188,199,205,257,376,388,441,511,547,591,625,643,787,804,803,895,815,606,595,652,725,8.5
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,8,Far West,Alaska,44,50,60,68,79,89,95,99,107,119,130,147,147,163,174,177,178,185,230,254,308,310,294,323,9
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,6,Southwest,Arizona,116,143,258,288,304,358,400,418,494,475,637,779,909,1003,1125,1200,1261,1388,1550,1585,1455,1457,1524,1768,12.6
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,5,Southeast,Arkansas,125,170,182,191,214,225,238,270,289,298,354,417,441,561,578,659,657,748,780,527,569,555,544,846,8.7
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,8,Far West,California,1105,1319,1530,1630,1701,1842,2359,2274,2354,2666,3046,3441,3239,3132,3195,3639,4086,4106,4539,5845,5920,5965,6996,9077,9.6
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,7,Rocky Mountains,Colorado,116,134,146,154,186,193,204,201,225,247,272,308,349,367,393,405,376,384,473,479,538,590,722,1076,10.2
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,1,New England,Connecticut,71,90,108,121,134,120,99,103,105,121,130,141,162,182,195,249,292,321,385,509,603,626,683,791,11.1
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,2,Mideast,Delaware,12,14,18,26,42,51,42,54,57,68,69,59,61,68,80,102,115,154,180,197,216,261,263,270,14.4
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,2,Mideast,District of Columbia,58,62,66,73,83,82,77,99,109,134,131,172,158,272,232,244,279,366,341,328,383,401,476,525,10.1
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,5,Southeast,Florida,417,531,615,635,665,630,639,679,696,780,925,1129,1208,1481,1593,1464,1590,1734,2128,2265,2359,2506,2571,2998,9
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,5,Southeast,Georgia,313,396,452,528,592,545,537,553,529,540,590,724,717,994,868,939,867,991,1007,1118,1141,1161,1041,1570,7.3
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,8,Far West,Hawaii,36,43,50,68,98,100,98,96,96,102,94,96,104,130,195,174,186,233,267,268,260,254,306,379,10.7
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,7,Rocky Mountains,Idaho,28,35,39,42,44,48,48,55,64,79,95,102,124,160,176,187,196,196,215,248,279,238,236,206,9.1
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,3,Great Lakes,Illinois,240,349,363,394,424,391,380,389,427,491,520,589,619,554,751,727,899,1018,1139,1391,1346,1348,1616,1994,9.6
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,3,Great Lakes,Indiana,204,273,313,283,210,189,170,171,184,214,248,362,275,397,704,768,730,751,879,781,801,969,1030,1142,7.8
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,4,Plains,Iowa,93,105,106,106,115,106,97,102,100,110,143,159,175,221,256,265,271,299,323,298,332,359,409,530,7.8
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,4,Plains,Kansas,63,77,97,109,92,74,52,50,53,67,77,83,102,111,130,142,163,193,231,223,243,266,340,402,8.4
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,5,Southeast,Kentucky,256,345,369,363,347,345,415,386,413,437,472,551,565,621,687,665,736,770,821,862,850,1116,1433,1845,9
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,5,Southeast,Louisiana,239,285,334,368,366,308,307,301,321,321,340,404,452,516,518,523,571,684,764,797,793,747,742,895,5.9
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,1,New England,Maine,43,52,56,62,72,70,77,83,104,113,140,162,201,214,174,261,244,258,270,258,335,439,412,390,10.1
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,2,Mideast,Maryland,203,267,224,249,259,231,217,151,326,296,309,341,397,440,469,511,491,473,830,597,603,655,742,941,6.9
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,1,New England,Massachusetts,297,329,307,333,374,377,491,581,644,696,764,803,787,769,773,822,868,945,1011,1108,1199,1200,1356,1632,7.7
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,3,Great Lakes,Michigan,443,521,598,687,704,749,832,850,584,580,685,819,821,1013,1002,1077,1337,1550,1346,1522,1778,1730,1959,2372,7.6
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,4,Plains,Minnesota,118,133,150,121,132,142,179,169,183,209,229,276,273,349,379,414,462,478,594,606,720,801,913,1114,10.3
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,5,Southeast,Mississippi,135,156,181,222,248,231,214,215,228,259,322,350,365,427,400,410,432,442,460,398,442,466,436,452,5.4
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,4,Plains,Missouri,108,123,129,145,153,159,157,176,193,217,257,311,355,430,478,453,495,554,648,620,649,726,743,702,8.5
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,7,Rocky Mountains,Montana,30,36,39,36,36,43,41,40,35,45,53,52,53,62,68,72,70,74,79,73,72,72,84,90,5
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,4,Plains,Nebraska,51,63,72,72,77,76,74,80,100,96,114,149,162,163,173,212,217,202,210,205,224,239,202,116,3.7
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,8,Far West,Nevada,31,51,52,46,50,51,51,71,62,59,78,95,94,122,136,137,144,136,142,163,168,197,204,405,11.8
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,1,New England,New Hampshire,28,41,54,62,76,89,101,114,121,126,131,139,145,151,159,166,176,187,207,208,207,117,88,118,6.5
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,2,Mideast,New Jersey,135,162,200,220,268,291,275,278,246,257,299,319,346,407,471,553,562,694,775,797,854,908,1043,1620,11.4
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,6,Southwest,New Mexico,63,81,89,98,105,121,129,125,131,119,135,123,143,167,152,213,218,266,323,347,385,490,568,515,9.6
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,2,Mideast,New York,846,1030,1285,1376,1524,1690,1811,1956,2043,2331,2378,2492,2706,2606,2669,2720,2613,2628,2943,3114,3294,3777,4543,6119,9
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,5,Southeast,North Carolina,270,334,391,445,535,581,664,737,682,835,1013,1051,1175,1368,1463,1296,1198,1300,1420,1355,1526,1685,1898,2096,9.3
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,4,Plains,North Dakota,19,23,26,24,22,25,28,30,30,33,33,40,35,43,47,42,47,44,55,61,61,63,64,96,7.3
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,3,Great Lakes,Ohio,310,395,452,493,558,631,724,604,627,740,598,678,726,862,903,987,965,964,1108,1041,1238,1136,1372,2115,8.7
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,6,Southwest,Oklahoma,87,100,101,97,101,96,91,100,110,153,195,179,260,316,409,494,518,600,740,814,907,975,1019,1012,11.3
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,8,Far West,Oregon,62,76,92,118,142,152,183,187,245,335,358,400,369,367,383,318,299,342,485,514,556,480,548,833,11.9
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,2,Mideast,Pennsylvania,235,272,322,364,424,451,418,344,391,400,422,482,527,854,1137,1329,1363,1330,1464,1958,1809,1856,1900,1747,9.1
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,1,New England,Rhode Island,11,15,19,28,23,20,15,18,19,21,21,25,27,40,43,55,62,74,73,100,95,98,95,199,13.5
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,5,Southeast,South Carolina,154,185,215,243,273,291,312,346,384,413,528,588,678,715,713,743,739,830,863,919,742,781,789,845,7.7
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,4,Plains,South Dakota,22,27,30,33,36,37,35,44,55,61,62,72,83,91,89,108,108,111,134,141,139,150,162,163,9.1
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,5,Southeast,Tennessee,328,381,417,434,488,471,529,612,654,796,897,927,906,911,1021,895,1053,1155,1074,1466,1575,1719,1904,1769,7.6
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,6,Southwest,Texas,635,677,703,814,881,884,780,800,829,842,934,1061,1175,1605,1663,1667,1917,1995,2343,2502,2905,2772,2972,3507,7.7
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,7,Rocky Mountains,Utah,63,82,89,95,116,144,147,179,201,214,220,232,256,258,301,306,312,315,337,258,241,247,364,359,7.9
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,1,New England,Vermont,23,29,30,31,34,35,40,41,49,56,68,70,75,82,106,151,164,167,190,198,204,244,275,280,11.4
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,5,Southeast,Virginia,183,221,249,258,272,268,281,265,261,256,264,272,296,355,377,426,440,529,559,638,654,658,763,817,6.7
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,8,Far West,Washington,260,324,372,419,487,524,528,515,556,598,676,776,717,555,656,805,892,963,954,1015,1112,1183,1308,1977,9.2
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,5,Southeast,West Virginia,120,222,263,213,191,180,172,185,160,186,186,187,207,222,229,253,229,233,313,251,267,262,309,461,6
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,3,Great Lakes,Wisconsin,139,165,181,196,206,199,174,167,188,211,242,302,378,409,474,492,555,668,977,1128,1134,1050,1008,1286,10.1
+3,Medicaid/Physician & Clinical Services (Millions of Dollars),State,7,Rocky Mountains,Wyoming,16,19,21,26,27,28,29,28,27,30,36,42,50,57,61,72,77,81,89,93,87,73,91,88,7.6
+4,Medicaid/Other Professional Services (Millions of Dollars),United States,0,United States,,549,594,834,859,1016,1207,1311,1324,1438,1585,1829,2268,2442,2935,3229,3295,3524,3951,4874,5160,4994,4989,5359,6258,11.2
+4,Medicaid/Other Professional Services (Millions of Dollars),Region,1,New England,,25,24,31,30,43,74,102,118,121,121,131,211,173,208,244,244,280,264,306,360,318,283,305,367,12.4
+4,Medicaid/Other Professional Services (Millions of Dollars),Region,2,Mideast,,124,128,176,180,211,240,245,242,247,261,271,284,288,398,453,492,477,518,737,845,843,899,1017,1105,10
+4,Medicaid/Other Professional Services (Millions of Dollars),Region,3,Great Lakes,,83,98,139,144,178,209,220,208,277,342,389,467,444,504,536,395,502,631,780,814,523,519,558,712,9.8
+4,Medicaid/Other Professional Services (Millions of Dollars),Region,4,Plains,,38,37,47,41,44,58,95,94,99,111,128,167,194,255,314,341,380,445,482,426,529,505,479,544,12.3
+4,Medicaid/Other Professional Services (Millions of Dollars),Region,5,Southeast,,61,77,116,124,142,145,151,152,153,175,219,229,246,270,288,305,334,388,514,674,735,718,896,1058,13.2
+4,Medicaid/Other Professional Services (Millions of Dollars),Region,6,Southwest,,52,61,89,100,132,175,175,208,252,261,350,524,696,897,1105,1212,1236,1344,1592,1655,1659,1631,1587,1702,16.3
+4,Medicaid/Other Professional Services (Millions of Dollars),Region,7,Rocky Mountains,,10,13,20,24,24,19,19,13,14,18,22,24,29,38,44,52,55,70,85,75,64,78,65,85,9.6
+4,Medicaid/Other Professional Services (Millions of Dollars),Region,8,Far West,,156,157,215,216,243,286,305,289,276,296,319,361,370,366,245,254,259,290,379,311,325,356,451,685,6.6
+4,Medicaid/Other Professional Services (Millions of Dollars),State,5,Southeast,Alabama,4,7,10,10,10,10,10,12,11,13,15,19,19,20,22,25,30,44,57,57,42,43,58,65,12.6
+4,Medicaid/Other Professional Services (Millions of Dollars),State,8,Far West,Alaska,2,2,2,1,1,1,2,2,3,4,4,5,5,5,6,5,5,12,16,18,20,23,20,24,12.2
+4,Medicaid/Other Professional Services (Millions of Dollars),State,6,Southwest,Arizona,0,1,3,4,7,11,12,15,21,23,48,81,118,140,191,197,188,203,246,242,243,213,216,272,32.1
+4,Medicaid/Other Professional Services (Millions of Dollars),State,5,Southeast,Arkansas,4,7,9,9,12,14,16,17,18,19,19,12,9,11,12,12,16,16,26,46,51,56,59,87,14
+4,Medicaid/Other Professional Services (Millions of Dollars),State,8,Far West,California,100,98,133,131,141,162,180,150,129,125,134,146,137,121,118,151,150,138,165,94,87,82,186,297,4.8
+4,Medicaid/Other Professional Services (Millions of Dollars),State,7,Rocky Mountains,Colorado,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+4,Medicaid/Other Professional Services (Millions of Dollars),State,1,New England,Connecticut,7,7,10,10,19,45,69,79,79,79,80,157,124,157,175,152,163,148,164,197,134,112,121,162,14.3
+4,Medicaid/Other Professional Services (Millions of Dollars),State,2,Mideast,Delaware,1,1,2,2,2,2,2,2,2,2,3,3,3,3,4,5,6,6,8,11,13,15,16,17,14.6
+4,Medicaid/Other Professional Services (Millions of Dollars),State,2,Mideast,District of Columbia,1,1,2,1,2,1,1,1,1,1,1,2,2,2,2,2,2,2,4,5,6,5,5,6,6.7
+4,Medicaid/Other Professional Services (Millions of Dollars),State,5,Southeast,Florida,2,2,4,5,6,7,8,8,8,9,12,12,14,15,15,16,16,22,81,128,184,161,192,193,22.7
+4,Medicaid/Other Professional Services (Millions of Dollars),State,5,Southeast,Georgia,15,16,28,38,43,39,36,34,35,37,47,57,69,76,77,83,78,87,88,86,86,92,91,96,8.5
+4,Medicaid/Other Professional Services (Millions of Dollars),State,8,Far West,Hawaii,2,2,3,3,3,4,3,3,3,5,4,5,6,12,12,11,18,19,30,32,29,24,25,33,12.8
+4,Medicaid/Other Professional Services (Millions of Dollars),State,7,Rocky Mountains,Idaho,3,5,7,8,8,9,9,3,4,6,8,8,11,17,20,27,29,39,50,39,24,13,12,23,8.8
+4,Medicaid/Other Professional Services (Millions of Dollars),State,3,Great Lakes,Illinois,18,22,30,28,27,26,25,25,27,35,38,51,38,85,50,14,34,88,94,214,164,160,170,235,11.8
+4,Medicaid/Other Professional Services (Millions of Dollars),State,3,Great Lakes,Indiana,24,30,31,29,39,49,46,46,51,58,74,97,81,106,17,14,14,14,16,17,16,17,18,20,-0.9
+4,Medicaid/Other Professional Services (Millions of Dollars),State,4,Plains,Iowa,6,7,8,8,8,8,7,8,8,10,16,39,49,71,79,80,97,146,147,88,112,83,41,62,10.3
+4,Medicaid/Other Professional Services (Millions of Dollars),State,4,Plains,Kansas,3,3,4,4,4,4,4,3,3,5,6,4,5,7,6,9,9,8,8,9,10,13,12,15,7.4
+4,Medicaid/Other Professional Services (Millions of Dollars),State,5,Southeast,Kentucky,8,10,13,11,10,10,11,13,14,17,23,26,28,33,35,38,47,52,61,58,47,15,17,42,7.2
+4,Medicaid/Other Professional Services (Millions of Dollars),State,5,Southeast,Louisiana,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+4,Medicaid/Other Professional Services (Millions of Dollars),State,1,New England,Maine,4,4,6,5,5,6,5,4,5,5,5,6,7,7,19,30,41,39,47,56,64,70,68,65,12.9
+4,Medicaid/Other Professional Services (Millions of Dollars),State,2,Mideast,Maryland,3,3,2,2,2,3,5,4,7,8,9,11,11,12,14,13,15,17,58,109,136,82,92,107,16.8
+4,Medicaid/Other Professional Services (Millions of Dollars),State,1,New England,Massachusetts,9,7,8,7,8,9,12,15,15,17,22,22,15,14,15,18,31,30,41,50,59,39,37,51,7.6
+4,Medicaid/Other Professional Services (Millions of Dollars),State,3,Great Lakes,Michigan,9,7,10,10,9,9,9,7,5,5,6,7,7,5,10,11,11,14,24,68,73,64,81,105,11.4
+4,Medicaid/Other Professional Services (Millions of Dollars),State,4,Plains,Minnesota,16,15,19,15,16,29,62,61,63,68,75,92,106,142,193,222,245,261,287,288,333,332,347,373,14.5
+4,Medicaid/Other Professional Services (Millions of Dollars),State,5,Southeast,Mississippi,0,0,0,0,1,1,1,1,1,3,9,7,5,6,4,4,4,5,12,31,42,47,50,60,23.7
+4,Medicaid/Other Professional Services (Millions of Dollars),State,4,Plains,Missouri,5,6,7,7,7,9,10,8,9,10,11,12,14,16,16,10,9,8,19,23,44,47,51,55,10.6
+4,Medicaid/Other Professional Services (Millions of Dollars),State,7,Rocky Mountains,Montana,4,4,6,6,6,6,5,5,5,7,9,9,10,12,11,13,14,15,18,20,21,22,23,26,8.8
+4,Medicaid/Other Professional Services (Millions of Dollars),State,4,Plains,Nebraska,4,3,4,3,4,4,8,9,11,13,15,15,14,13,14,15,15,15,12,10,21,20,16,17,6.7
+4,Medicaid/Other Professional Services (Millions of Dollars),State,8,Far West,Nevada,3,4,5,4,4,5,5,5,6,6,7,9,8,16,19,25,36,72,76,64,69,72,76,81,15.3
+4,Medicaid/Other Professional Services (Millions of Dollars),State,1,New England,New Hampshire,2,2,3,4,5,7,7,7,8,9,10,10,11,11,11,12,12,12,14,15,16,11,22,27,12.7
+4,Medicaid/Other Professional Services (Millions of Dollars),State,2,Mideast,New Jersey,7,7,10,12,20,26,27,26,25,27,29,27,27,29,29,36,36,44,65,85,76,37,32,40,8
+4,Medicaid/Other Professional Services (Millions of Dollars),State,6,Southwest,New Mexico,7,15,30,40,61,90,98,99,95,65,61,141,206,57,56,61,74,85,106,131,131,161,178,230,16.7
+4,Medicaid/Other Professional Services (Millions of Dollars),State,2,Mideast,New York,103,106,146,148,168,187,192,194,198,211,217,228,232,230,233,247,271,293,329,357,414,528,590,636,8.2
+4,Medicaid/Other Professional Services (Millions of Dollars),State,5,Southeast,North Carolina,7,7,10,12,15,16,19,15,14,17,23,22,23,28,30,31,29,33,48,77,76,74,146,198,15.7
+4,Medicaid/Other Professional Services (Millions of Dollars),State,4,Plains,North Dakota,2,2,2,2,2,3,3,3,2,3,3,3,3,3,3,3,3,3,4,6,7,8,10,17,11.2
+4,Medicaid/Other Professional Services (Millions of Dollars),State,3,Great Lakes,Ohio,25,30,55,59,68,78,78,58,107,140,154,168,168,181,194,157,259,364,428,263,188,141,154,220,9.9
+4,Medicaid/Other Professional Services (Millions of Dollars),State,6,Southwest,Oklahoma,5,6,7,6,6,6,6,7,7,9,13,14,10,7,9,11,11,14,19,35,37,40,47,51,10.2
+4,Medicaid/Other Professional Services (Millions of Dollars),State,8,Far West,Oregon,3,3,4,5,5,4,3,3,4,5,6,7,5,11,14,5,3,3,44,52,65,46,55,145,19.1
+4,Medicaid/Other Professional Services (Millions of Dollars),State,2,Mideast,Pennsylvania,8,10,15,15,18,20,19,15,15,12,12,13,14,122,172,190,148,155,273,277,198,232,282,299,16.9
+4,Medicaid/Other Professional Services (Millions of Dollars),State,1,New England,Rhode Island,1,2,2,1,1,1,1,1,1,2,2,2,2,2,2,2,2,3,3,3,3,3,3,5,5.5
+4,Medicaid/Other Professional Services (Millions of Dollars),State,5,Southeast,South Carolina,5,6,8,8,8,8,8,8,9,9,11,12,14,15,18,23,26,34,50,68,66,72,81,102,13.7
+4,Medicaid/Other Professional Services (Millions of Dollars),State,4,Plains,South Dakota,1,1,2,1,2,2,2,2,2,2,2,2,3,3,3,2,2,3,3,3,2,2,2,3,6
+4,Medicaid/Other Professional Services (Millions of Dollars),State,5,Southeast,Tennessee,7,8,11,11,14,15,15,17,19,24,27,28,28,26,26,20,26,30,27,39,41,44,46,47,8.6
+4,Medicaid/Other Professional Services (Millions of Dollars),State,6,Southwest,Texas,40,39,49,49,58,68,59,87,128,163,229,287,361,693,849,943,963,1042,1219,1247,1247,1217,1146,1150,15.7
+4,Medicaid/Other Professional Services (Millions of Dollars),State,7,Rocky Mountains,Utah,3,3,6,10,9,4,4,4,4,4,4,4,5,6,8,7,7,10,9,9,9,10,12,16,7.7
+4,Medicaid/Other Professional Services (Millions of Dollars),State,1,New England,Vermont,1,1,2,2,4,6,7,10,13,10,12,15,14,17,22,29,32,33,38,39,41,48,55,57,19
+4,Medicaid/Other Professional Services (Millions of Dollars),State,5,Southeast,Virginia,5,6,10,11,11,12,13,14,13,13,20,19,19,20,22,27,28,32,35,62,74,88,127,125,15.4
+4,Medicaid/Other Professional Services (Millions of Dollars),State,8,Far West,Washington,47,49,70,72,89,111,112,125,130,152,163,189,210,201,75,56,45,46,47,50,55,110,90,105,3.6
+4,Medicaid/Other Professional Services (Millions of Dollars),State,5,Southeast,West Virginia,4,9,14,11,12,13,14,14,10,13,14,15,18,21,27,26,34,32,30,23,24,27,29,44,11.5
+4,Medicaid/Other Professional Services (Millions of Dollars),State,3,Great Lakes,Wisconsin,7,8,13,19,35,46,61,73,87,104,117,145,150,126,266,199,185,152,217,252,81,136,136,132,13.9
+4,Medicaid/Other Professional Services (Millions of Dollars),State,7,Rocky Mountains,Wyoming,0,0,0,0,0,0,1,1,1,1,1,2,2,3,4,4,5,7,7,8,10,34,18,20,19.9
+5,Medicaid/Dental Services (Millions of Dollars),United States,0,United States,,945,1196,1675,1741,1807,1872,1974,2129,2180,2400,3090,3709,4035,4264,4572,4782,5211,6227,7638,8401,8459,8581,8817,9929,10.8
+5,Medicaid/Dental Services (Millions of Dollars),Region,1,New England,,60,67,84,98,115,108,118,138,144,151,185,197,177,180,198,270,351,457,613,619,638,581,630,799,12
+5,Medicaid/Dental Services (Millions of Dollars),Region,2,Mideast,,159,164,188,201,219,208,193,176,186,244,358,542,555,590,622,724,799,902,1076,1309,1234,1274,1203,1240,9.3
+5,Medicaid/Dental Services (Millions of Dollars),Region,3,Great Lakes,,149,155,188,180,176,174,161,190,226,305,494,512,541,574,622,718,742,849,1005,960,966,1053,1074,1314,9.9
+5,Medicaid/Dental Services (Millions of Dollars),Region,4,Plains,,72,76,92,87,95,95,90,91,99,114,145,172,182,206,213,201,217,232,269,284,309,323,371,407,7.8
+5,Medicaid/Dental Services (Millions of Dollars),Region,5,Southeast,,190,248,298,259,284,289,297,340,369,431,573,701,842,953,1030,1075,1123,1261,1509,1644,1669,1834,1883,1912,10.6
+5,Medicaid/Dental Services (Millions of Dollars),Region,6,Southwest,,47,58,90,120,143,163,229,191,199,213,263,345,456,520,593,629,805,1129,1441,1759,1845,1620,1684,1744,17.1
+5,Medicaid/Dental Services (Millions of Dollars),Region,7,Rocky Mountains,,19,24,27,28,32,38,42,50,65,75,87,98,95,106,122,133,132,163,207,225,250,241,324,343,13.3
+5,Medicaid/Dental Services (Millions of Dollars),Region,8,Far West,,249,404,707,769,743,797,844,954,893,869,985,1141,1187,1135,1171,1032,1042,1235,1518,1601,1548,1655,1647,2171,9.9
+5,Medicaid/Dental Services (Millions of Dollars),State,5,Southeast,Alabama,6,7,8,9,11,11,11,14,15,16,33,46,51,59,62,68,74,84,99,102,85,85,85,85,12.1
+5,Medicaid/Dental Services (Millions of Dollars),State,8,Far West,Alaska,6,7,8,7,6,6,6,5,7,9,10,12,15,18,18,17,19,30,39,47,54,62,60,68,11.5
+5,Medicaid/Dental Services (Millions of Dollars),State,6,Southwest,Arizona,2,2,9,22,27,35,42,47,54,51,70,87,103,120,138,151,168,191,224,240,225,197,200,244,24.5
+5,Medicaid/Dental Services (Millions of Dollars),State,5,Southeast,Arkansas,5,7,7,7,8,9,9,12,14,16,20,23,19,22,21,34,40,41,60,68,74,80,77,117,14.6
+5,Medicaid/Dental Services (Millions of Dollars),State,8,Far West,California,190,340,628,686,645,674,710,821,753,714,814,926,959,879,928,800,792,916,1110,1051,1043,1072,1019,1151,8.1
+5,Medicaid/Dental Services (Millions of Dollars),State,7,Rocky Mountains,Colorado,4,4,5,6,7,9,10,13,25,29,34,47,48,48,54,60,67,77,105,116,125,123,146,202,18.7
+5,Medicaid/Dental Services (Millions of Dollars),State,1,New England,Connecticut,10,11,15,21,23,15,10,10,10,10,9,8,8,7,6,6,5,21,101,137,153,154,155,173,13.2
+5,Medicaid/Dental Services (Millions of Dollars),State,2,Mideast,Delaware,0,1,1,1,1,2,2,3,3,5,7,6,10,12,14,18,21,26,31,33,36,38,39,41,21.3
+5,Medicaid/Dental Services (Millions of Dollars),State,2,Mideast,District of Columbia,1,1,2,2,2,2,2,1,0,0,0,0,0,1,1,1,4,13,25,27,33,37,51,36,16.5
+5,Medicaid/Dental Services (Millions of Dollars),State,5,Southeast,Florida,30,38,51,51,58,64,70,93,101,95,88,100,119,115,111,112,107,126,161,213,249,359,358,293,10.4
+5,Medicaid/Dental Services (Millions of Dollars),State,5,Southeast,Georgia,27,26,30,32,34,33,31,36,38,48,82,115,155,183,186,163,140,164,167,165,163,170,167,182,8.7
+5,Medicaid/Dental Services (Millions of Dollars),State,8,Far West,Hawaii,7,8,10,9,7,5,1,1,1,1,5,35,35,36,35,29,40,58,96,130,133,164,171,214,16
+5,Medicaid/Dental Services (Millions of Dollars),State,7,Rocky Mountains,Idaho,3,7,7,7,8,10,9,9,11,16,19,17,18,24,25,26,21,28,32,27,38,26,48,39,11.8
+5,Medicaid/Dental Services (Millions of Dollars),State,3,Great Lakes,Illinois,32,32,41,46,41,36,34,34,7,15,114,68,66,73,79,105,97,133,132,191,172,194,181,231,9
+5,Medicaid/Dental Services (Millions of Dollars),State,3,Great Lakes,Indiana,26,33,37,28,20,18,15,34,76,93,113,132,128,144,158,180,183,207,255,232,216,249,241,265,10.6
+5,Medicaid/Dental Services (Millions of Dollars),State,4,Plains,Iowa,22,21,24,24,27,27,26,26,27,30,43,44,46,50,48,54,54,57,68,68,70,75,79,90,6.4
+5,Medicaid/Dental Services (Millions of Dollars),State,4,Plains,Kansas,5,6,8,7,8,7,8,10,10,12,14,18,21,28,29,35,42,47,53,58,67,74,90,55,10.5
+5,Medicaid/Dental Services (Millions of Dollars),State,5,Southeast,Kentucky,27,35,40,35,35,35,35,34,34,40,52,55,60,64,66,72,83,85,97,102,92,106,73,129,7.1
+5,Medicaid/Dental Services (Millions of Dollars),State,5,Southeast,Louisiana,19,21,23,22,21,20,18,17,19,21,27,30,32,39,40,39,50,70,103,120,119,144,147,96,7.3
+5,Medicaid/Dental Services (Millions of Dollars),State,1,New England,Maine,6,6,6,6,6,6,6,10,10,10,11,13,17,21,15,20,20,23,26,30,33,35,32,29,7.2
+5,Medicaid/Dental Services (Millions of Dollars),State,2,Mideast,Maryland,7,8,4,4,4,3,3,2,1,2,2,2,2,3,3,3,3,4,31,105,124,118,127,130,13.8
+5,Medicaid/Dental Services (Millions of Dollars),State,1,New England,Massachusetts,36,40,49,55,66,65,78,93,93,98,128,138,114,101,121,174,259,336,395,358,359,301,347,441,11.6
+5,Medicaid/Dental Services (Millions of Dollars),State,3,Great Lakes,Michigan,39,35,46,45,51,51,47,60,83,103,145,170,192,170,188,253,241,278,293,229,286,273,309,384,10.5
+5,Medicaid/Dental Services (Millions of Dollars),State,4,Plains,Minnesota,20,22,28,23,26,25,22,21,23,25,28,39,40,44,50,51,57,59,70,75,81,76,92,121,8
+5,Medicaid/Dental Services (Millions of Dollars),State,5,Southeast,Mississippi,2,2,2,3,3,4,4,3,4,5,6,7,7,8,7,6,5,7,8,9,18,17,25,28,12.4
+5,Medicaid/Dental Services (Millions of Dollars),State,4,Plains,Missouri,14,14,17,19,19,20,17,12,10,13,22,31,38,46,45,17,17,17,21,19,19,20,19,17,0.8
+5,Medicaid/Dental Services (Millions of Dollars),State,7,Rocky Mountains,Montana,5,5,5,5,6,6,7,7,6,6,7,7,6,7,8,8,8,13,16,21,21,22,25,29,8.2
+5,Medicaid/Dental Services (Millions of Dollars),State,4,Plains,Nebraska,6,7,8,8,8,10,10,14,21,24,29,28,28,27,31,34,35,34,36,40,45,53,67,96,12.7
+5,Medicaid/Dental Services (Millions of Dollars),State,8,Far West,Nevada,5,7,7,6,7,6,8,14,15,19,21,20,14,17,17,19,17,22,29,32,33,39,40,64,11.9
+5,Medicaid/Dental Services (Millions of Dollars),State,1,New England,New Hampshire,2,3,4,5,6,6,5,5,5,5,5,5,6,13,14,15,16,18,21,22,22,21,20,55,16.4
+5,Medicaid/Dental Services (Millions of Dollars),State,2,Mideast,New Jersey,27,28,35,35,36,30,20,16,16,17,25,25,25,28,30,32,31,39,38,36,45,38,34,34,0.9
+5,Medicaid/Dental Services (Millions of Dollars),State,6,Southwest,New Mexico,5,5,6,7,7,10,11,7,7,12,19,22,24,24,23,28,33,32,73,79,89,99,109,131,15.5
+5,Medicaid/Dental Services (Millions of Dollars),State,2,Mideast,New York,94,92,108,115,120,114,112,111,109,161,252,425,421,453,463,514,511,521,581,617,646,719,729,717,9.2
+5,Medicaid/Dental Services (Millions of Dollars),State,5,Southeast,North Carolina,25,29,36,35,41,42,43,47,55,63,97,117,155,184,216,232,250,296,338,330,337,345,417,422,13
+5,Medicaid/Dental Services (Millions of Dollars),State,4,Plains,North Dakota,3,3,4,3,4,4,3,5,5,5,5,7,6,6,6,5,6,6,8,10,11,11,10,12,5.9
+5,Medicaid/Dental Services (Millions of Dollars),State,3,Great Lakes,Ohio,39,40,44,41,44,48,45,41,38,66,92,107,118,136,143,121,157,163,198,160,179,232,241,334,9.8
+5,Medicaid/Dental Services (Millions of Dollars),State,6,Southwest,Oklahoma,8,9,8,6,6,5,5,8,9,9,17,26,29,43,69,84,102,108,129,131,124,124,121,112,12.4
+5,Medicaid/Dental Services (Millions of Dollars),State,8,Far West,Oregon,7,7,8,10,12,14,13,9,11,11,13,17,17,21,26,26,29,38,50,61,72,78,87,148,14.1
+5,Medicaid/Dental Services (Millions of Dollars),State,2,Mideast,Pennsylvania,30,35,40,45,55,57,54,44,56,59,73,85,96,93,110,155,228,299,370,492,350,324,224,281,10.2
+5,Medicaid/Dental Services (Millions of Dollars),State,1,New England,Rhode Island,3,4,5,7,9,10,11,12,14,13,16,18,18,23,23,27,19,26,32,34,33,26,24,47,12.6
+5,Medicaid/Dental Services (Millions of Dollars),State,5,Southeast,South Carolina,9,10,13,14,14,15,16,16,16,49,73,69,80,82,82,88,99,109,147,161,148,154,160,255,15.8
+5,Medicaid/Dental Services (Millions of Dollars),State,4,Plains,South Dakota,2,2,3,3,3,4,4,4,4,4,4,4,5,5,5,5,7,11,13,15,15,14,14,16,10.5
+5,Medicaid/Dental Services (Millions of Dollars),State,5,Southeast,Tennessee,19,21,23,22,25,25,28,32,34,43,48,90,109,137,148,143,139,141,164,171,177,169,158,136,8.8
+5,Medicaid/Dental Services (Millions of Dollars),State,6,Southwest,Texas,33,43,67,86,102,112,171,129,129,141,158,210,299,333,363,365,503,798,1015,1309,1408,1200,1254,1257,17.2
+5,Medicaid/Dental Services (Millions of Dollars),State,7,Rocky Mountains,Utah,6,6,7,7,9,11,14,18,20,21,23,22,18,21,27,30,27,34,41,49,53,57,91,59,10.5
+5,Medicaid/Dental Services (Millions of Dollars),State,1,New England,Vermont,3,4,5,6,6,7,8,8,13,15,16,16,14,15,19,29,32,32,37,38,39,45,52,53,12.9
+5,Medicaid/Dental Services (Millions of Dollars),State,5,Southeast,Virginia,8,9,12,12,13,13,12,15,19,17,19,18,18,21,46,71,88,92,110,127,133,134,137,125,12.9
+5,Medicaid/Dental Services (Millions of Dollars),State,8,Far West,Washington,34,36,46,50,67,91,106,104,106,115,121,133,145,164,147,140,146,171,194,280,212,238,270,525,12.6
+5,Medicaid/Dental Services (Millions of Dollars),State,5,Southeast,West Virginia,13,43,51,17,20,19,20,21,20,19,28,33,36,39,46,47,46,47,55,77,73,71,79,44,5.4
+5,Medicaid/Dental Services (Millions of Dollars),State,3,Great Lakes,Wisconsin,14,16,20,21,22,21,19,21,22,28,30,34,37,51,55,58,64,68,127,148,114,106,102,100,9
+5,Medicaid/Dental Services (Millions of Dollars),State,7,Rocky Mountains,Wyoming,2,2,2,2,2,2,2,2,2,3,4,5,6,6,8,9,9,11,12,13,12,13,13,14,9.9
+6,Medicaid/Home Health Care (Millions of Dollars),United States,0,United States,,2495,2939,3456,3841,4313,4676,5169,5558,5913,6756,8281,9702,11404,13471,14907,16905,19590,21646,23979,25936,27079,27735,28661,30194,11.4
+6,Medicaid/Home Health Care (Millions of Dollars),Region,1,New England,,206,244,280,284,336,391,485,556,577,630,770,923,1082,1113,1190,1220,1358,1520,1788,1971,2310,2309,2632,2974,12.3
+6,Medicaid/Home Health Care (Millions of Dollars),Region,2,Mideast,,1543,1762,1919,1929,2052,2079,2148,2145,2090,2271,2702,2987,3742,4282,4505,4919,5977,6383,6795,7310,7563,8025,7697,7256,7
+6,Medicaid/Home Health Care (Millions of Dollars),Region,3,Great Lakes,,226,273,319,320,361,409,450,524,538,590,725,875,1014,1200,1339,1528,1975,2102,2610,2900,3043,3161,3499,3900,13.2
+6,Medicaid/Home Health Care (Millions of Dollars),Region,4,Plains,,76,105,135,144,179,219,268,264,271,314,441,543,574,702,805,940,1075,1240,1503,1589,1828,2023,2248,2402,16.2
+6,Medicaid/Home Health Care (Millions of Dollars),Region,5,Southeast,,260,337,413,439,517,545,520,551,647,713,855,995,1151,1543,1717,1937,2233,2565,2784,2847,2527,2837,3173,3354,11.8
+6,Medicaid/Home Health Care (Millions of Dollars),Region,6,Southwest,,139,157,198,216,246,276,378,505,564,616,809,959,1122,1065,1156,1319,1427,1534,1878,2524,2625,2319,2296,2562,13.5
+6,Medicaid/Home Health Care (Millions of Dollars),Region,7,Rocky Mountains,,13,18,26,31,42,54,68,79,97,105,126,154,168,180,206,228,267,308,350,359,391,448,511,658,18.7
+6,Medicaid/Home Health Care (Millions of Dollars),Region,8,Far West,,32,43,167,479,581,702,854,936,1128,1517,1853,2266,2551,3388,3989,4815,5278,5995,6271,6437,6794,6613,6603,7089,26.4
+6,Medicaid/Home Health Care (Millions of Dollars),State,5,Southeast,Alabama,12,14,17,16,18,19,22,32,36,49,51,61,69,80,110,103,121,120,138,135,104,114,117,117,10.4
+6,Medicaid/Home Health Care (Millions of Dollars),State,8,Far West,Alaska,0,0,1,1,2,2,2,2,2,3,3,9,19,33,45,43,24,27,30,76,87,96,106,84,28
+6,Medicaid/Home Health Care (Millions of Dollars),State,6,Southwest,Arizona,1,3,4,5,5,4,7,8,11,11,16,21,27,35,44,53,62,57,69,73,70,62,62,75,21.5
+6,Medicaid/Home Health Care (Millions of Dollars),State,5,Southeast,Arkansas,18,27,30,28,31,32,30,32,28,29,32,37,40,57,67,74,75,83,104,117,137,152,153,233,11.7
+6,Medicaid/Home Health Care (Millions of Dollars),State,8,Far West,California,13,19,130,419,490,590,716,825,1011,1377,1676,2033,2264,3020,3569,4312,4687,5295,5612,5612,5958,5669,5580,5802,30.2
+6,Medicaid/Home Health Care (Millions of Dollars),State,7,Rocky Mountains,Colorado,4,5,7,10,16,28,43,51,66,72,89,112,108,113,130,148,178,206,239,245,269,276,313,486,23.2
+6,Medicaid/Home Health Care (Millions of Dollars),State,1,New England,Connecticut,50,56,65,66,88,136,175,219,233,254,290,313,334,343,353,337,351,346,399,374,425,316,301,321,8.4
+6,Medicaid/Home Health Care (Millions of Dollars),State,2,Mideast,Delaware,6,7,10,12,15,18,16,18,17,20,22,24,26,31,36,42,47,54,63,70,80,87,96,100,13.2
+6,Medicaid/Home Health Care (Millions of Dollars),State,2,Mideast,District of Columbia,13,14,17,18,20,18,16,17,18,20,19,26,34,42,59,97,147,178,210,200,183,260,299,272,14.3
+6,Medicaid/Home Health Care (Millions of Dollars),State,5,Southeast,Florida,49,77,110,135,167,154,125,138,162,165,219,264,357,408,460,527,585,637,699,688,723,801,800,705,12.3
+6,Medicaid/Home Health Care (Millions of Dollars),State,5,Southeast,Georgia,30,31,31,36,40,39,37,40,48,50,56,74,82,238,132,170,218,276,307,317,310,278,217,238,9.4
+6,Medicaid/Home Health Care (Millions of Dollars),State,8,Far West,Hawaii,0,1,1,2,3,4,3,3,3,5,5,3,3,3,4,3,4,7,4,11,10,11,12,15,19.1
+6,Medicaid/Home Health Care (Millions of Dollars),State,7,Rocky Mountains,Idaho,3,5,7,9,11,13,11,11,16,15,13,16,27,25,25,28,32,35,34,29,33,75,83,61,14.2
+6,Medicaid/Home Health Care (Millions of Dollars),State,3,Great Lakes,Illinois,7,14,15,20,25,24,26,23,29,30,35,50,57,61,78,67,96,86,114,133,71,128,135,137,13.5
+6,Medicaid/Home Health Care (Millions of Dollars),State,3,Great Lakes,Indiana,16,24,25,18,24,30,30,27,31,36,44,49,63,82,129,142,158,190,246,259,308,353,388,422,15.4
+6,Medicaid/Home Health Care (Millions of Dollars),State,4,Plains,Iowa,8,11,11,15,22,25,28,29,30,29,36,40,53,54,54,65,73,81,87,93,97,127,158,199,14.8
+6,Medicaid/Home Health Care (Millions of Dollars),State,4,Plains,Kansas,5,7,8,9,11,12,15,15,17,22,33,36,35,39,46,57,71,72,64,67,57,57,62,70,12.3
+6,Medicaid/Home Health Care (Millions of Dollars),State,5,Southeast,Kentucky,38,43,48,48,54,61,59,68,92,96,98,94,90,100,112,137,137,147,145,132,128,155,202,245,8.4
+6,Medicaid/Home Health Care (Millions of Dollars),State,5,Southeast,Louisiana,9,13,20,25,26,23,23,19,19,22,26,31,37,51,101,139,217,296,316,303,267,357,431,510,19.3
+6,Medicaid/Home Health Care (Millions of Dollars),State,1,New England,Maine,10,13,14,15,15,17,18,20,18,12,11,11,44,47,38,55,51,53,52,54,82,85,89,98,10.2
+6,Medicaid/Home Health Care (Millions of Dollars),State,2,Mideast,Maryland,19,32,46,62,82,83,101,122,126,133,146,159,199,209,225,194,211,217,198,223,295,301,325,403,14.1
+6,Medicaid/Home Health Care (Millions of Dollars),State,1,New England,Massachusetts,139,165,189,189,218,223,272,294,297,339,442,568,669,681,742,754,868,1017,1214,1410,1657,1763,2086,2342,13.1
+6,Medicaid/Home Health Care (Millions of Dollars),State,3,Great Lakes,Michigan,108,126,177,181,197,221,223,266,267,288,332,384,444,501,516,564,694,768,858,1015,929,855,1037,1218,11.1
+6,Medicaid/Home Health Care (Millions of Dollars),State,4,Plains,Minnesota,48,69,90,85,96,111,139,143,158,180,207,244,244,347,416,514,594,686,872,907,1084,1193,1322,1364,15.7
+6,Medicaid/Home Health Care (Millions of Dollars),State,5,Southeast,Mississippi,5,5,7,7,9,11,10,11,8,10,16,18,22,56,41,40,41,39,40,37,34,40,45,53,10.7
+6,Medicaid/Home Health Care (Millions of Dollars),State,4,Plains,Missouri,11,13,20,29,43,63,77,68,58,74,152,208,226,237,267,278,308,367,439,474,540,589,640,684,19.8
+6,Medicaid/Home Health Care (Millions of Dollars),State,7,Rocky Mountains,Montana,4,5,7,7,9,7,9,10,8,11,16,14,15,19,21,23,25,30,37,43,43,45,45,30,9.5
+6,Medicaid/Home Health Care (Millions of Dollars),State,4,Plains,Nebraska,3,4,5,5,5,7,7,6,6,8,10,12,14,18,15,16,19,22,26,29,31,36,44,55,13.1
+6,Medicaid/Home Health Care (Millions of Dollars),State,8,Far West,Nevada,3,5,7,6,5,6,7,8,12,13,16,26,42,59,70,84,96,109,102,118,125,134,137,211,20.3
+6,Medicaid/Home Health Care (Millions of Dollars),State,1,New England,New Hampshire,2,3,4,4,5,5,5,5,6,8,8,10,11,11,11,11,11,11,14,15,18,23,21,36,12.3
+6,Medicaid/Home Health Care (Millions of Dollars),State,2,Mideast,New Jersey,71,84,113,127,156,190,223,219,196,103,216,247,321,339,349,399,420,500,593,647,639,428,474,645,10.1
+6,Medicaid/Home Health Care (Millions of Dollars),State,6,Southwest,New Mexico,3,4,5,5,6,8,8,8,8,21,66,101,129,159,165,194,225,213,222,235,224,229,233,296,22.3
+6,Medicaid/Home Health Care (Millions of Dollars),State,2,Mideast,New York,1412,1596,1693,1659,1712,1692,1710,1698,1651,1906,2190,2413,3024,3503,3636,3888,4724,4946,5196,5452,5788,6296,5820,5247,5.9
+6,Medicaid/Home Health Care (Millions of Dollars),State,5,Southeast,North Carolina,51,65,79,81,100,132,139,135,178,202,242,291,315,378,481,502,515,580,618,557,450,538,730,735,12.3
+6,Medicaid/Home Health Care (Millions of Dollars),State,4,Plains,North Dakota,1,1,1,1,1,1,1,1,1,1,1,1,1,3,4,5,5,5,6,8,9,10,12,17,14.4
+6,Medicaid/Home Health Care (Millions of Dollars),State,3,Great Lakes,Ohio,15,20,24,27,36,43,42,63,51,59,92,134,174,219,257,327,490,601,718,800,1061,1147,1176,1352,21.8
+6,Medicaid/Home Health Care (Millions of Dollars),State,6,Southwest,Oklahoma,19,21,20,17,15,15,18,23,31,43,52,46,46,32,25,28,29,30,32,36,35,34,35,33,2.4
+6,Medicaid/Home Health Care (Millions of Dollars),State,8,Far West,Oregon,3,4,6,10,19,29,37,22,16,14,16,22,22,33,25,60,77,100,50,82,42,105,131,172,19.1
+6,Medicaid/Home Health Care (Millions of Dollars),State,2,Mideast,Pennsylvania,23,29,39,51,67,78,81,71,83,89,110,118,136,158,200,299,427,488,534,718,577,653,682,589,15.2
+6,Medicaid/Home Health Care (Millions of Dollars),State,1,New England,Rhode Island,2,2,3,5,5,4,6,6,4,4,4,5,6,12,18,25,34,50,60,63,71,58,62,101,19.6
+6,Medicaid/Home Health Care (Millions of Dollars),State,5,Southeast,South Carolina,6,6,7,8,11,13,13,12,13,12,18,13,13,16,26,45,55,63,77,92,95,102,116,140,14.3
+6,Medicaid/Home Health Care (Millions of Dollars),State,4,Plains,South Dakota,1,1,1,1,1,1,1,1,0,0,1,1,2,2,3,5,5,6,9,10,10,10,10,13,14.3
+6,Medicaid/Home Health Care (Millions of Dollars),State,5,Southeast,Tennessee,12,14,17,16,18,18,19,22,33,45,61,75,82,92,113,107,143,175,176,275,57,62,66,66,7.8
+6,Medicaid/Home Health Care (Millions of Dollars),State,6,Southwest,Texas,116,129,169,189,218,249,344,466,515,541,675,790,920,839,923,1044,1111,1234,1555,2181,2296,1994,1965,2158,13.6
+6,Medicaid/Home Health Care (Millions of Dollars),State,7,Rocky Mountains,Utah,2,2,3,3,5,4,2,4,6,5,6,8,14,20,25,25,28,32,33,35,38,43,62,72,17.9
+6,Medicaid/Home Health Care (Millions of Dollars),State,1,New England,Vermont,3,4,4,5,5,6,8,12,18,12,14,16,18,19,28,38,43,43,49,55,56,65,74,76,15.4
+6,Medicaid/Home Health Care (Millions of Dollars),State,5,Southeast,Virginia,8,9,7,6,7,8,8,7,8,9,10,14,18,19,32,41,57,65,70,79,89,88,126,132,12.7
+6,Medicaid/Home Health Care (Millions of Dollars),State,8,Far West,Washington,12,14,23,41,62,71,88,76,84,105,138,173,202,240,276,313,389,457,474,540,571,598,637,806,20
+6,Medicaid/Home Health Care (Millions of Dollars),State,5,Southeast,West Virginia,21,31,40,34,36,35,34,35,23,25,25,24,27,47,42,53,69,83,94,115,132,149,171,180,9.8
+6,Medicaid/Home Health Care (Millions of Dollars),State,3,Great Lakes,Wisconsin,81,89,77,73,79,91,129,145,160,177,222,258,277,337,360,428,538,458,674,692,673,677,764,771,10.3
+6,Medicaid/Home Health Care (Millions of Dollars),State,7,Rocky Mountains,Wyoming,1,1,1,1,2,2,2,2,2,2,3,3,4,4,4,4,5,5,6,8,8,8,9,9,13.4
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),United States,0,United States,,6043,6883,7721,8627,9700,10824,12222,14031,16647,19771,23375,27520,32233,35844,36530,19109,18334,19226,20340,20412,20953,21591,22434,27955,6.9
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),Region,1,New England,,354,402,435,520,600,623,706,843,984,1146,1330,1493,1636,1723,1785,784,720,902,886,936,827,941,980,1545,6.6
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),Region,2,Mideast,,1282,1372,1561,1792,2031,2298,2659,3306,4021,4693,5452,6444,7667,9014,9567,5579,5044,5501,6030,5668,5817,5423,6187,7309,7.9
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),Region,3,Great Lakes,,1048,1196,1262,1372,1523,1691,1824,2067,2114,2563,3087,3757,4351,4639,4933,2285,2110,2072,2409,3122,3373,4302,4629,5402,7.4
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),Region,4,Plains,,383,441,502,554,601,663,795,941,1144,1382,1593,1901,2043,2338,2425,1170,1146,1205,1276,1372,1443,1424,1426,1696,6.7
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),Region,5,Southeast,,1498,1752,1969,2177,2507,2822,3163,3484,4366,5066,6195,6942,8752,9753,9271,4544,4333,4406,4430,4016,4158,4382,4053,4996,5.4
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),Region,6,Southwest,,354,425,505,582,635,735,983,894,1077,1197,1472,1813,2210,2445,2635,1619,1807,1896,2081,2155,2303,2019,2192,2883,9.5
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),Region,7,Rocky Mountains,,110,120,137,159,179,212,239,293,340,412,495,534,616,620,732,395,396,419,409,401,419,417,426,684,8.3
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),Region,8,Far West,,1014,1175,1351,1472,1623,1779,1853,2203,2601,3312,3751,4635,4959,5313,5182,2735,2779,2824,2820,2742,2613,2681,2540,3441,5.5
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,5,Southeast,Alabama,86,112,135,153,167,178,168,204,230,280,316,379,427,477,462,292,290,297,319,303,302,279,282,304,5.6
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,8,Far West,Alaska,8,10,13,14,16,19,23,27,31,37,47,63,78,89,94,55,49,50,48,36,35,29,41,33,6.1
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,6,Southwest,Arizona,7,6,10,12,15,17,18,28,46,56,95,139,188,247,316,231,291,367,475,556,420,460,457,655,22
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,5,Southeast,Arkansas,66,65,64,71,83,95,109,121,148,167,196,244,279,316,351,207,205,200,205,179,160,146,168,180,4.4
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,8,Far West,California,802,938,1086,1121,1194,1308,1469,1729,2019,2553,2860,3606,3853,4045,3911,2044,2119,2149,2166,2016,1826,2020,1738,2289,4.7
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,7,Rocky Mountains,Colorado,45,47,54,64,76,95,110,131,153,186,212,239,268,235,308,155,180,200,179,162,184,170,194,400,9.9
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,1,New England,Connecticut,77,87,101,115,124,121,139,161,186,223,250,297,324,356,376,125,135,286,286,328,289,298,324,525,8.7
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,2,Mideast,Delaware,10,11,13,16,19,25,30,36,45,55,65,84,82,93,80,68,58,65,70,70,84,93,114,112,11.1
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,2,Mideast,District of Columbia,19,20,23,26,29,31,37,41,50,66,68,83,97,116,117,85,63,68,103,80,85,79,90,110,8
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,5,Southeast,Florida,301,362,412,480,559,657,771,743,925,1093,1216,1353,1693,1696,1706,587,576,571,578,576,642,851,869,976,5.2
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,5,Southeast,Georgia,164,175,196,220,247,270,288,333,395,497,644,596,823,926,751,455,297,265,266,199,271,297,329,439,4.4
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,8,Far West,Hawaii,20,21,26,37,50,46,27,31,41,50,64,74,79,91,93,47,45,47,56,69,74,67,101,154,9.3
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,7,Rocky Mountains,Idaho,16,19,21,25,29,35,38,47,57,71,88,94,106,119,122,72,62,59,64,61,48,46,60,81,7.3
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,3,Great Lakes,Illinois,213,301,299,316,402,427,471,524,588,660,745,1126,1296,1200,1551,516,687,604,858,1003,947,859,679,973,6.8
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,3,Great Lakes,Indiana,158,183,192,207,205,232,259,295,354,427,514,563,574,629,676,268,282,230,272,520,446,507,533,691,6.6
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,4,Plains,Iowa,73,77,81,92,94,99,111,130,142,166,202,235,272,290,315,160,133,143,124,103,122,120,112,144,3
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,4,Plains,Kansas,40,46,55,62,69,78,86,105,120,148,166,213,213,232,249,121,137,163,156,143,130,97,101,204,7.4
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,5,Southeast,Kentucky,120,150,168,184,207,237,276,244,312,402,491,520,542,627,552,352,313,337,365,329,337,287,142,306,4.2
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,5,Southeast,Louisiana,164,183,201,226,241,255,271,306,367,410,509,600,657,735,804,518,549,616,651,614,631,763,543,677,6.4
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,1,New England,Maine,42,46,52,57,63,75,82,98,115,143,153,172,200,191,184,104,97,112,86,80,59,73,62,73,2.4
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,2,Mideast,Maryland,89,99,108,124,139,161,187,219,243,264,324,376,493,563,610,301,357,414,368,419,575,488,421,553,8.3
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,1,New England,Massachusetts,176,205,208,261,311,308,344,429,485,534,650,715,748,750,750,358,310,325,312,315,263,366,340,693,6.1
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,3,Great Lakes,Michigan,232,227,242,285,314,363,365,435,240,370,476,497,548,637,575,303,292,245,252,276,396,739,902,923,6.2
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,4,Plains,Minnesota,88,94,101,92,99,122,190,219,279,341,412,510,491,559,625,298,287,306,342,346,426,414,399,454,7.4
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,5,Southeast,Mississippi,92,113,115,126,139,158,171,193,237,328,427,424,467,531,476,206,212,203,227,211,177,173,156,180,3
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,4,Plains,Missouri,120,156,194,225,242,243,274,335,410,502,547,663,779,947,890,406,409,421,487,598,606,599,628,639,7.6
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,7,Rocky Mountains,Montana,18,19,21,24,28,31,33,39,39,52,69,62,65,74,78,38,36,40,39,34,31,36,33,46,4.2
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,4,Plains,Nebraska,39,45,45,53,62,81,89,102,135,155,185,183,185,200,228,130,127,118,119,119,112,147,134,198,7.3
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,8,Far West,Nevada,11,13,14,16,19,22,23,31,41,56,63,93,116,129,121,79,73,73,87,73,85,72,75,162,12.2
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,1,New England,New Hampshire,16,19,22,25,31,35,38,46,57,67,76,74,89,97,95,45,42,45,51,35,35,35,28,44,4.5
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,2,Mideast,New Jersey,207,234,255,263,324,387,439,488,571,651,691,767,901,1087,1218,664,549,649,626,600,575,509,708,877,6.5
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,6,Southwest,New Mexico,26,30,31,38,41,48,52,67,99,94,123,151,197,206,183,78,67,91,104,97,121,125,130,198,9.2
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,2,Mideast,New York,639,649,722,820,928,1050,1214,1564,1909,2389,2793,3441,3995,4752,4954,3378,3006,3212,3721,3397,3197,2609,2945,3458,7.6
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,5,Southeast,North Carolina,130,144,164,191,247,301,347,399,549,677,826,896,1092,1211,1367,681,655,753,686,603,588,565,461,666,7.4
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,4,Plains,North Dakota,11,12,14,15,17,20,20,23,27,32,37,42,44,46,49,20,21,21,20,32,18,22,23,25,3.5
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,3,Great Lakes,Ohio,289,315,343,373,443,500,563,619,695,825,1047,1198,1451,1636,1603,980,660,643,677,1036,1271,1513,1774,2023,8.8
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,6,Southwest,Oklahoma,60,69,76,80,86,87,99,122,147,122,152,234,247,359,389,233,227,238,272,243,261,272,282,328,7.7
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,8,Far West,Oregon,57,64,78,115,141,152,65,82,110,147,200,229,180,197,193,106,99,105,102,161,204,142,231,389,8.7
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,2,Mideast,Pennsylvania,319,359,440,542,592,645,752,957,1204,1268,1511,1692,2099,2403,2589,1083,1011,1094,1143,1101,1300,1644,1909,2198,8.8
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,1,New England,Rhode Island,26,27,30,37,45,53,66,71,90,107,120,143,160,195,204,73,62,51,41,52,55,48,94,79,4.9
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,5,Southeast,South Carolina,74,80,93,108,118,137,157,187,247,296,327,369,493,528,520,249,255,240,225,218,314,317,365,376,7.3
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,4,Plains,South Dakota,11,12,14,16,18,21,24,27,31,39,43,53,59,64,69,34,31,33,29,31,28,25,28,32,4.8
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,5,Southeast,Tennessee,149,182,186,167,213,212,235,330,431,335,564,742,1301,1701,1223,430,467,419,419,334,332,382,371,412,4.5
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,6,Southwest,Texas,261,320,387,452,493,583,813,677,786,924,1103,1289,1578,1632,1747,1078,1222,1200,1231,1260,1500,1163,1323,1702,8.5
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,7,Rocky Mountains,Utah,23,28,33,37,37,40,45,60,72,80,99,106,136,151,187,103,97,94,101,124,138,146,120,138,8
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,1,New England,Vermont,17,18,21,24,27,32,36,38,50,72,81,91,115,134,175,79,73,85,109,125,127,122,131,132,9.3
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,5,Southeast,Virginia,104,123,156,157,180,221,253,274,355,396,458,571,680,692,708,297,281,266,275,249,211,169,241,273,4.3
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,8,Far West,Washington,114,128,134,169,202,233,246,303,358,469,518,570,652,762,770,404,393,399,362,387,390,351,354,414,5.8
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,5,Southeast,West Virginia,48,62,79,93,105,101,117,150,170,186,221,247,297,313,353,269,233,239,214,201,193,152,128,207,6.6
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,3,Great Lakes,Wisconsin,157,168,185,190,159,169,166,194,238,281,305,373,482,537,527,218,189,351,349,288,313,684,742,791,7.3
+7,Medicaid/Prescription Drugs and Other Non-durable Medical Products (Millions of Dollars),State,7,Rocky Mountains,Wyoming,7,7,8,9,10,12,13,15,19,23,27,33,42,40,38,27,21,27,26,20,19,18,19,19,4.4
+8,Medicaid/Durable Medical Products (Millions of Dollars),United States,0,United States,,721,889,1062,1276,1526,1655,1615,1560,1616,1835,2467,2709,2767,2896,3295,3761,4015,4202,4579,4916,5097,5345,5717,6545,10.1
+8,Medicaid/Durable Medical Products (Millions of Dollars),Region,1,New England,,40,57,77,137,183,143,103,100,100,87,115,120,113,108,123,151,223,197,250,252,282,294,310,309,9.3
+8,Medicaid/Durable Medical Products (Millions of Dollars),Region,2,Mideast,,83,103,139,153,184,229,224,222,264,295,331,358,415,442,518,598,651,645,712,755,803,871,937,1099,11.9
+8,Medicaid/Durable Medical Products (Millions of Dollars),Region,3,Great Lakes,,105,140,155,170,188,226,237,234,258,260,317,304,313,352,382,519,555,542,619,656,678,710,778,806,9.3
+8,Medicaid/Durable Medical Products (Millions of Dollars),Region,4,Plains,,43,47,54,81,87,88,108,121,130,178,211,240,240,266,362,358,350,349,305,393,434,464,491,539,11.6
+8,Medicaid/Durable Medical Products (Millions of Dollars),Region,5,Southeast,,138,197,253,307,398,422,388,353,336,402,641,707,717,734,817,827,1024,1093,1231,1245,1185,1222,1292,1611,11.3
+8,Medicaid/Durable Medical Products (Millions of Dollars),Region,6,Southwest,,129,135,158,174,200,220,203,150,170,223,305,381,403,449,514,567,470,545,641,737,743,765,801,904,8.8
+8,Medicaid/Durable Medical Products (Millions of Dollars),Region,7,Rocky Mountains,,27,34,39,40,44,51,42,39,57,62,72,80,89,102,108,116,133,152,165,175,179,188,199,225,9.7
+8,Medicaid/Durable Medical Products (Millions of Dollars),Region,8,Far West,,156,177,189,213,242,275,310,341,302,328,476,519,478,444,470,625,609,679,656,703,793,830,909,1051,8.6
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,5,Southeast,Alabama,6,6,7,8,9,18,18,11,10,13,34,48,34,29,30,28,31,34,37,37,38,42,41,42,8.8
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,8,Far West,Alaska,4,5,6,5,6,7,7,6,10,11,15,15,15,17,20,16,18,18,20,22,25,27,26,28,8.9
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,6,Southwest,Arizona,14,15,16,17,17,19,20,21,23,23,32,37,42,58,63,74,92,127,175,192,194,181,185,227,12.7
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,5,Southeast,Arkansas,5,9,10,12,14,16,17,20,22,29,33,34,35,40,44,45,49,51,63,62,43,43,45,51,10.4
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,8,Far West,California,132,148,152,153,177,196,224,248,211,217,324,355,312,290,288,426,401,463,429,479,552,571,636,691,7.5
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,7,Rocky Mountains,Colorado,14,18,21,22,22,26,20,14,35,36,40,42,43,46,48,53,65,73,79,88,88,91,98,119,9.6
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,1,New England,Connecticut,13,22,21,37,54,25,33,26,19,5,15,15,14,8,17,14,21,26,37,40,46,51,50,53,6.2
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,2,Mideast,Delaware,1,1,4,3,4,4,5,6,5,6,7,8,11,10,12,8,4,4,4,5,6,6,7,7,7.7
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,2,Mideast,District of Columbia,2,4,5,6,6,6,7,8,7,6,7,14,16,18,20,26,25,25,15,18,19,19,19,20,9.6
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,5,Southeast,Florida,20,30,39,45,62,82,58,58,58,85,154,174,169,180,194,230,204,229,272,274,282,307,356,472,14.8
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,5,Southeast,Georgia,12,18,25,27,29,23,24,22,25,28,33,38,41,44,48,50,55,57,65,68,73,68,71,76,8.5
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,8,Far West,Hawaii,2,3,3,3,2,3,3,4,6,5,6,7,7,7,7,7,7,7,7,7,7,8,9,11,6.7
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,7,Rocky Mountains,Idaho,4,5,5,6,7,8,7,6,7,9,10,11,12,14,15,16,18,19,20,18,18,19,19,22,7.6
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,3,Great Lakes,Illinois,9,16,20,33,51,60,66,74,65,112,98,97,104,126,160,169,194,205,242,262,279,291,315,301,16.6
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,3,Great Lakes,Indiana,13,25,25,22,20,27,32,36,44,53,68,73,64,75,74,69,81,84,102,122,117,114,134,134,10.6
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,4,Plains,Iowa,10,11,12,12,13,18,25,26,23,23,25,28,32,42,49,54,34,36,39,39,59,86,80,96,10.5
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,4,Plains,Kansas,7,6,7,9,9,9,17,19,19,21,28,32,30,31,39,32,19,10,15,17,18,18,28,34,7.5
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,5,Southeast,Kentucky,24,31,36,38,42,60,68,44,18,25,71,75,71,64,70,68,82,86,91,106,111,114,119,168,8.9
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,5,Southeast,Louisiana,27,41,53,54,41,40,51,47,47,55,65,71,77,66,64,64,78,91,109,103,108,111,119,119,6.6
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,1,New England,Maine,4,5,6,8,8,8,8,8,8,9,14,14,15,17,19,19,20,21,23,21,23,24,25,27,8.9
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,2,Mideast,Maryland,4,4,3,4,9,21,17,16,19,42,49,49,80,48,78,77,90,80,97,118,128,160,169,210,18.9
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,1,New England,Massachusetts,16,22,39,78,104,94,45,47,52,53,58,59,49,49,53,82,141,110,146,147,167,173,188,177,11
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,3,Great Lakes,Michigan,25,28,30,31,31,34,36,34,26,29,46,24,42,36,36,44,36,44,67,48,51,51,54,58,3.7
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,4,Plains,Minnesota,12,11,12,33,36,29,28,31,34,35,41,47,50,58,139,146,158,161,111,180,196,190,204,226,13.4
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,5,Southeast,Mississippi,2,3,3,4,4,5,5,5,5,5,7,8,8,8,10,10,11,11,12,13,15,14,22,24,11.3
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,4,Plains,Missouri,7,8,10,12,12,12,16,22,26,71,81,92,87,87,84,72,82,87,83,99,106,118,122,127,13.3
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,7,Rocky Mountains,Montana,5,6,6,6,7,9,8,10,8,10,13,12,12,16,17,19,22,27,35,32,33,35,36,39,9.1
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,4,Plains,Nebraska,6,8,10,11,13,15,16,17,21,22,25,28,30,35,37,40,42,42,43,40,38,35,38,37,8.2
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,8,Far West,Nevada,2,3,4,6,10,11,12,12,12,15,16,22,19,14,16,19,21,29,41,30,34,40,42,54,15.8
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,1,New England,New Hampshire,4,5,5,7,9,8,8,9,8,8,11,11,15,14,12,14,16,17,18,24,23,24,23,24,7.6
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,2,Mideast,New Jersey,23,29,37,38,40,40,38,40,42,45,59,55,56,63,63,62,68,64,74,68,62,63,67,73,5.1
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,6,Southwest,New Mexico,6,9,11,15,18,21,19,5,6,15,21,22,28,28,29,31,37,40,33,53,39,42,44,59,10.8
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,2,Mideast,New York,34,43,67,77,96,114,119,128,168,180,188,210,223,258,291,314,339,352,386,386,424,445,480,585,13.2
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,5,Southeast,North Carolina,6,9,14,27,47,53,58,57,54,49,112,131,136,143,153,159,304,245,257,293,299,308,291,419,20.5
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,4,Plains,North Dakota,1,1,1,2,2,2,2,2,3,3,5,5,5,5,4,4,3,2,4,2,3,3,3,3,5.3
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,3,Great Lakes,Ohio,44,51,61,66,71,88,83,71,85,20,56,62,57,67,61,178,184,160,173,175,172,193,211,238,7.7
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,6,Southwest,Oklahoma,2,3,4,6,7,9,12,15,17,23,30,34,36,50,63,70,76,74,71,91,75,88,89,93,18.2
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,8,Far West,Oregon,5,7,9,12,12,11,10,8,10,13,30,32,35,24,22,37,36,37,52,50,56,59,66,107,14.1
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,2,Mideast,Pennsylvania,19,21,22,25,29,44,37,25,22,16,21,23,29,46,55,111,125,120,136,161,165,178,197,204,11
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,1,New England,Rhode Island,1,2,3,4,5,6,7,8,8,8,12,14,15,15,16,14,17,14,17,10,11,12,12,15,13
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,5,Southeast,South Carolina,9,14,20,24,27,31,35,36,40,46,53,53,54,59,77,77,79,81,70,102,71,68,69,76,9.6
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,4,Plains,South Dakota,1,1,2,2,2,3,3,3,4,4,6,7,6,8,9,11,11,12,10,14,14,15,16,16,14.6
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,5,Southeast,Tennessee,16,20,20,34,86,54,12,9,10,15,19,32,33,42,59,29,51,39,62,34,37,38,40,38,3.8
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,6,Southwest,Texas,107,108,126,137,157,170,151,108,124,162,222,288,297,313,359,392,265,303,363,402,435,454,483,525,7.2
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,7,Rocky Mountains,Utah,3,3,4,5,6,6,6,7,5,6,7,11,18,22,23,23,21,26,22,28,30,32,35,34,12
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,1,New England,Vermont,1,2,2,2,3,3,3,3,3,3,5,5,5,6,6,7,9,8,10,11,12,11,12,14,10.5
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,5,Southeast,Virginia,10,13,17,19,23,25,29,30,34,35,38,19,36,36,45,46,56,147,167,127,77,76,85,86,10
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,8,Far West,Washington,11,12,14,33,36,48,54,62,54,68,84,87,91,92,117,119,125,125,107,115,119,126,129,160,12.5
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,5,Southeast,West Virginia,1,3,9,14,14,13,13,14,13,18,22,24,21,23,23,22,23,23,27,26,31,33,35,37,18.5
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,3,Great Lakes,Wisconsin,14,20,19,19,15,17,21,20,39,46,49,48,46,47,51,59,60,49,36,50,60,62,64,74,7.6
+8,Medicaid/Durable Medical Products (Millions of Dollars),State,7,Rocky Mountains,Wyoming,1,1,3,1,1,1,1,2,2,2,3,4,4,5,4,5,5,7,9,9,10,11,11,11,12.6
+9,Medicaid/Nursing Home Care (Millions of Dollars),United States,0,United States,,19563,21480,22838,24038,24516,25978,26803,27334,29129,31882,34571,35561,37872,39760,41341,41563,42341,44039,45483,46307,47683,47764,48129,49138,4.1
+9,Medicaid/Nursing Home Care (Millions of Dollars),Region,1,New England,,2189,2224,2176,2308,2337,2244,2557,2515,2642,2792,2911,2951,3061,3316,3372,3494,3501,3491,3598,3521,3482,3579,3713,3625,2.2
+9,Medicaid/Nursing Home Care (Millions of Dollars),Region,2,Mideast,,5675,6290,6815,7291,7543,8417,8972,9205,9718,10961,10933,11500,11713,12030,12842,12374,12403,13490,13065,12685,13991,13007,12948,13297,3.8
+9,Medicaid/Nursing Home Care (Millions of Dollars),Region,3,Great Lakes,,3398,3914,4190,4326,4384,4542,4698,4583,5257,5287,6624,6441,6719,6875,7074,6537,6701,6844,7396,7603,7224,7755,8115,8040,3.8
+9,Medicaid/Nursing Home Care (Millions of Dollars),Region,4,Plains,,1511,1641,1634,1716,1769,1852,1712,1819,1772,2013,1821,1804,2114,2184,2139,2103,2198,2277,2319,2401,2496,2557,2578,2779,2.7
+9,Medicaid/Nursing Home Care (Millions of Dollars),Region,5,Southeast,,3626,4049,4433,4717,4816,5016,5039,5213,5437,6109,6904,6972,7962,8763,9037,9277,9497,9804,10154,10792,10787,10912,10852,11059,5
+9,Medicaid/Nursing Home Care (Millions of Dollars),Region,6,Southwest,,1206,1245,1308,1339,1325,1426,1280,1346,1384,1532,1786,2073,2155,2251,2266,2527,2604,2668,3022,3015,3274,3378,3452,3704,5
+9,Medicaid/Nursing Home Care (Millions of Dollars),Region,7,Rocky Mountains,,327,354,370,388,401,429,451,471,492,548,550,602,643,667,742,751,803,810,872,897,933,1072,1054,1048,5.2
+9,Medicaid/Nursing Home Care (Millions of Dollars),Region,8,Far West,,1630,1762,1910,1952,1940,2053,2094,2182,2427,2642,3043,3219,3504,3674,3870,4500,4634,4654,5056,5393,5495,5504,5417,5586,5.5
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,5,Southeast,Alabama,226,270,288,322,334,359,484,491,536,571,611,618,682,694,775,762,795,824,815,816,853,853,836,855,6
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,8,Far West,Alaska,31,32,35,39,35,29,35,36,37,43,56,67,75,80,89,92,79,67,86,87,91,98,75,108,5.5
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,6,Southwest,Arizona,10,9,7,8,8,8,14,25,28,35,57,97,130,168,233,291,302,329,355,353,606,641,653,756,20.7
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,5,Southeast,Arkansas,131,157,177,199,206,218,198,191,185,200,293,360,404,399,392,422,439,474,508,529,569,585,570,587,6.7
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,8,Far West,California,983,1052,1139,1176,1206,1298,1309,1371,1466,1706,2114,2280,2408,2616,2772,3354,3463,3465,3852,4062,4169,4159,4084,4127,6.4
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,7,Rocky Mountains,Colorado,140,150,147,149,156,172,222,243,268,280,287,324,348,367,402,407,432,439,486,515,509,559,564,583,6.4
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,1,New England,Connecticut,610,623,647,684,695,732,805,836,901,934,983,969,952,964,1050,1175,1164,1203,1192,1207,1161,1205,1192,1168,2.9
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,2,Mideast,Delaware,52,54,57,60,63,72,71,71,74,90,105,122,127,141,139,143,148,177,182,174,161,165,132,147,4.6
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,2,Mideast,District of Columbia,116,133,142,146,131,128,127,113,113,110,117,123,137,124,116,120,116,126,151,167,199,162,173,186,2.1
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,5,Southeast,Florida,682,754,835,903,943,937,1111,1172,1244,1414,1540,1760,2029,2097,2136,2284,2281,2272,2490,2724,2759,2721,2629,2664,6.1
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,5,Southeast,Georgia,380,413,438,471,485,510,547,550,576,644,680,700,804,974,973,847,853,933,889,1132,975,1104,1084,1075,4.6
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,8,Far West,Hawaii,55,58,63,76,77,87,105,106,101,103,103,102,107,115,125,128,137,157,143,254,229,242,228,246,6.8
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,7,Rocky Mountains,Idaho,61,67,72,74,74,78,66,74,76,83,91,90,95,100,96,103,118,121,124,107,141,206,190,148,3.9
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,3,Great Lakes,Illinois,748,979,1009,1015,1021,1097,997,914,924,1078,1084,1209,1268,1292,1347,1095,1260,1273,1609,1593,1268,1707,1592,1417,2.8
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,3,Great Lakes,Indiana,553,629,659,663,608,628,505,526,583,596,651,678,654,784,1218,803,911,1125,1052,1086,1211,1359,1634,1936,5.6
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,4,Plains,Iowa,224,229,236,242,245,261,181,187,180,232,110,89,261,240,229,249,259,277,285,328,339,366,360,394,2.5
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,4,Plains,Kansas,171,176,183,190,184,184,159,152,147,201,150,187,182,212,199,202,232,237,244,237,307,284,240,310,2.6
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,5,Southeast,Kentucky,216,231,250,263,256,261,307,329,357,417,433,484,471,525,588,611,654,692,692,717,736,735,729,796,5.8
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,5,Southeast,Louisiana,396,452,507,478,468,463,292,300,264,300,281,119,485,519,541,547,597,622,640,735,723,737,747,802,3.1
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,1,New England,Maine,178,188,190,197,187,177,175,167,164,175,178,174,214,202,178,207,202,205,205,177,176,179,202,202,0.5
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,2,Mideast,Maryland,298,308,318,336,338,315,435,453,468,538,599,650,726,782,831,850,883,955,996,1000,1031,1092,1090,1127,5.9
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,1,New England,Massachusetts,1080,1064,974,1071,1091,965,1126,1058,1108,1200,1257,1286,1387,1510,1534,1510,1505,1462,1544,1495,1505,1529,1658,1600,1.7
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,3,Great Lakes,Michigan,534,596,751,799,836,911,1028,829,1332,877,1618,1059,1483,1511,1378,1421,1397,1426,1459,1645,1609,1659,1656,1706,5.2
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,4,Plains,Minnesota,546,585,622,658,697,720,653,666,698,707,752,708,743,694,693,681,661,663,671,665,667,670,716,730,1.3
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,5,Southeast,Mississippi,135,166,168,180,176,192,163,192,213,250,302,323,359,434,452,485,510,516,556,559,564,525,556,501,5.9
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,4,Plains,Missouri,334,397,332,357,383,419,457,465,446,538,451,467,579,690,658,624,668,714,728,775,776,832,851,941,4.6
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,7,Rocky Mountains,Montana,38,43,50,55,56,54,57,52,44,77,67,67,74,70,75,75,72,70,83,88,80,84,85,86,3.6
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,4,Plains,Nebraska,105,116,121,123,122,130,143,229,180,194,235,205,225,218,215,199,222,226,221,213,216,223,226,223,3.3
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,8,Far West,Nevada,44,57,67,62,54,53,47,46,54,67,79,97,100,144,142,139,149,158,152,163,168,178,182,196,6.8
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,1,New England,New Hampshire,95,98,107,127,133,140,186,189,188,194,182,202,177,280,248,245,251,251,276,256,254,259,249,301,5.1
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,2,Mideast,New Jersey,795,815,909,1001,1009,1050,1113,1109,1143,1338,1035,1213,1316,1377,1846,1706,1732,1804,1896,1846,1884,1710,1743,1755,3.5
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,6,Southwest,New Mexico,86,93,98,95,88,90,99,106,118,125,132,133,138,161,176,169,156,146,160,130,130,131,132,128,1.7
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,2,Mideast,New York,3246,3535,4006,4176,4391,5061,5020,5303,5331,5572,5827,6108,6019,6127,5991,6228,6151,6852,6551,6148,7254,6485,6300,6261,2.9
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,5,Southeast,North Carolina,455,523,603,658,687,721,660,656,684,718,787,813,825,993,1005,1014,1019,1093,1148,1116,1122,1109,1105,1102,3.9
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,4,Plains,North Dakota,68,69,68,67,60,60,38,41,44,50,43,57,62,67,77,75,81,80,83,98,108,103,109,107,2
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,3,Great Lakes,Ohio,1065,1167,1187,1225,1260,1230,1389,1502,1603,1780,1984,2125,2309,2472,2367,2402,2379,2303,2420,2510,2390,2290,2291,2047,2.9
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,6,Southwest,Oklahoma,223,223,227,211,210,213,200,209,206,207,298,309,329,358,352,373,415,440,422,411,412,420,474,480,3.4
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,8,Far West,Oregon,163,163,164,163,156,164,149,158,228,212,225,190,180,218,237,253,272,288,304,293,306,288,310,343,3.3
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,2,Mideast,Pennsylvania,1168,1445,1384,1571,1612,1791,2206,2155,2589,3313,3251,3284,3389,3479,3918,3328,3373,3576,3289,3351,3462,3393,3509,3822,5.3
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,1,New England,Rhode Island,174,201,209,180,183,179,199,199,216,223,236,247,254,280,281,285,294,284,294,300,302,320,325,264,1.8
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,5,Southeast,South Carolina,219,243,253,276,282,293,224,242,262,283,308,354,364,420,425,411,454,460,489,505,480,503,495,543,4
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,4,Plains,South Dakota,62,68,72,79,79,79,80,79,77,92,79,91,61,63,69,73,75,80,87,86,84,78,76,72,0.6
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,5,Southeast,Tennessee,332,374,432,462,473,528,527,541,540,613,643,730,742,826,851,948,932,875,889,839,851,876,889,920,4.5
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,6,Southwest,Texas,888,920,976,1025,1020,1115,967,1006,1032,1164,1299,1534,1558,1564,1504,1694,1732,1754,2084,2121,2127,2185,2192,2340,4.3
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,7,Rocky Mountains,Utah,66,72,78,79,79,82,66,64,67,69,72,78,87,90,127,124,141,137,134,139,148,154,151,167,4.1
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,1,New England,Vermont,51,51,49,49,48,51,65,65,65,66,75,73,77,80,81,71,84,86,88,85,84,87,87,90,2.6
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,5,Southeast,Virginia,329,342,354,365,359,376,366,370,404,518,837,506,575,601,628,656,654,703,692,746,756,757,803,779,3.8
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,8,Far West,Washington,355,399,441,436,412,422,450,464,541,510,467,483,633,500,505,533,532,519,519,534,533,541,539,566,2.1
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,5,Southeast,West Virginia,125,125,130,140,149,157,159,180,172,179,189,205,222,281,271,289,310,339,348,372,399,408,408,435,5.6
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,3,Great Lakes,Wisconsin,499,543,584,624,658,676,780,812,815,956,1286,1371,1005,815,764,817,754,717,856,770,747,739,942,934,2.8
+9,Medicaid/Nursing Home Care (Millions of Dollars),State,7,Rocky Mountains,Wyoming,21,22,23,32,35,43,40,39,36,38,33,43,38,41,42,43,41,44,46,48,55,68,64,64,5
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",United States,0,United States,,12947,14344,16727,19108,21784,24186,26333,27917,30080,32492,36037,40193,43255,46823,49851,53287,57386,59981,65706,69609,70579,75665,79581,83982,8.5
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",Region,1,New England,,1258,1418,1560,1898,2299,2219,2119,2487,2726,2959,3102,3599,3589,3954,4082,4365,4812,5098,5787,5662,5391,5892,6134,5808,6.9
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",Region,2,Mideast,,3621,3951,4855,5419,6123,7101,7888,8244,9075,9402,10174,11072,12609,12719,13475,14910,15213,15427,16873,18415,19499,18557,18141,20019,7.7
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",Region,3,Great Lakes,,2138,2455,2590,2796,3117,3537,3856,3899,3644,4185,4858,5527,5913,6335,6938,6721,6911,7145,7673,8313,8222,8677,9491,10041,7
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",Region,4,Plains,,1085,1172,1403,1790,1994,2141,2166,2362,2505,2802,3230,3604,3954,4282,4331,4525,4738,4965,5278,5491,5545,5743,6031,6213,7.9
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",Region,5,Southeast,,2278,2614,3130,3658,4303,4624,5138,5294,5687,6466,7290,7915,8131,9161,9657,10224,11867,12838,14034,14272,14320,14619,14489,14875,8.5
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",Region,6,Southwest,,1072,1149,1355,1540,1772,2060,2330,2378,2672,2860,3054,3499,3761,3846,4262,4648,5055,5575,5865,6287,5797,5776,6566,7343,8.7
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",Region,7,Rocky Mountains,,324,323,359,403,452,515,552,632,719,819,937,984,1044,1152,1206,1288,1389,1512,1638,1863,1680,1846,1914,1899,8
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",Region,8,Far West,,1170,1263,1475,1604,1725,1989,2284,2621,3051,2999,3392,3994,4253,5373,5900,6608,7400,7419,8559,9305,10125,14555,16815,17783,12.6
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,5,Southeast,Alabama,159,170,182,188,213,224,438,252,252,327,328,360,427,431,447,468,516,569,557,596,708,660,645,676,6.5
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,8,Far West,Alaska,21,23,25,26,29,35,45,51,59,77,105,136,158,149,194,190,219,236,226,253,273,304,329,318,12.6
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,6,Southwest,Arizona,20,19,22,27,28,36,57,64,113,87,136,189,261,335,410,618,761,952,1211,1430,817,730,740,879,18
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,5,Southeast,Arkansas,106,123,137,161,194,216,221,236,287,321,299,275,251,363,439,456,498,532,603,893,957,1008,1091,1293,11.5
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,8,Far West,California,544,538,624,734,771,990,1249,1446,1659,1485,1700,2181,2371,3384,3678,4323,4908,4762,5566,6056,6920,11185,12771,13566,15
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,7,Rocky Mountains,Colorado,136,140,149,171,192,210,230,276,319,335,364,391,411,448,451,482,533,581,652,679,704,810,782,712,7.5
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,1,New England,Connecticut,347,371,389,447,545,465,517,568,682,733,696,818,662,933,808,958,920,1199,1667,1440,1310,1563,1595,1565,6.8
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,2,Mideast,Delaware,40,55,63,71,80,92,100,109,118,134,140,142,171,184,186,194,212,229,237,230,256,262,266,263,8.5
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,2,Mideast,District of Columbia,49,64,76,77,77,77,93,90,87,101,101,102,92,97,96,92,95,90,143,350,392,342,344,341,8.9
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,5,Southeast,Florida,345,426,541,667,779,806,858,938,1009,1214,1438,1655,1786,1793,1842,1913,2134,2232,2177,2241,2129,2072,2122,2150,8.3
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,5,Southeast,Georgia,199,221,273,353,383,408,433,414,452,477,592,730,696,1042,838,755,1302,929,944,975,1009,1279,1382,1355,8.7
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,8,Far West,Hawaii,24,25,31,51,72,32,40,47,60,67,72,81,114,134,137,116,196,197,133,106,104,105,108,103,6.6
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,7,Rocky Mountains,Idaho,50,52,58,60,68,80,89,108,124,163,201,212,210,248,277,298,329,350,372,531,291,335,389,430,9.8
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,3,Great Lakes,Illinois,561,744,809,869,1020,1178,1240,1283,1205,1301,1465,1768,1719,1954,2196,2088,2224,2284,2389,2786,2567,2751,3242,2988,7.5
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,3,Great Lakes,Indiana,265,344,363,395,381,391,393,409,382,451,534,690,814,909,836,890,843,927,979,1024,1014,953,1042,1146,6.6
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,4,Plains,Iowa,160,171,196,232,264,295,312,323,338,367,409,430,484,541,592,686,714,766,878,986,987,1010,1102,1133,8.9
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,4,Plains,Kansas,138,146,167,197,229,287,385,436,468,513,566,603,563,661,708,754,701,658,729,677,707,693,696,574,6.4
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,5,Southeast,Kentucky,107,112,129,140,146,176,232,294,325,402,449,465,464,532,537,585,687,686,820,983,939,957,988,1265,11.3
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,5,Southeast,Louisiana,320,373,463,468,463,493,477,485,528,560,565,580,657,776,826,821,921,1061,1084,1191,1049,1111,1103,1025,5.2
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,1,New England,Maine,101,122,150,150,183,245,257,348,428,450,509,650,685,792,838,808,782,844,842,769,731,678,693,763,9.2
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,2,Mideast,Maryland,157,185,182,215,282,412,360,358,357,404,405,443,692,702,745,943,942,972,1111,1375,1306,1369,1468,1546,10.4
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,1,New England,Massachusetts,565,600,635,919,1125,1021,845,977,994,1084,1117,1265,1359,1247,1477,1638,2038,2007,2216,2368,2286,2490,2577,2285,6.3
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,3,Great Lakes,Michigan,463,372,388,440,504,628,984,712,461,463,531,464,489,442,535,571,596,584,619,872,916,994,984,760,2.2
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,4,Plains,Minnesota,440,453,556,769,835,817,706,790,825,928,1129,1315,1660,1693,1581,1609,1770,1855,1846,1915,1866,1908,2019,2229,7.3
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,5,Southeast,Mississippi,73,94,116,119,134,161,201,214,266,306,397,437,436,551,548,585,616,690,749,845,881,902,863,959,11.8
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,4,Plains,Missouri,168,217,285,367,423,474,474,509,543,613,701,775,768,844,885,886,937,1007,1069,1110,1202,1302,1362,1398,9.6
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,7,Rocky Mountains,Montana,36,39,44,50,57,69,60,60,66,94,119,99,122,136,147,155,163,191,201,237,235,262,271,300,9.6
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,4,Plains,Nebraska,64,66,73,84,90,105,130,136,154,182,217,248,238,269,281,297,314,345,401,407,371,402,405,400,8.3
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,8,Far West,Nevada,24,33,43,45,57,62,60,74,77,94,101,123,106,111,133,143,136,137,162,222,203,197,202,247,10.7
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,1,New England,New Hampshire,64,70,82,97,113,139,144,181,155,182,182,199,189,215,226,236,249,277,294,300,299,393,463,401,8.3
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,2,Mideast,New Jersey,477,465,517,594,633,688,773,715,772,825,931,1051,1076,1181,1410,1855,1548,1646,1729,1866,2128,1948,1699,2230,6.9
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,6,Southwest,New Mexico,64,75,89,108,139,170,165,155,164,196,208,241,253,315,348,345,366,397,355,404,340,342,357,332,7.4
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,2,Mideast,New York,2221,2452,3211,3541,3928,4468,5045,5381,5958,5964,6388,6986,8007,8080,8343,9020,9699,9604,10600,11197,11852,10942,10626,11362,7.4
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,5,Southeast,North Carolina,328,367,442,508,611,689,780,831,874,964,1050,1127,1137,1262,1430,1867,2005,2481,2953,2407,2254,2028,1579,1327,6.3
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,4,Plains,North Dakota,67,67,68,75,82,87,88,94,98,113,112,122,124,145,146,149,152,170,188,228,246,255,270,297,6.7
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,3,Great Lakes,Ohio,468,549,581,652,750,808,679,881,953,1180,1507,1717,1982,2051,2267,2157,2166,2285,2572,2807,2698,2967,3199,3997,9.8
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,6,Southwest,Oklahoma,153,182,213,215,248,277,324,375,426,434,506,569,493,521,571,618,675,747,763,719,708,695,715,738,7.1
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,8,Far West,Oregon,244,286,354,391,428,447,441,497,585,594,700,747,780,804,836,864,917,955,1218,1292,1356,1302,1691,2058,9.7
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,2,Mideast,Pennsylvania,677,730,807,923,1124,1363,1517,1590,1783,1974,2208,2348,2571,2475,2695,2806,2716,2886,3053,3397,3565,3693,3737,4277,8.3
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,1,New England,Rhode Island,131,197,241,209,238,245,248,291,327,341,404,443,453,502,518,547,598,566,546,560,540,524,535,516,6.1
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,5,Southeast,South Carolina,224,251,290,329,368,393,425,449,490,524,654,638,605,666,635,633,633,753,727,737,708,733,676,753,5.4
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,4,Plains,South Dakota,47,52,58,65,71,75,71,74,80,85,96,111,117,129,139,144,151,164,167,169,166,173,177,183,6.1
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,5,Southeast,Tennessee,144,165,163,242,452,442,423,476,475,534,640,675,647,688,914,836,1106,1067,1205,993,1003,1033,1080,1070,9.1
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,6,Southwest,Texas,836,873,1031,1190,1357,1577,1783,1784,1968,2143,2204,2499,2754,2676,2933,3067,3253,3479,3535,3734,3932,4009,4754,5395,8.4
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,7,Rocky Mountains,Utah,95,76,84,85,95,103,110,126,148,162,184,196,205,215,222,228,233,253,274,277,303,297,330,322,5.5
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,1,New England,Vermont,50,57,63,76,95,105,108,122,140,168,193,224,241,265,215,178,226,204,222,226,224,244,271,278,7.7
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,5,Southeast,Virginia,218,236,259,285,323,368,403,438,458,548,575,629,607,664,780,888,1006,1384,1716,1870,2106,2169,2299,2318,10.8
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,8,Far West,Washington,314,359,398,358,367,423,449,506,610,683,714,727,724,791,922,970,1024,1132,1253,1376,1269,1462,1714,1490,7
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,5,Southeast,West Virginia,55,77,136,198,238,248,248,266,272,289,304,345,417,394,423,418,442,455,499,543,578,666,661,684,11.6
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,3,Great Lakes,Wisconsin,381,446,450,439,461,532,561,614,643,791,821,888,909,979,1103,1015,1083,1065,1115,824,1027,1013,1024,1151,4.9
+10,"Medicaid/Other Health, Residential, and Personal Care (Millions of Dollars)",State,7,Rocky Mountains,Wyoming,7,16,24,36,41,53,64,62,62,65,68,86,96,106,109,124,131,138,138,139,146,142,141,135,13.7
