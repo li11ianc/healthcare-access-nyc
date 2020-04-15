@@ -1,0 +1,63 @@
+---
+title: "Project Draft"
+author: '%>% it Up!: Lilly Clark, Thea Dowrich and Daisy Fang'
+date: "4/15/2020"
+output: 
+  html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning=FALSE, message=FALSE)
+```
+
+```{r packages}
+library(tidyverse)
+library(gifski)
+library(gganimate)
+```
+
+
+## Introduction
+***
+The beginning of this new decade has been marked by significant uncertainty and difficulty. Coronavirus disease (COVID-19) originated in Wuhan, China in December 2019, but was not declared a Public Health Emergency of International Concern by the World Health Organization (WHO) until January 30. On March 11, WHO recognized the coronavirus as a pandemic  and on March 13, the United States declared a national emergency. 
+
+After Donald Trump declared a national emergency, life as we knew it in America was largely disrupted: schools, colleges and universities closed, restaurants and bars prohibit dining in, and companies have shifted to remote work.  Stay-at-home and shelter-in-place orders have been in place across the nation, but individual response’s per state have been largely variable.  Responses by state are primarily dependent upon their healthcare system’s capacity. Testing has not been universally accessible and the number of necessary equipment (i.e., ventilators) is not up to standard, across the board.  
+
+Coronavirus has shown to impact marginalized communities at a more intense rate, but nobody is immune to the virus. Across the nation, access to specialized medical care is highly dependent upon one’s socioeconomic and employment status. Thus, we wanted to take a deeper look into these access disparities in the age of a global pandemic. Changes to healthcare policy, such as the Affordable Care Act of 2010 (ACA), have made inexpensive healthcare available to more constituents.  However, there is still a long way to go, and the virus has brought many of these inequalities to light.
+
+The following questions guided our research in investigating nationwide healthcare inequity: <br>
+1.	Are there disparities in healthcare access across the United States?
+<br>
+2.	As New York was one of the first hot spots for the virus, what inequalities to access exist within the state?
+<br>
+3.	How do these differences in access relate to differences in patient experience?
+<br>
+4.	How have health policy changes influenced accessibility? 
+
+## Changes in Healthcare Policy and Access
+
+```{r medicaid-changes}
+medicaid <- read_csv("data/Total Medicaid.csv")
+
+medicaid <- medicaid %>%
+  rename(
+    spending = `Spending (in Millions of Dollars)`,
+    enrollment = `Medicaid Enrollee Population (Thousands)`
+  )
+
+medicaid$Year <- as.integer(medicaid$Year)
+
+ggplot(data = medicaid, mapping = aes(x = spending, y = enrollment, colour = State)) +
+  geom_point(alpha = 0.7, show.legend = FALSE) +
+  scale_size(range = c(2, 12)) +
+  scale_x_log10() +
+  scale_y_log10() +
+  facet_wrap(~Region, ncol = 4) +
+  theme_light(base_size = 11) +
+  labs(title = 'Year: {frame_time}', x = 'Spending (in Millions of Dollars)', y = 'Medicaid Enrollee Population (Thousands)') +
+  transition_time(Year) +
+  ease_aes('linear')
+```
+
+
+
