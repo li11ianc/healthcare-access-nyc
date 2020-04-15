@@ -1,4 +1,4 @@
-State,Uninsured.Rate..2010.,Uninsured.Rate..2015.,Uninsured.Rate.Change..2010.2015.,Health.Insurance.Coverage.Change..2010.2015.,Employer.Health.Insurance.Coverage..2015.,Marketplace.Health.Insurance.Coverage..2016.,Marketplace.Tax.Credits..2016.,Average.Monthly.Tax.Credit..2016.,State.Medicaid.Expansion..2016.,Medicaid.Enrollment..2013.,Medicaid.Enrollment..2016.,Medicaid.Enrollment.Change..2013.2016.,Medicare.Enrollment..2016.
+state,uninsured_rate_2010,uninsured_rate_2015,uninsured_rate_change_2010_2015,health_insurance_coverage_change_2010_2015,employer_health_insurance_coverage_2015,marketplace_health_insurance_coverage_2016,marketplace_tax_credits_2016,average_monthly_tax_credit_2016,state_medicaid_expansion_2016,medicaid_enrollment_2013,medicaid_enrollment_2016,medicaid_enrollment_change_2013_2016,medicare_enrollment_2016
 Alabama ,14.60%,10.10%,-4.50%,215000,2545000,165534,152206,$310 ,FALSE,799176,910775,111599,989855
 Alaska ,19.90%,14.90%,-5%,36000,390000,17995,16205,$750 ,TRUE,122334,166625,44291,88966
 Arizona ,16.90%,10.80%,-6.10%,410000,3288000,179445,124346,$230 ,TRUE,1201770,1716198,514428,1175624

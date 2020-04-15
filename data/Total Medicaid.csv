@@ -1,0 +1,1225 @@
+﻿Number,Cumulative Number,State,Region,Year,Spending (in Millions of Dollars),Medicaid Enrollee Population (Thousands)
+1,1,Alabama,Southeast,1991,261,384
+1,2,Alabama,Southeast,1992,429,439
+1,3,Alabama,Southeast,1993,486,469
+1,4,Alabama,Southeast,1994,533,477
+1,5,Alabama,Southeast,1995,595,464
+1,6,Alabama,Southeast,1996,623,494
+1,7,Alabama,Southeast,1997,419,495
+1,8,Alabama,Southeast,1998,566,505
+1,9,Alabama,Southeast,1999,599,527
+1,10,Alabama,Southeast,2000,792,554
+1,11,Alabama,Southeast,2001,711,643
+1,12,Alabama,Southeast,2002,778,711
+1,13,Alabama,Southeast,2003,875,755
+1,14,Alabama,Southeast,2004,946,788
+1,15,Alabama,Southeast,2005,1138,814
+1,16,Alabama,Southeast,2006,1046,774
+1,17,Alabama,Southeast,2007,897,737
+1,18,Alabama,Southeast,2008,1089,765
+1,19,Alabama,Southeast,2009,1246,811
+1,20,Alabama,Southeast,2010,2140,863
+1,21,Alabama,Southeast,2011,1687,922
+1,22,Alabama,Southeast,2012,2101,942
+1,23,Alabama,Southeast,2013,1959,964
+1,24,Alabama,Southeast,2014,2115,988
+2,1,Alaska,Far West,1991,74,39
+2,2,Alaska,Far West,1992,91,48
+2,3,Alaska,Far West,1993,128,56
+2,4,Alaska,Far West,1994,107,65
+2,5,Alaska,Far West,1995,110,66
+2,6,Alaska,Far West,1996,132,62
+2,7,Alaska,Far West,1997,129,53
+2,8,Alaska,Far West,1998,129,63
+2,9,Alaska,Far West,1999,132,66
+2,10,Alaska,Far West,2000,177,71
+2,11,Alaska,Far West,2001,213,75
+2,12,Alaska,Far West,2002,251,79
+2,13,Alaska,Far West,2003,332,82
+2,14,Alaska,Far West,2004,283,84
+2,15,Alaska,Far West,2005,283,87
+2,16,Alaska,Far West,2006,333,90
+2,17,Alaska,Far West,2007,327,88
+2,18,Alaska,Far West,2008,316,88
+2,19,Alaska,Far West,2009,367,94
+2,20,Alaska,Far West,2010,366,103
+2,21,Alaska,Far West,2011,386,109
+2,22,Alaska,Far West,2012,400,111
+2,23,Alaska,Far West,2013,363,111
+2,24,Alaska,Far West,2014,372,113
+3,1,Arizona,Southwest,1991,608,347
+3,2,Arizona,Southwest,1992,850,412
+3,3,Arizona,Southwest,1993,854,459
+3,4,Arizona,Southwest,1994,951,485
+3,5,Arizona,Southwest,1995,937,490
+3,6,Arizona,Southwest,1996,938,495
+3,7,Arizona,Southwest,1997,944,476
+3,8,Arizona,Southwest,1998,981,459
+3,9,Arizona,Southwest,1999,1119,463
+3,10,Arizona,Southwest,2000,1107,506
+3,11,Arizona,Southwest,2001,1422,619
+3,12,Arizona,Southwest,2002,1729,819
+3,13,Arizona,Southwest,2003,1982,964
+3,14,Arizona,Southwest,2004,2249,1031
+3,15,Arizona,Southwest,2005,2457,1095
+3,16,Arizona,Southwest,2006,2611,1072
+3,17,Arizona,Southwest,2007,2763,1114
+3,18,Arizona,Southwest,2008,2952,1186
+3,19,Arizona,Southwest,2009,3263,1350
+3,20,Arizona,Southwest,2010,3251,1235
+3,21,Arizona,Southwest,2011,3148,1155
+3,22,Arizona,Southwest,2012,3161,1340
+3,23,Arizona,Southwest,2013,3311,1345
+3,24,Arizona,Southwest,2014,3495,1388
+4,1,Arkansas,Southeast,1991,343,241
+4,2,Arkansas,Southeast,1992,376,265
+4,3,Arkansas,Southeast,1993,408,272
+4,4,Arkansas,Southeast,1994,391,270
+4,5,Arkansas,Southeast,1995,396,275
+4,6,Arkansas,Southeast,1996,409,281
+4,7,Arkansas,Southeast,1997,429,294
+4,8,Arkansas,Southeast,1998,439,336
+4,9,Arkansas,Southeast,1999,450,385
+4,10,Arkansas,Southeast,2000,487,410
+4,11,Arkansas,Southeast,2001,643,457
+4,12,Arkansas,Southeast,2002,810,512
+4,13,Arkansas,Southeast,2003,753,571
+4,14,Arkansas,Southeast,2004,822,597
+4,15,Arkansas,Southeast,2005,820,625
+4,16,Arkansas,Southeast,2006,848,616
+4,17,Arkansas,Southeast,2007,1003,565
+4,18,Arkansas,Southeast,2008,973,562
+4,19,Arkansas,Southeast,2009,1038,582
+4,20,Arkansas,Southeast,2010,1311,594
+4,21,Arkansas,Southeast,2011,1261,600
+4,22,Arkansas,Southeast,2012,1304,599
+4,23,Arkansas,Southeast,2013,1334,606
+4,24,Arkansas,Southeast,2014,1565,812
+5,1,California,Far West,1991,4880,4339
+5,2,California,Far West,1992,5176,4811
+5,3,California,Far West,1993,6100,5133
+5,4,California,Far West,1994,6369,5279
+5,5,California,Far West,1995,6951,5206
+5,6,California,Far West,1996,7704,5279
+5,7,California,Far West,1997,7519,5094
+5,8,California,Far West,1998,8130,5000
+5,9,California,Far West,1999,9595,5158
+5,10,California,Far West,2000,9054,6220
+5,11,California,Far West,2001,10804,6780
+5,12,California,Far West,2002,10453,7498
+5,13,California,Far West,2003,12850,7914
+5,14,California,Far West,2004,12559,7977
+5,15,California,Far West,2005,13412,8005
+5,16,California,Far West,2006,12771,7992
+5,17,California,Far West,2007,13159,8045
+5,18,California,Far West,2008,15217,8166
+5,19,California,Far West,2009,15533,8602
+5,20,California,Far West,2010,16557,8892
+5,21,California,Far West,2011,18160,9127
+5,22,California,Far West,2012,20237,9455
+5,23,California,Far West,2013,22734,9424
+5,24,California,Far West,2014,24761,11505
+6,1,Colorado,Rocky Mountains,1991,290,216
+6,2,Colorado,Rocky Mountains,1992,427,249
+6,3,Colorado,Rocky Mountains,1993,473,265
+6,4,Colorado,Rocky Mountains,1994,543,272
+6,5,Colorado,Rocky Mountains,1995,596,272
+6,6,Colorado,Rocky Mountains,1996,548,265
+6,7,Colorado,Rocky Mountains,1997,547,259
+6,8,Colorado,Rocky Mountains,1998,599,255
+6,9,Colorado,Rocky Mountains,1999,633,261
+6,10,Colorado,Rocky Mountains,2000,703,284
+6,11,Colorado,Rocky Mountains,2001,729,305
+6,12,Colorado,Rocky Mountains,2002,800,335
+6,13,Colorado,Rocky Mountains,2003,816,366
+6,14,Colorado,Rocky Mountains,2004,877,388
+6,15,Colorado,Rocky Mountains,2005,912,412
+6,16,Colorado,Rocky Mountains,2006,968,421
+6,17,Colorado,Rocky Mountains,2007,1014,413
+6,18,Colorado,Rocky Mountains,2008,1101,430
+6,19,Colorado,Rocky Mountains,2009,1202,490
+6,20,Colorado,Rocky Mountains,2010,1669,551
+6,21,Colorado,Rocky Mountains,2011,1780,591
+6,22,Colorado,Rocky Mountains,2012,1976,610
+6,23,Colorado,Rocky Mountains,2013,2119,617
+6,24,Colorado,Rocky Mountains,2014,2460,845
+7,1,Connecticut,New England,1991,477,319
+7,2,Connecticut,New England,1992,456,282
+7,3,Connecticut,New England,1993,526,299
+7,4,Connecticut,New England,1994,667,316
+7,5,Connecticut,New England,1995,785,332
+7,6,Connecticut,New England,1996,880,338
+7,7,Connecticut,New England,1997,967,337
+7,8,Connecticut,New England,1998,837,342
+7,9,Connecticut,New England,1999,791,351
+7,10,Connecticut,New England,2000,780,356
+7,11,Connecticut,New England,2001,766,374
+7,12,Connecticut,New England,2002,844,412
+7,13,Connecticut,New England,2003,862,430
+7,14,Connecticut,New England,2004,946,444
+7,15,Connecticut,New England,2005,942,445
+7,16,Connecticut,New England,2006,1024,443
+7,17,Connecticut,New England,2007,1084,454
+7,18,Connecticut,New England,2008,1191,477
+7,19,Connecticut,New England,2009,1283,510
+7,20,Connecticut,New England,2010,1330,606
+7,21,Connecticut,New England,2011,1582,662
+7,22,Connecticut,New England,2012,2274,705
+7,23,Connecticut,New England,2013,2103,741
+7,24,Connecticut,New England,2014,2236,868
+8,1,Delaware,Mideast,1991,77,49
+8,2,Delaware,Mideast,1992,83,55
+8,3,Delaware,Mideast,1993,91,62
+8,4,Delaware,Mideast,1994,98,65
+8,5,Delaware,Mideast,1995,112,68
+8,6,Delaware,Mideast,1996,125,75
+8,7,Delaware,Mideast,1997,97,80
+8,8,Delaware,Mideast,1998,124,83
+8,9,Delaware,Mideast,1999,111,91
+8,10,Delaware,Mideast,2000,130,99
+8,11,Delaware,Mideast,2001,141,108
+8,12,Delaware,Mideast,2002,155,117
+8,13,Delaware,Mideast,2003,187,126
+8,14,Delaware,Mideast,2004,215,135
+8,15,Delaware,Mideast,2005,259,141
+8,16,Delaware,Mideast,2006,302,145
+8,17,Delaware,Mideast,2007,323,146
+8,18,Delaware,Mideast,2008,320,155
+8,19,Delaware,Mideast,2009,334,169
+8,20,Delaware,Mideast,2010,378,186
+8,21,Delaware,Mideast,2011,424,202
+8,22,Delaware,Mideast,2012,523,211
+8,23,Delaware,Mideast,2013,491,214
+8,24,Delaware,Mideast,2014,549,218
+9,1,District of Columbia,Mideast,1991,272,101
+9,2,District of Columbia,Mideast,1992,284,108
+9,3,District of Columbia,Mideast,1993,345,119
+9,4,District of Columbia,Mideast,1994,396,123
+9,5,District of Columbia,Mideast,1995,367,116
+9,6,District of Columbia,Mideast,1996,386,128
+9,7,District of Columbia,Mideast,1997,440,129
+9,8,District of Columbia,Mideast,1998,482,119
+9,9,District of Columbia,Mideast,1999,423,124
+9,10,District of Columbia,Mideast,2000,447,126
+9,11,District of Columbia,Mideast,2001,418,124
+9,12,District of Columbia,Mideast,2002,448,127
+9,13,District of Columbia,Mideast,2003,477,132
+9,14,District of Columbia,Mideast,2004,483,137
+9,15,District of Columbia,Mideast,2005,565,139
+9,16,District of Columbia,Mideast,2006,542,140
+9,17,District of Columbia,Mideast,2007,596,141
+9,18,District of Columbia,Mideast,2008,556,140
+9,19,District of Columbia,Mideast,2009,588,148
+9,20,District of Columbia,Mideast,2010,599,175
+9,21,District of Columbia,Mideast,2011,652,202
+9,22,District of Columbia,Mideast,2012,677,211
+9,23,District of Columbia,Mideast,2013,727,217
+9,24,District of Columbia,Mideast,2014,681,242
+10,1,Florida,Southeast,1991,1388,1075
+10,2,Florida,Southeast,1992,1631,1456
+10,3,Florida,Southeast,1993,1865,1666
+10,4,Florida,Southeast,1994,1936,1622
+10,5,Florida,Southeast,1995,2046,1540
+10,6,Florida,Southeast,1996,2022,1391
+10,7,Florida,Southeast,1997,1955,1507
+10,8,Florida,Southeast,1998,2115,1487
+10,9,Florida,Southeast,1999,2098,1568
+10,10,Florida,Southeast,2000,2337,1727
+10,11,Florida,Southeast,2001,2546,1929
+10,12,Florida,Southeast,2002,3037,2082
+10,13,Florida,Southeast,2003,3403,2163
+10,14,Florida,Southeast,2004,4091,2185
+10,15,Florida,Southeast,2005,4123,2273
+10,16,Florida,Southeast,2006,4624,2233
+10,17,Florida,Southeast,2007,4893,2135
+10,18,Florida,Southeast,2008,5418,2313
+10,19,Florida,Southeast,2009,5746,2680
+10,20,Florida,Southeast,2010,6796,2874
+10,21,Florida,Southeast,2011,6833,3100
+10,22,Florida,Southeast,2012,6817,3288
+10,23,Florida,Southeast,2013,6999,3406
+10,24,Florida,Southeast,2014,7833,3534
+11,1,Georgia,Southeast,1991,836,681
+11,2,Georgia,Southeast,1992,874,789
+11,3,Georgia,Southeast,1993,1064,861
+11,4,Georgia,Southeast,1994,1241,936
+11,5,Georgia,Southeast,1995,1295,980
+11,6,Georgia,Southeast,1996,1387,983
+11,7,Georgia,Southeast,1997,1352,962
+11,8,Georgia,Southeast,1998,1438,952
+11,9,Georgia,Southeast,1999,1476,944
+11,10,Georgia,Southeast,2000,2017,917
+11,11,Georgia,Southeast,2001,2793,1023
+11,12,Georgia,Southeast,2002,3162,1139
+11,13,Georgia,Southeast,2003,3399,1282
+11,14,Georgia,Southeast,2004,2916,1342
+11,15,Georgia,Southeast,2005,3035,1387
+11,16,Georgia,Southeast,2006,2790,1320
+11,17,Georgia,Southeast,2007,3217,1246
+11,18,Georgia,Southeast,2008,3102,1292
+11,19,Georgia,Southeast,2009,2965,1416
+11,20,Georgia,Southeast,2010,3188,1472
+11,21,Georgia,Southeast,2011,3547,1514
+11,22,Georgia,Southeast,2012,3356,1577
+11,23,Georgia,Southeast,2013,3755,1596
+11,24,Georgia,Southeast,2014,3730,1685
+12,1,Hawaii,Far West,1991,104,78
+12,2,Hawaii,Far West,1992,110,87
+12,3,Hawaii,Far West,1993,149,94
+12,4,Hawaii,Far West,1994,210,78
+12,5,Hawaii,Far West,1995,307,39
+12,6,Hawaii,Far West,1996,263,40
+12,7,Hawaii,Far West,1997,288,60
+12,8,Hawaii,Far West,1998,244,143
+12,9,Hawaii,Far West,1999,256,165
+12,10,Hawaii,Far West,2000,251,154
+12,11,Hawaii,Far West,2001,245,150
+12,12,Hawaii,Far West,2002,284,156
+12,13,Hawaii,Far West,2003,284,166
+12,14,Hawaii,Far West,2004,347,174
+12,15,Hawaii,Far West,2005,373,179
+12,16,Hawaii,Far West,2006,372,179
+12,17,Hawaii,Far West,2007,407,176
+12,18,Hawaii,Far West,2008,389,184
+12,19,Hawaii,Far West,2009,389,206
+12,20,Hawaii,Far West,2010,487,228
+12,21,Hawaii,Far West,2011,568,242
+12,22,Hawaii,Far West,2012,406,251
+12,23,Hawaii,Far West,2013,511,257
+12,24,Hawaii,Far West,2014,614,291
+13,1,Idaho,Rocky Mountains,1991,78,58
+13,2,Idaho,Rocky Mountains,1992,82,73
+13,3,Idaho,Rocky Mountains,1993,87,82
+13,4,Idaho,Rocky Mountains,1994,91,90
+13,5,Idaho,Rocky Mountains,1995,97,92
+13,6,Idaho,Rocky Mountains,1996,117,90
+13,7,Idaho,Rocky Mountains,1997,113,83
+13,8,Idaho,Rocky Mountains,1998,129,83
+13,9,Idaho,Rocky Mountains,1999,140,90
+13,10,Idaho,Rocky Mountains,2000,157,109
+13,11,Idaho,Rocky Mountains,2001,182,129
+13,12,Idaho,Rocky Mountains,2002,199,142
+13,13,Idaho,Rocky Mountains,2003,210,154
+13,14,Idaho,Rocky Mountains,2004,257,163
+13,15,Idaho,Rocky Mountains,2005,230,167
+13,16,Idaho,Rocky Mountains,2006,250,170
+13,17,Idaho,Rocky Mountains,2007,286,169
+13,18,Idaho,Rocky Mountains,2008,305,165
+13,19,Idaho,Rocky Mountains,2009,341,178
+13,20,Idaho,Rocky Mountains,2010,408,191
+13,21,Idaho,Rocky Mountains,2011,414,213
+13,22,Idaho,Rocky Mountains,2012,548,219
+13,23,Idaho,Rocky Mountains,2013,571,222
+13,24,Idaho,Rocky Mountains,2014,530,218
+14,1,Illinois,Great Lakes,1991,1119,1307
+14,2,Illinois,Great Lakes,1992,1767,1396
+14,3,Illinois,Great Lakes,1993,2343,1476
+14,4,Illinois,Great Lakes,1994,2516,1557
+14,5,Illinois,Great Lakes,1995,2691,1591
+14,6,Illinois,Great Lakes,1996,3021,1554
+14,7,Illinois,Great Lakes,1997,3069,1517
+14,8,Illinois,Great Lakes,1998,3027,1446
+14,9,Illinois,Great Lakes,1999,3019,1345
+14,10,Illinois,Great Lakes,2000,3486,1390
+14,11,Illinois,Great Lakes,2001,3409,1454
+14,12,Illinois,Great Lakes,2002,3628,1594
+14,13,Illinois,Great Lakes,2003,4137,1752
+14,14,Illinois,Great Lakes,2004,4257,1864
+14,15,Illinois,Great Lakes,2005,4823,1968
+14,16,Illinois,Great Lakes,2006,4826,1893
+14,17,Illinois,Great Lakes,2007,6108,1964
+14,18,Illinois,Great Lakes,2008,5913,2190
+14,19,Illinois,Great Lakes,2009,7369,2357
+14,20,Illinois,Great Lakes,2010,7753,2489
+14,21,Illinois,Great Lakes,2011,5995,2576
+14,22,Illinois,Great Lakes,2012,5772,2674
+14,23,Illinois,Great Lakes,2013,7575,2704
+14,24,Illinois,Great Lakes,2014,7121,3105
+15,1,Indiana,Great Lakes,1991,685,362
+15,2,Indiana,Great Lakes,1992,824,433
+15,3,Indiana,Great Lakes,1993,1114,474
+15,4,Indiana,Great Lakes,1994,890,498
+15,5,Indiana,Great Lakes,1995,804,508
+15,6,Indiana,Great Lakes,1996,955,460
+15,7,Indiana,Great Lakes,1997,914,447
+15,8,Indiana,Great Lakes,1998,1049,459
+15,9,Indiana,Great Lakes,1999,1203,519
+15,10,Indiana,Great Lakes,2000,1492,575
+15,11,Indiana,Great Lakes,2001,1536,636
+15,12,Indiana,Great Lakes,2002,1423,679
+15,13,Indiana,Great Lakes,2003,1330,705
+15,14,Indiana,Great Lakes,2004,1634,742
+15,15,Indiana,Great Lakes,2005,1435,770
+15,16,Indiana,Great Lakes,2006,1632,787
+15,17,Indiana,Great Lakes,2007,1981,805
+15,18,Indiana,Great Lakes,2008,2387,852
+15,19,Indiana,Great Lakes,2009,2007,926
+15,20,Indiana,Great Lakes,2010,1849,978
+15,21,Indiana,Great Lakes,2011,1630,979
+15,22,Indiana,Great Lakes,2012,2591,1015
+15,23,Indiana,Great Lakes,2013,2164,1041
+15,24,Indiana,Great Lakes,2014,3113,1070
+16,1,Iowa,Plains,1991,296,220
+16,2,Iowa,Plains,1992,333,229
+16,3,Iowa,Plains,1993,391,237
+16,4,Iowa,Plains,1994,415,248
+16,5,Iowa,Plains,1995,421,244
+16,6,Iowa,Plains,1996,451,238
+16,7,Iowa,Plains,1997,418,242
+16,8,Iowa,Plains,1998,491,249
+16,9,Iowa,Plains,1999,484,223
+16,10,Iowa,Plains,2000,606,227
+16,11,Iowa,Plains,2001,598,248
+16,12,Iowa,Plains,2002,785,267
+16,13,Iowa,Plains,2003,690,283
+16,14,Iowa,Plains,2004,691,300
+16,15,Iowa,Plains,2005,690,312
+16,16,Iowa,Plains,2006,863,348
+16,17,Iowa,Plains,2007,854,361
+16,18,Iowa,Plains,2008,924,381
+16,19,Iowa,Plains,2009,933,420
+16,20,Iowa,Plains,2010,988,452
+16,21,Iowa,Plains,2011,1103,481
+16,22,Iowa,Plains,2012,1244,506
+16,23,Iowa,Plains,2013,1177,518
+16,24,Iowa,Plains,2014,1409,606
+17,1,Kansas,Plains,1991,223,176
+17,2,Kansas,Plains,1992,296,143
+17,3,Kansas,Plains,1993,337,190
+17,4,Kansas,Plains,1994,326,176
+17,5,Kansas,Plains,1995,297,206
+17,6,Kansas,Plains,1996,288,200
+17,7,Kansas,Plains,1997,304,188
+17,8,Kansas,Plains,1998,291,179
+17,9,Kansas,Plains,1999,307,189
+17,10,Kansas,Plains,2000,412,199
+17,11,Kansas,Plains,2001,421,214
+17,12,Kansas,Plains,2002,479,230
+17,13,Kansas,Plains,2003,390,249
+17,14,Kansas,Plains,2004,486,261
+17,15,Kansas,Plains,2005,548,270
+17,16,Kansas,Plains,2006,665,273
+17,17,Kansas,Plains,2007,697,268
+17,18,Kansas,Plains,2008,762,271
+17,19,Kansas,Plains,2009,799,288
+17,20,Kansas,Plains,2010,814,317
+17,21,Kansas,Plains,2011,954,339
+17,22,Kansas,Plains,2012,945,350
+17,23,Kansas,Plains,2013,796,355
+17,24,Kansas,Plains,2014,708,352
+18,1,Kentucky,Southeast,1991,395,470
+18,2,Kentucky,Southeast,1992,582,511
+18,3,Kentucky,Southeast,1993,637,535
+18,4,Kentucky,Southeast,1994,712,545
+18,5,Kentucky,Southeast,1995,790,549
+18,6,Kentucky,Southeast,1996,860,548
+18,7,Kentucky,Southeast,1997,951,536
+18,8,Kentucky,Southeast,1998,1038,526
+18,9,Kentucky,Southeast,1999,1025,524
+18,10,Kentucky,Southeast,2000,1240,551
+18,11,Kentucky,Southeast,2001,1175,577
+18,12,Kentucky,Southeast,2002,1303,600
+18,13,Kentucky,Southeast,2003,1219,631
+18,14,Kentucky,Southeast,2004,1595,650
+18,15,Kentucky,Southeast,2005,1378,659
+18,16,Kentucky,Southeast,2006,1536,671
+18,17,Kentucky,Southeast,2007,1665,682
+18,18,Kentucky,Southeast,2008,1617,692
+18,19,Kentucky,Southeast,2009,2101,733
+18,20,Kentucky,Southeast,2010,1946,756
+18,21,Kentucky,Southeast,2011,1990,768
+18,22,Kentucky,Southeast,2012,1617,771
+18,23,Kentucky,Southeast,2013,1474,776
+18,24,Kentucky,Southeast,2014,2629,1058
+19,1,Louisiana,Southeast,1991,819,569
+19,2,Louisiana,Southeast,1992,970,599
+19,3,Louisiana,Southeast,1993,1472,622
+19,4,Louisiana,Southeast,1994,1676,635
+19,5,Louisiana,Southeast,1995,1455,633
+19,6,Louisiana,Southeast,1996,1071,615
+19,7,Louisiana,Southeast,1997,1351,587
+19,8,Louisiana,Southeast,1998,1150,578
+19,9,Louisiana,Southeast,1999,1119,608
+19,10,Louisiana,Southeast,2000,1132,638
+19,11,Louisiana,Southeast,2001,1617,691
+19,12,Louisiana,Southeast,2002,1570,767
+19,13,Louisiana,Southeast,2003,1497,821
+19,14,Louisiana,Southeast,2004,1771,867
+19,15,Louisiana,Southeast,2005,2047,905
+19,16,Louisiana,Southeast,2006,2235,913
+19,17,Louisiana,Southeast,2007,2349,887
+19,18,Louisiana,Southeast,2008,2333,933
+19,19,Louisiana,Southeast,2009,2582,991
+19,20,Louisiana,Southeast,2010,2624,1055
+19,21,Louisiana,Southeast,2011,2643,1084
+19,22,Louisiana,Southeast,2012,2658,1127
+19,23,Louisiana,Southeast,2013,3211,1136
+19,24,Louisiana,Southeast,2014,2957,1128
+20,1,Maine,New England,1991,133,141
+20,2,Maine,New England,1992,197,152
+20,3,Maine,New England,1993,269,156
+20,4,Maine,New England,1994,301,157
+20,5,Maine,New England,1995,283,155
+20,6,Maine,New England,1996,290,156
+20,7,Maine,New England,1997,349,153
+20,8,Maine,New England,1998,379,155
+20,9,Maine,New England,1999,290,159
+20,10,Maine,New England,2000,282,164
+20,11,Maine,New England,2001,299,220
+20,12,Maine,New England,2002,295,305
+20,13,Maine,New England,2003,404,236
+20,14,Maine,New England,2004,488,253
+20,15,Maine,New England,2005,567,263
+20,16,Maine,New England,2006,513,270
+20,17,Maine,New England,2007,556,294
+20,18,Maine,New England,2008,573,296
+20,19,Maine,New England,2009,894,308
+20,20,Maine,New England,2010,541,325
+20,21,Maine,New England,2011,780,338
+20,22,Maine,New England,2012,732,326
+20,23,Maine,New England,2013,924,319
+20,24,Maine,New England,2014,715,315
+21,1,Maryland,Mideast,1991,736,365
+21,2,Maryland,Mideast,1992,832,396
+21,3,Maryland,Mideast,1993,988,417
+21,4,Maryland,Mideast,1994,1080,438
+21,5,Maryland,Mideast,1995,1081,456
+21,6,Maryland,Mideast,1996,1076,567
+21,7,Maryland,Mideast,1997,1063,761
+21,8,Maryland,Mideast,1998,1127,473
+21,9,Maryland,Mideast,1999,1268,510
+21,10,Maryland,Mideast,2000,1167,480
+21,11,Maryland,Mideast,2001,1293,503
+21,12,Maryland,Mideast,2002,1418,536
+21,13,Maryland,Mideast,2003,1646,581
+21,14,Maryland,Mideast,2004,1779,609
+21,15,Maryland,Mideast,2005,1848,620
+21,16,Maryland,Mideast,2006,1902,602
+21,17,Maryland,Mideast,2007,2051,596
+21,18,Maryland,Mideast,2008,2139,619
+21,19,Maryland,Mideast,2009,2387,721
+21,20,Maryland,Mideast,2010,2703,811
+21,21,Maryland,Mideast,2011,2704,885
+21,22,Maryland,Mideast,2012,2724,940
+21,23,Maryland,Mideast,2013,2834,975
+21,24,Maryland,Mideast,2014,3753,1143
+22,1,Massachusetts,New England,1991,1146,698
+22,2,Massachusetts,New England,1992,1314,460
+22,3,Massachusetts,New England,1993,1315,516
+22,4,Massachusetts,New England,1994,1504,513
+22,5,Massachusetts,New England,1995,1667,513
+22,6,Massachusetts,New England,1996,1739,514
+22,7,Massachusetts,New England,1997,2122,539
+22,8,Massachusetts,New England,1998,2294,602
+22,9,Massachusetts,New England,1999,2481,607
+22,10,Massachusetts,New England,2000,2496,614
+22,11,Massachusetts,New England,2001,2675,642
+22,12,Massachusetts,New England,2002,3115,673
+22,13,Massachusetts,New England,2003,2856,630
+22,14,Massachusetts,New England,2004,3278,641
+22,15,Massachusetts,New England,2005,3845,671
+22,16,Massachusetts,New England,2006,3426,689
+22,17,Massachusetts,New England,2007,3774,708
+22,18,Massachusetts,New England,2008,4005,867
+22,19,Massachusetts,New England,2009,4193,932
+22,20,Massachusetts,New England,2010,4211,960
+22,21,Massachusetts,New England,2011,4109,1128
+22,22,Massachusetts,New England,2012,4541,1277
+22,23,Massachusetts,New England,2013,4019,1312
+22,24,Massachusetts,New England,2014,4537,1542
+23,1,Michigan,Great Lakes,1991,1214,1108
+23,2,Michigan,Great Lakes,1992,1414,1124
+23,3,Michigan,Great Lakes,1993,1607,1168
+23,4,Michigan,Great Lakes,1994,1743,1178
+23,5,Michigan,Great Lakes,1995,1941,1149
+23,6,Michigan,Great Lakes,1996,1956,1123
+23,7,Michigan,Great Lakes,1997,2397,1094
+23,8,Michigan,Great Lakes,1998,1633,1084
+23,9,Michigan,Great Lakes,1999,3242,1068
+23,10,Michigan,Great Lakes,2000,2891,1062
+23,11,Michigan,Great Lakes,2001,2676,1131
+23,12,Michigan,Great Lakes,2002,2670,1210
+23,13,Michigan,Great Lakes,2003,2898,1278
+23,14,Michigan,Great Lakes,2004,2888,1377
+23,15,Michigan,Great Lakes,2005,3278,1447
+23,16,Michigan,Great Lakes,2006,3334,1489
+23,17,Michigan,Great Lakes,2007,3932,1547
+23,18,Michigan,Great Lakes,2008,4070,1586
+23,19,Michigan,Great Lakes,2009,4469,1701
+23,20,Michigan,Great Lakes,2010,4832,1894
+23,21,Michigan,Great Lakes,2011,4638,1934
+23,22,Michigan,Great Lakes,2012,4635,1879
+23,23,Michigan,Great Lakes,2013,4556,1881
+23,24,Michigan,Great Lakes,2014,4954,2110
+24,1,Minnesota,Plains,1991,567,358
+24,2,Minnesota,Plains,1992,591,386
+24,3,Minnesota,Plains,1993,619,412
+24,4,Minnesota,Plains,1994,617,435
+24,5,Minnesota,Plains,1995,654,450
+24,6,Minnesota,Plains,1996,673,479
+24,7,Minnesota,Plains,1997,679,469
+24,8,Minnesota,Plains,1998,708,449
+24,9,Minnesota,Plains,1999,723,457
+24,10,Minnesota,Plains,2000,803,470
+24,11,Minnesota,Plains,2001,920,500
+24,12,Minnesota,Plains,2002,1204,530
+24,13,Minnesota,Plains,2003,1023,563
+24,14,Minnesota,Plains,2004,1260,579
+24,15,Minnesota,Plains,2005,1230,590
+24,16,Minnesota,Plains,2006,1435,595
+24,17,Minnesota,Plains,2007,1683,610
+24,18,Minnesota,Plains,2008,1739,628
+24,19,Minnesota,Plains,2009,1998,694
+24,20,Minnesota,Plains,2010,2271,743
+24,21,Minnesota,Plains,2011,2298,852
+24,22,Minnesota,Plains,2012,2546,891
+24,23,Minnesota,Plains,2013,2703,908
+24,24,Minnesota,Plains,2014,3053,1053
+25,1,Mississippi,Southeast,1991,373,427
+25,2,Mississippi,Southeast,1992,385,416
+25,3,Mississippi,Southeast,1993,463,455
+25,4,Mississippi,Southeast,1994,544,452
+25,5,Mississippi,Southeast,1995,650,449
+25,6,Mississippi,Southeast,1996,739,440
+25,7,Mississippi,Southeast,1997,751,420
+25,8,Mississippi,Southeast,1998,760,410
+25,9,Mississippi,Southeast,1999,736,440
+25,10,Mississippi,Southeast,2000,783,488
+25,11,Mississippi,Southeast,2001,986,565
+25,12,Mississippi,Southeast,2002,1129,594
+25,13,Mississippi,Southeast,2003,1135,611
+25,14,Mississippi,Southeast,2004,1400,659
+25,15,Mississippi,Southeast,2005,1204,668
+25,16,Mississippi,Southeast,2006,1411,629
+25,17,Mississippi,Southeast,2007,1561,603
+25,18,Mississippi,Southeast,2008,1517,612
+25,19,Mississippi,Southeast,2009,1574,626
+25,20,Mississippi,Southeast,2010,2008,639
+25,21,Mississippi,Southeast,2011,2009,653
+25,22,Mississippi,Southeast,2012,2071,653
+25,23,Mississippi,Southeast,2013,2258,661
+25,24,Mississippi,Southeast,2014,2313,683
+26,1,Missouri,Plains,1991,457,469
+26,2,Missouri,Plains,1992,951,527
+26,3,Missouri,Plains,1993,980,575
+26,4,Missouri,Plains,1994,1106,621
+26,5,Missouri,Plains,1995,1169,639
+26,6,Missouri,Plains,1996,1228,628
+26,7,Missouri,Plains,1997,1325,619
+26,8,Missouri,Plains,1998,1460,629
+26,9,Missouri,Plains,1999,1663,688
+26,10,Missouri,Plains,2000,1908,765
+26,11,Missouri,Plains,2001,2085,822
+26,12,Missouri,Plains,2002,2231,870
+26,13,Missouri,Plains,2003,2465,908
+26,14,Missouri,Plains,2004,2644,941
+26,15,Missouri,Plains,2005,2986,918
+26,16,Missouri,Plains,2006,3318,827
+26,17,Missouri,Plains,2007,3463,817
+26,18,Missouri,Plains,2008,3582,819
+26,19,Missouri,Plains,2009,3917,853
+26,20,Missouri,Plains,2010,3872,900
+26,21,Missouri,Plains,2011,3851,938
+26,22,Missouri,Plains,2012,4175,932
+26,23,Missouri,Plains,2013,4101,917
+26,24,Missouri,Plains,2014,4004,910
+27,1,Montana,Rocky Mountains,1991,109,62
+27,2,Montana,Rocky Mountains,1992,117,66
+27,3,Montana,Rocky Mountains,1993,138,71
+27,4,Montana,Rocky Mountains,1994,142,74
+27,5,Montana,Rocky Mountains,1995,138,75
+27,6,Montana,Rocky Mountains,1996,145,74
+27,7,Montana,Rocky Mountains,1997,147,69
+27,8,Montana,Rocky Mountains,1998,187,67
+27,9,Montana,Rocky Mountains,1999,139,69
+27,10,Montana,Rocky Mountains,2000,179,71
+27,11,Montana,Rocky Mountains,2001,180,76
+27,12,Montana,Rocky Mountains,2002,171,79
+27,13,Montana,Rocky Mountains,2003,185,83
+27,14,Montana,Rocky Mountains,2004,240,86
+27,15,Montana,Rocky Mountains,2005,260,86
+27,16,Montana,Rocky Mountains,2006,288,84
+27,17,Montana,Rocky Mountains,2007,294,82
+27,18,Montana,Rocky Mountains,2008,308,82
+27,19,Montana,Rocky Mountains,2009,339,88
+27,20,Montana,Rocky Mountains,2010,439,103
+27,21,Montana,Rocky Mountains,2011,285,107
+27,22,Montana,Rocky Mountains,2012,375,110
+27,23,Montana,Rocky Mountains,2013,392,115
+27,24,Montana,Rocky Mountains,2014,413,113
+28,1,Nebraska,Plains,1991,130,113
+28,2,Nebraska,Plains,1992,166,127
+28,3,Nebraska,Plains,1993,219,132
+28,4,Nebraska,Plains,1994,233,133
+28,5,Nebraska,Plains,1995,235,136
+28,6,Nebraska,Plains,1996,264,142
+28,7,Nebraska,Plains,1997,262,152
+28,8,Nebraska,Plains,1998,333,161
+28,9,Nebraska,Plains,1999,341,175
+28,10,Nebraska,Plains,2000,336,181
+28,11,Nebraska,Plains,2001,383,194
+28,12,Nebraska,Plains,2002,415,204
+28,13,Nebraska,Plains,2003,423,176
+28,14,Nebraska,Plains,2004,421,182
+28,15,Nebraska,Plains,2005,456,179
+28,16,Nebraska,Plains,2006,475,182
+28,17,Nebraska,Plains,2007,506,183
+28,18,Nebraska,Plains,2008,499,183
+28,19,Nebraska,Plains,2009,539,197
+28,20,Nebraska,Plains,2010,563,201
+28,21,Nebraska,Plains,2011,515,204
+28,22,Nebraska,Plains,2012,561,213
+28,23,Nebraska,Plains,2013,533,217
+28,24,Nebraska,Plains,2014,558,213
+29,1,Nevada,Far West,1991,109,53
+29,2,Nevada,Far West,1992,136,67
+29,3,Nevada,Far West,1993,150,76
+29,4,Nevada,Far West,1994,174,86
+29,5,Nevada,Far West,1995,202,94
+29,6,Nevada,Far West,1996,209,94
+29,7,Nevada,Far West,1997,204,86
+29,8,Nevada,Far West,1998,217,92
+29,9,Nevada,Far West,1999,215,100
+29,10,Nevada,Far West,2000,231,104
+29,11,Nevada,Far West,2001,275,114
+29,12,Nevada,Far West,2002,314,149
+29,13,Nevada,Far West,2003,382,171
+29,14,Nevada,Far West,2004,439,185
+29,15,Nevada,Far West,2005,449,178
+29,16,Nevada,Far West,2006,464,175
+29,17,Nevada,Far West,2007,502,178
+29,18,Nevada,Far West,2008,500,192
+29,19,Nevada,Far West,2009,525,223
+29,20,Nevada,Far West,2010,523,268
+29,21,Nevada,Far West,2011,536,295
+29,22,Nevada,Far West,2012,803,308
+29,23,Nevada,Far West,2013,674,322
+29,24,Nevada,Far West,2014,928,428
+30,1,New Hampshire,New England,1991,70,51
+30,2,New Hampshire,New England,1992,132,61
+30,3,New Hampshire,New England,1993,160,66
+30,4,New Hampshire,New England,1994,178,72
+30,5,New Hampshire,New England,1995,206,80
+30,6,New Hampshire,New England,1996,168,80
+30,7,New Hampshire,New England,1997,141,79
+30,8,New Hampshire,New England,1998,172,78
+30,9,New Hampshire,New England,1999,188,83
+30,10,New Hampshire,New England,2000,214,83
+30,11,New Hampshire,New England,2001,227,84
+30,12,New Hampshire,New England,2002,261,91
+30,13,New Hampshire,New England,2003,309,101
+30,14,New Hampshire,New England,2004,365,106
+30,15,New Hampshire,New England,2005,354,109
+30,16,New Hampshire,New England,2006,347,111
+30,17,New Hampshire,New England,2007,408,114
+30,18,New Hampshire,New England,2008,398,118
+30,19,New Hampshire,New England,2009,425,129
+30,20,New Hampshire,New England,2010,420,136
+30,21,New Hampshire,New England,2011,250,138
+30,22,New Hampshire,New England,2012,261,139
+30,23,New Hampshire,New England,2013,280,137
+30,24,New Hampshire,New England,2014,313,144
+31,1,New Jersey,Mideast,1991,1218,574
+31,2,New Jersey,Mideast,1992,1462,632
+31,3,New Jersey,Mideast,1993,1667,673
+31,4,New Jersey,Mideast,1994,1840,694
+31,5,New Jersey,Mideast,1995,1988,710
+31,6,New Jersey,Mideast,1996,1995,709
+31,7,New Jersey,Mideast,1997,2033,694
+31,8,New Jersey,Mideast,1998,2020,681
+31,9,New Jersey,Mideast,1999,2089,664
+31,10,New Jersey,Mideast,2000,2143,682
+31,11,New Jersey,Mideast,2001,2298,696
+31,12,New Jersey,Mideast,2002,2503,706
+31,13,New Jersey,Mideast,2003,2722,726
+31,14,New Jersey,Mideast,2004,2656,741
+31,15,New Jersey,Mideast,2005,2985,764
+31,16,New Jersey,Mideast,2006,3413,798
+31,17,New Jersey,Mideast,2007,3449,813
+31,18,New Jersey,Mideast,2008,3462,827
+31,19,New Jersey,Mideast,2009,3390,865
+31,20,New Jersey,Mideast,2010,3457,912
+31,21,New Jersey,Mideast,2011,3557,975
+31,22,New Jersey,Mideast,2012,3838,1013
+31,23,New Jersey,Mideast,2013,3773,1014
+31,24,New Jersey,Mideast,2014,4661,1483
+32,1,New Mexico,Southwest,1991,167,134
+32,2,New Mexico,Southwest,1992,191,151
+32,3,New Mexico,Southwest,1993,223,161
+32,4,New Mexico,Southwest,1994,253,208
+32,5,New Mexico,Southwest,1995,278,234
+32,6,New Mexico,Southwest,1996,324,246
+32,7,New Mexico,Southwest,1997,331,259
+32,8,New Mexico,Southwest,1998,405,264
+32,9,New Mexico,Southwest,1999,408,291
+32,10,New Mexico,Southwest,2000,545,312
+32,11,New Mexico,Southwest,2001,643,333
+32,12,New Mexico,Southwest,2002,761,374
+32,13,New Mexico,Southwest,2003,797,401
+32,14,New Mexico,Southwest,2004,941,418
+32,15,New Mexico,Southwest,2005,1014,405
+32,16,New Mexico,Southwest,2006,1101,399
+32,17,New Mexico,Southwest,2007,1350,408
+32,18,New Mexico,Southwest,2008,1505,435
+32,19,New Mexico,Southwest,2009,1541,462
+32,20,New Mexico,Southwest,2010,1622,525
+32,21,New Mexico,Southwest,2011,1496,542
+32,22,New Mexico,Southwest,2012,1381,560
+32,23,New Mexico,Southwest,2013,1289,568
+32,24,New Mexico,Southwest,2014,1934,702
+33,1,New York,Mideast,1991,7391,2318
+33,2,New York,Mideast,1992,8148,2441
+33,3,New York,Mideast,1993,8236,2589
+33,4,New York,Mideast,1994,8951,2714
+33,5,New York,Mideast,1995,9483,2774
+33,6,New York,Mideast,1996,9560,2751
+33,7,New York,Mideast,1997,8506,2732
+33,8,New York,Mideast,1998,9568,2667
+33,9,New York,Mideast,1999,10130,2793
+33,10,New York,Mideast,2000,10679,2790
+33,11,New York,Mideast,2001,10753,2903
+33,12,New York,Mideast,2002,12876,3444
+33,13,New York,Mideast,2003,13798,3736
+33,14,New York,Mideast,2004,14257,3928
+33,15,New York,Mideast,2005,14384,4195
+33,16,New York,Mideast,2006,15894,4161
+33,17,New York,Mideast,2007,15915,4090
+33,18,New York,Mideast,2008,16169,4169
+33,19,New York,Mideast,2009,17173,4495
+33,20,New York,Mideast,2010,17397,4754
+33,21,New York,Mideast,2011,17851,4915
+33,22,New York,Mideast,2012,17503,5022
+33,23,New York,Mideast,2013,17445,5189
+33,24,New York,Mideast,2014,17436,5286
+34,1,North Carolina,Southeast,1991,696,591
+34,2,North Carolina,Southeast,1992,823,692
+34,3,North Carolina,Southeast,1993,950,766
+34,4,North Carolina,Southeast,1994,1030,821
+34,5,North Carolina,Southeast,1995,1319,879
+34,6,North Carolina,Southeast,1996,1434,905
+34,7,North Carolina,Southeast,1997,1508,917
+34,8,North Carolina,Southeast,1998,1499,917
+34,9,North Carolina,Southeast,1999,1605,928
+34,10,North Carolina,Southeast,2000,1811,974
+34,11,North Carolina,Southeast,2001,2114,1067
+34,12,North Carolina,Southeast,2002,2065,1122
+34,13,North Carolina,Southeast,2003,2005,1178
+34,14,North Carolina,Southeast,2004,2462,1222
+34,15,North Carolina,Southeast,2005,2622,1251
+34,16,North Carolina,Southeast,2006,2985,1293
+34,17,North Carolina,Southeast,2007,2899,1311
+34,18,North Carolina,Southeast,2008,3094,1366
+34,19,North Carolina,Southeast,2009,3476,1469
+34,20,North Carolina,Southeast,2010,3304,1539
+34,21,North Carolina,Southeast,2011,3976,1581
+34,22,North Carolina,Southeast,2012,4266,1628
+34,23,North Carolina,Southeast,2013,4556,1650
+34,24,North Carolina,Southeast,2014,4946,1649
+35,1,North Dakota,Plains,1991,80,37
+35,2,North Dakota,Plains,1992,87,51
+35,3,North Dakota,Plains,1993,98,53
+35,4,North Dakota,Plains,1994,103,51
+35,5,North Dakota,Plains,1995,118,50
+35,6,North Dakota,Plains,1996,130,49
+35,7,North Dakota,Plains,1997,129,47
+35,8,North Dakota,Plains,1998,131,45
+35,9,North Dakota,Plains,1999,120,45
+35,10,North Dakota,Plains,2000,146,46
+35,11,North Dakota,Plains,2001,135,48
+35,12,North Dakota,Plains,2002,161,54
+35,13,North Dakota,Plains,2003,160,55
+35,14,North Dakota,Plains,2004,162,53
+35,15,North Dakota,Plains,2005,163,53
+35,16,North Dakota,Plains,2006,177,52
+35,17,North Dakota,Plains,2007,175,52
+35,18,North Dakota,Plains,2008,189,54
+35,19,North Dakota,Plains,2009,216,60
+35,20,North Dakota,Plains,2010,230,65
+35,21,North Dakota,Plains,2011,226,65
+35,22,North Dakota,Plains,2012,264,65
+35,23,North Dakota,Plains,2013,277,65
+35,24,North Dakota,Plains,2014,365,76
+36,1,Ohio,Great Lakes,1991,1824,1230
+36,2,Ohio,Great Lakes,1992,2082,1326
+36,3,Ohio,Great Lakes,1993,2278,1330
+36,4,Ohio,Great Lakes,1994,2399,1333
+36,5,Ohio,Great Lakes,1995,2429,1293
+36,6,Ohio,Great Lakes,1996,2388,1219
+36,7,Ohio,Great Lakes,1997,2410,1124
+36,8,Ohio,Great Lakes,1998,2346,1060
+36,9,Ohio,Great Lakes,1999,2274,1024
+36,10,Ohio,Great Lakes,2000,2569,1067
+36,11,Ohio,Great Lakes,2001,2764,1228
+36,12,Ohio,Great Lakes,2002,3038,1347
+36,13,Ohio,Great Lakes,2003,3333,1471
+36,14,Ohio,Great Lakes,2004,3496,1523
+36,15,Ohio,Great Lakes,2005,3956,1610
+36,16,Ohio,Great Lakes,2006,4128,1648
+36,17,Ohio,Great Lakes,2007,4533,1644
+36,18,Ohio,Great Lakes,2008,4548,1679
+36,19,Ohio,Great Lakes,2009,5070,1801
+36,20,Ohio,Great Lakes,2010,5146,1937
+36,21,Ohio,Great Lakes,2011,5196,2001
+36,22,Ohio,Great Lakes,2012,4955,2158
+36,23,Ohio,Great Lakes,2013,5479,2233
+36,24,Ohio,Great Lakes,2014,5608,2559
+37,1,Oklahoma,Southwest,1991,350,272
+37,2,Oklahoma,Southwest,1992,429,304
+37,3,Oklahoma,Southwest,1993,414,316
+37,4,Oklahoma,Southwest,1994,379,322
+37,5,Oklahoma,Southwest,1995,389,324
+37,6,Oklahoma,Southwest,1996,411,308
+37,7,Oklahoma,Southwest,1997,418,279
+37,8,Oklahoma,Southwest,1998,439,299
+37,9,Oklahoma,Southwest,1999,495,373
+37,10,Oklahoma,Southwest,2000,624,408
+37,11,Oklahoma,Southwest,2001,790,437
+37,12,Oklahoma,Southwest,2002,812,455
+37,13,Oklahoma,Southwest,2003,826,481
+37,14,Oklahoma,Southwest,2004,757,489
+37,15,Oklahoma,Southwest,2005,800,505
+37,16,Oklahoma,Southwest,2006,999,531
+37,17,Oklahoma,Southwest,2007,1161,556
+37,18,Oklahoma,Southwest,2008,1241,559
+37,19,Oklahoma,Southwest,2009,1334,616
+37,20,Oklahoma,Southwest,2010,1449,673
+37,21,Oklahoma,Southwest,2011,1472,699
+37,22,Oklahoma,Southwest,2012,1922,734
+37,23,Oklahoma,Southwest,2013,1839,748
+37,24,Oklahoma,Southwest,2014,1952,735
+38,1,Oregon,Far West,1991,190,210
+38,2,Oregon,Far West,1992,228,238
+38,3,Oregon,Far West,1993,263,268
+38,4,Oregon,Far West,1994,319,305
+38,5,Oregon,Far West,1995,449,309
+38,6,Oregon,Far West,1996,471,338
+38,7,Oregon,Far West,1997,533,375
+38,8,Oregon,Far West,1998,676,376
+38,9,Oregon,Far West,1999,695,381
+38,10,Oregon,Far West,2000,706,392
+38,11,Oregon,Far West,2001,768,423
+38,12,Oregon,Far West,2002,850,454
+38,13,Oregon,Far West,2003,762,422
+38,14,Oregon,Far West,2004,887,418
+38,15,Oregon,Far West,2005,937,405
+38,16,Oregon,Far West,2006,908,396
+38,17,Oregon,Far West,2007,965,381
+38,18,Oregon,Far West,2008,1117,399
+38,19,Oregon,Far West,2009,1148,449
+38,20,Oregon,Far West,2010,1193,519
+38,21,Oregon,Far West,2011,1336,596
+38,22,Oregon,Far West,2012,1637,621
+38,23,Oregon,Far West,2013,1596,627
+38,24,Oregon,Far West,2014,2736,964
+39,1,Pennsylvania,Mideast,1991,1150,1154
+39,2,Pennsylvania,Mideast,1992,1915,1270
+39,3,Pennsylvania,Mideast,1993,1886,1350
+39,4,Pennsylvania,Mideast,1994,2138,1422
+39,5,Pennsylvania,Mideast,1995,2252,1464
+39,6,Pennsylvania,Mideast,1996,2500,1454
+39,7,Pennsylvania,Mideast,1997,2787,1424
+39,8,Pennsylvania,Mideast,1998,2506,1421
+39,9,Pennsylvania,Mideast,1999,2835,1447
+39,10,Pennsylvania,Mideast,2000,2933,1378
+39,11,Pennsylvania,Mideast,2001,2925,1382
+39,12,Pennsylvania,Mideast,2002,3246,1438
+39,13,Pennsylvania,Mideast,2003,3141,1506
+39,14,Pennsylvania,Mideast,2004,3440,1611
+39,15,Pennsylvania,Mideast,2005,4000,1706
+39,16,Pennsylvania,Mideast,2006,4429,1720
+39,17,Pennsylvania,Mideast,2007,5090,1724
+39,18,Pennsylvania,Mideast,2008,5072,1830
+39,19,Pennsylvania,Mideast,2009,5469,1953
+39,20,Pennsylvania,Mideast,2010,5911,2056
+39,21,Pennsylvania,Mideast,2011,6757,2139
+39,22,Pennsylvania,Mideast,2012,6383,2147
+39,23,Pennsylvania,Mideast,2013,6672,2172
+39,24,Pennsylvania,Mideast,2014,6803,2150
+40,1,Rhode Island,New England,1991,190,152
+40,2,Rhode Island,New England,1992,275,187
+40,3,Rhode Island,New England,1993,225,154
+40,4,Rhode Island,New England,1994,264,109
+40,5,Rhode Island,New England,1995,277,127
+40,6,Rhode Island,New England,1996,230,124
+40,7,Rhode Island,New England,1997,372,122
+40,8,Rhode Island,New England,1998,325,125
+40,9,Rhode Island,New England,1999,338,136
+40,10,Rhode Island,New England,2000,297,149
+40,11,Rhode Island,New England,2001,455,145
+40,12,Rhode Island,New England,2002,441,151
+40,13,Rhode Island,New England,2003,421,157
+40,14,Rhode Island,New England,2004,545,161
+40,15,Rhode Island,New England,2005,546,162
+40,16,Rhode Island,New England,2006,620,162
+40,17,Rhode Island,New England,2007,481,160
+40,18,Rhode Island,New England,2008,644,155
+40,19,Rhode Island,New England,2009,715,164
+40,20,Rhode Island,New England,2010,742,175
+40,21,Rhode Island,New England,2011,788,174
+40,22,Rhode Island,New England,2012,670,164
+40,23,Rhode Island,New England,2013,652,167
+40,24,Rhode Island,New England,2014,1035,207
+41,1,South Carolina,Southeast,1991,537,310
+41,2,South Carolina,Southeast,1992,651,354
+41,3,South Carolina,Southeast,1993,716,394
+41,4,South Carolina,Southeast,1994,728,422
+41,5,South Carolina,Southeast,1995,707,441
+41,6,South Carolina,Southeast,1996,638,458
+41,7,South Carolina,Southeast,1997,609,485
+41,8,South Carolina,Southeast,1998,691,553
+41,9,South Carolina,Southeast,1999,720,586
+41,10,South Carolina,Southeast,2000,865,631
+41,11,South Carolina,Southeast,2001,932,702
+41,12,South Carolina,Southeast,2002,1071,758
+41,13,South Carolina,Southeast,2003,889,836
+41,14,South Carolina,Southeast,2004,1309,813
+41,15,South Carolina,Southeast,2005,1498,813
+41,16,South Carolina,Southeast,2006,1598,748
+41,17,South Carolina,Southeast,2007,1550,705
+41,18,South Carolina,Southeast,2008,1750,705
+41,19,South Carolina,Southeast,2009,2142,739
+41,20,South Carolina,Southeast,2010,2056,776
+41,21,South Carolina,Southeast,2011,1841,816
+41,22,South Carolina,Southeast,2012,1759,875
+41,23,South Carolina,Southeast,2013,1827,937
+41,24,South Carolina,Southeast,2014,1972,922
+42,1,South Dakota,Plains,1991,113,51
+42,2,South Dakota,Plains,1992,76,57
+42,3,South Dakota,Plains,1993,86,59
+42,4,South Dakota,Plains,1994,89,61
+42,5,South Dakota,Plains,1995,91,62
+42,6,South Dakota,Plains,1996,96,63
+42,7,South Dakota,Plains,1997,105,62
+42,8,South Dakota,Plains,1998,113,63
+42,9,South Dakota,Plains,1999,114,70
+42,10,South Dakota,Plains,2000,131,74
+42,11,South Dakota,Plains,2001,135,80
+42,12,South Dakota,Plains,2002,196,85
+42,13,South Dakota,Plains,2003,181,89
+42,14,South Dakota,Plains,2004,198,91
+42,15,South Dakota,Plains,2005,190,93
+42,16,South Dakota,Plains,2006,199,94
+42,17,South Dakota,Plains,2007,214,96
+42,18,South Dakota,Plains,2008,222,96
+42,19,South Dakota,Plains,2009,247,101
+42,20,South Dakota,Plains,2010,273,106
+42,21,South Dakota,Plains,2011,238,107
+42,22,South Dakota,Plains,2012,252,108
+42,23,South Dakota,Plains,2013,267,108
+42,24,South Dakota,Plains,2014,266,108
+43,1,Tennessee,Southeast,1991,538,723
+43,2,Tennessee,Southeast,1992,839,822
+43,3,Tennessee,Southeast,1993,913,904
+43,4,Tennessee,Southeast,1994,1149,988
+43,5,Tennessee,Southeast,1995,1199,1372
+43,6,Tennessee,Southeast,1996,1246,1336
+43,7,Tennessee,Southeast,1997,1505,1316
+43,8,Tennessee,Southeast,1998,1504,1288
+43,9,Tennessee,Southeast,1999,1706,1336
+43,10,Tennessee,Southeast,2000,2055,1360
+43,11,Tennessee,Southeast,2001,2180,1458
+43,12,Tennessee,Southeast,2002,2094,1442
+43,13,Tennessee,Southeast,2003,2094,1365
+43,14,Tennessee,Southeast,2004,2166,1374
+43,15,Tennessee,Southeast,2005,2241,1333
+43,16,Tennessee,Southeast,2006,2102,1240
+43,17,Tennessee,Southeast,2007,2442,1250
+43,18,Tennessee,Southeast,2008,2569,1251
+43,19,Tennessee,Southeast,2009,2456,1277
+43,20,Tennessee,Southeast,2010,3247,1294
+43,21,Tennessee,Southeast,2011,3034,1316
+43,22,Tennessee,Southeast,2012,3347,1323
+43,23,Tennessee,Southeast,2013,3447,1325
+43,24,Tennessee,Southeast,2014,3197,1348
+44,1,Texas,Southwest,1991,1802,1548
+44,2,Texas,Southwest,1992,2679,1827
+44,3,Texas,Southwest,1993,3251,2007
+44,4,Texas,Southwest,1994,3636,2114
+44,5,Texas,Southwest,1995,3723,2139
+44,6,Texas,Southwest,1996,3839,2114
+44,7,Texas,Southwest,1997,3602,2030
+44,8,Texas,Southwest,1998,3717,1932
+44,9,Texas,Southwest,1999,3787,1893
+44,10,Texas,Southwest,2000,3763,1954
+44,11,Texas,Southwest,2001,3960,2065
+44,12,Texas,Southwest,2002,4545,2417
+44,13,Texas,Southwest,2003,4873,2770
+44,14,Texas,Southwest,2004,5565,2939
+44,15,Texas,Southwest,2005,6766,3028
+44,16,Texas,Southwest,2006,6741,3045
+44,17,Texas,Southwest,2007,7938,3176
+44,18,Texas,Southwest,2008,8217,3243
+44,19,Texas,Southwest,2009,9540,3498
+44,20,Texas,Southwest,2010,10472,3793
+44,21,Texas,Southwest,2011,10628,4027
+44,22,Texas,Southwest,2012,10494,4090
+44,23,Texas,Southwest,2013,10936,4095
+44,24,Texas,Southwest,2014,12047,4136
+45,1,Utah,Rocky Mountains,1991,152,103
+45,2,Utah,Rocky Mountains,1992,168,118
+45,3,Utah,Rocky Mountains,1993,190,129
+45,4,Utah,Rocky Mountains,1994,198,136
+45,5,Utah,Rocky Mountains,1995,201,137
+45,6,Utah,Rocky Mountains,1996,214,126
+45,7,Utah,Rocky Mountains,1997,215,107
+45,8,Utah,Rocky Mountains,1998,218,131
+45,9,Utah,Rocky Mountains,1999,207,133
+45,10,Utah,Rocky Mountains,2000,221,134
+45,11,Utah,Rocky Mountains,2001,224,141
+45,12,Utah,Rocky Mountains,2002,298,159
+45,13,Utah,Rocky Mountains,2003,352,192
+45,14,Utah,Rocky Mountains,2004,426,205
+45,15,Utah,Rocky Mountains,2005,440,213
+45,16,Utah,Rocky Mountains,2006,549,206
+45,17,Utah,Rocky Mountains,2007,480,197
+45,18,Utah,Rocky Mountains,2008,526,203
+45,19,Utah,Rocky Mountains,2009,632,234
+45,20,Utah,Rocky Mountains,2010,682,253
+45,21,Utah,Rocky Mountains,2011,766,274
+45,22,Utah,Rocky Mountains,2012,844,282
+45,23,Utah,Rocky Mountains,2013,805,283
+45,24,Utah,Rocky Mountains,2014,754,296
+46,1,Vermont,New England,1991,56,64
+46,2,Vermont,New England,1992,56,69
+46,3,Vermont,New England,1993,60,73
+46,4,Vermont,New England,1994,68,81
+46,5,Vermont,New England,1995,73,86
+46,6,Vermont,New England,1996,73,92
+46,7,Vermont,New England,1997,73,103
+46,8,Vermont,New England,1998,88,109
+46,9,Vermont,New England,1999,93,113
+46,10,Vermont,New England,2000,108,121
+46,11,Vermont,New England,2001,118,125
+46,12,Vermont,New England,2002,134,128
+46,13,Vermont,New England,2003,142,129
+46,14,Vermont,New England,2004,157,129
+46,15,Vermont,New England,2005,205,128
+46,16,Vermont,New England,2006,309,127
+46,17,Vermont,New England,2007,327,127
+46,18,Vermont,New England,2008,311,138
+46,19,Vermont,New England,2009,327,152
+46,20,Vermont,New England,2010,335,163
+46,21,Vermont,New England,2011,339,166
+46,22,Vermont,New England,2012,356,168
+46,23,Vermont,New England,2013,409,171
+46,24,Vermont,New England,2014,409,176
+47,1,Virginia,Southeast,1991,507,407
+47,2,Virginia,Southeast,1992,506,476
+47,3,Virginia,Southeast,1993,620,523
+47,4,Virginia,Southeast,1994,660,560
+47,5,Virginia,Southeast,1995,708,576
+47,6,Virginia,Southeast,1996,722,573
+47,7,Virginia,Southeast,1997,784,557
+47,8,Virginia,Southeast,1998,805,541
+47,9,Virginia,Southeast,1999,828,540
+47,10,Virginia,Southeast,2000,944,534
+47,11,Virginia,Southeast,2001,1081,535
+47,12,Virginia,Southeast,2002,1110,553
+47,13,Virginia,Southeast,2003,1245,595
+47,14,Virginia,Southeast,2004,1332,650
+47,15,Virginia,Southeast,2005,1524,687
+47,16,Virginia,Southeast,2006,1868,700
+47,17,Virginia,Southeast,2007,1994,701
+47,18,Virginia,Southeast,2008,1830,723
+47,19,Virginia,Southeast,2009,1855,782
+47,20,Virginia,Southeast,2010,2098,840
+47,21,Virginia,Southeast,2011,2264,868
+47,22,Virginia,Southeast,2012,2235,912
+47,23,Virginia,Southeast,2013,2283,944
+47,24,Virginia,Southeast,2014,2178,928
+48,1,Washington,Far West,1991,511,452
+48,2,Washington,Far West,1992,588,512
+48,3,Washington,Far West,1993,670,563
+48,4,Washington,Far West,1994,749,611
+48,5,Washington,Far West,1995,814,665
+48,6,Washington,Far West,1996,873,702
+48,7,Washington,Far West,1997,905,726
+48,8,Washington,Far West,1998,955,720
+48,9,Washington,Far West,1999,965,714
+48,10,Washington,Far West,2000,1041,770
+48,11,Washington,Far West,2001,1301,822
+48,12,Washington,Far West,2002,1332,903
+48,13,Washington,Far West,2003,1450,942
+48,14,Washington,Far West,2004,1649,931
+48,15,Washington,Far West,2005,1813,953
+48,16,Washington,Far West,2006,1784,948
+48,17,Washington,Far West,2007,1916,928
+48,18,Washington,Far West,2008,2025,954
+48,19,Washington,Far West,2009,2066,1013
+48,20,Washington,Far West,2010,2241,1117
+48,21,Washington,Far West,2011,2453,1148
+48,22,Washington,Far West,2012,2504,1157
+48,23,Washington,Far West,2013,2256,1177
+48,24,Washington,Far West,2014,2962,1539
+49,1,West Virginia,Southeast,1991,269,234
+49,2,West Virginia,Southeast,1992,309,253
+49,3,West Virginia,Southeast,1993,349,268
+49,4,West Virginia,Southeast,1994,396,282
+49,5,West Virginia,Southeast,1995,369,298
+49,6,West Virginia,Southeast,1996,389,276
+49,7,West Virginia,Southeast,1997,443,231
+49,8,West Virginia,Southeast,1998,477,282
+49,9,West Virginia,Southeast,1999,444,267
+49,10,West Virginia,Southeast,2000,456,260
+49,11,West Virginia,Southeast,2001,484,267
+49,12,West Virginia,Southeast,2002,495,283
+49,13,West Virginia,Southeast,2003,578,297
+49,14,West Virginia,Southeast,2004,639,303
+49,15,West Virginia,Southeast,2005,600,308
+49,16,West Virginia,Southeast,2006,668,318
+49,17,West Virginia,Southeast,2007,684,320
+49,18,West Virginia,Southeast,2008,659,327
+49,19,West Virginia,Southeast,2009,749,341
+49,20,West Virginia,Southeast,2010,814,351
+49,21,West Virginia,Southeast,2011,808,355
+49,22,West Virginia,Southeast,2012,955,354
+49,23,West Virginia,Southeast,2013,994,359
+49,24,West Virginia,Southeast,2014,1156,495
+50,1,Wisconsin,Great Lakes,1991,493,469
+50,2,Wisconsin,Great Lakes,1992,504,483
+50,3,Wisconsin,Great Lakes,1993,536,494
+50,4,Wisconsin,Great Lakes,1994,584,498
+50,5,Wisconsin,Great Lakes,1995,608,492
+50,6,Wisconsin,Great Lakes,1996,625,471
+50,7,Wisconsin,Great Lakes,1997,642,436
+50,8,Wisconsin,Great Lakes,1998,618,415
+50,9,Wisconsin,Great Lakes,1999,613,425
+50,10,Wisconsin,Great Lakes,2000,718,476
+50,11,Wisconsin,Great Lakes,2001,822,484
+50,12,Wisconsin,Great Lakes,2002,919,552
+50,13,Wisconsin,Great Lakes,2003,950,664
+50,14,Wisconsin,Great Lakes,2004,966,726
+50,15,Wisconsin,Great Lakes,2005,1000,762
+50,16,Wisconsin,Great Lakes,2006,1066,777
+50,17,Wisconsin,Great Lakes,2007,1135,785
+50,18,Wisconsin,Great Lakes,2008,1170,826
+50,19,Wisconsin,Great Lakes,2009,2367,956
+50,20,Wisconsin,Great Lakes,2010,2078,1050
+50,21,Wisconsin,Great Lakes,2011,1936,1067
+50,22,Wisconsin,Great Lakes,2012,2046,1060
+50,23,Wisconsin,Great Lakes,2013,2084,1055
+50,24,Wisconsin,Great Lakes,2014,2090,1039
+51,1,Wyoming,Rocky Mountains,1991,40,30
+51,2,Wyoming,Rocky Mountains,1992,49,35
+51,3,Wyoming,Rocky Mountains,1993,54,37
+51,4,Wyoming,Rocky Mountains,1994,47,38
+51,5,Wyoming,Rocky Mountains,1995,46,38
+51,6,Wyoming,Rocky Mountains,1996,48,37
+51,7,Wyoming,Rocky Mountains,1997,41,35
+51,8,Wyoming,Rocky Mountains,1998,45,35
+51,9,Wyoming,Rocky Mountains,1999,48,36
+51,10,Wyoming,Rocky Mountains,2000,52,37
+51,11,Wyoming,Rocky Mountains,2001,72,43
+51,12,Wyoming,Rocky Mountains,2002,65,51
+51,13,Wyoming,Rocky Mountains,2003,86,57
+51,14,Wyoming,Rocky Mountains,2004,112,59
+51,15,Wyoming,Rocky Mountains,2005,124,62
+51,16,Wyoming,Rocky Mountains,2006,136,61
+51,17,Wyoming,Rocky Mountains,2007,141,59
+51,18,Wyoming,Rocky Mountains,2008,159,59
+51,19,Wyoming,Rocky Mountains,2009,175,64
+51,20,Wyoming,Rocky Mountains,2010,171,68
+51,21,Wyoming,Rocky Mountains,2011,165,69
+51,22,Wyoming,Rocky Mountains,2012,168,68
+51,23,Wyoming,Rocky Mountains,2013,180,68
+51,24,Wyoming,Rocky Mountains,2014,175,69
