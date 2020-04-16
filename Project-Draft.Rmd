@@ -92,6 +92,8 @@ ggplot(data = medicaid, mapping = aes(x = spending, y = enrollment, colour = Sta
   ease_aes('linear')
 ```
 
+***
+
 ```{r nyc-changes, fig.align = "center"}
 total <- read_csv("data/TM with USA.csv")
 
