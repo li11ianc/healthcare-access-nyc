@@ -15,9 +15,19 @@ library(tidyverse)
 library(gifski)
 library(gganimate)
 library(ggmap)
+library(maps)
+library(usmap)
+library(viridis)
 library(patchwork)
 ```
 
+```{r load-data}
+## facilities <- read.csv("data/raw/facility.csv")
+insurance <- read.csv("data/insurance.csv")
+inpatients <- read.csv("data/medicare_inpatients.csv")
+medicaid <- read_csv("data/Total Medicaid.csv")
+states_pop <- read.csv("data/states_pop.csv")
+```
 
 ## Introduction
 ***
@@ -27,18 +37,23 @@ After Donald Trump declared a national emergency, life as we knew it in America 
 
 Coronavirus has been shown to impact marginalized communities at a more intense rate, but nobody is immune to the virus. Nationwide, access to specialized medical care is highly dependent upon one’s socioeconomic and employment status. Thus, we wanted to take a deeper look into these access disparities in the age of a global pandemic. Changes to healthcare policy, such as the Affordable Care Act of 2010 (ACA), have made inexpensive healthcare available to more constituents.  However, there is still a long way to go, and the virus has brought many of these inequalities to light.
 
-The following questions guided our research in investigating nationwide healthcare inequity: <br>
+The following questions guided our research in investigating nationwide healthcare inequity: 
+
+<br>
 1.	Are there disparities in healthcare access across the United States?
+
 <br>
 2.	As New York was one of the first hot spots for the virus, what inequalities to access exist within the state?
+
 <br>
 3.	How do these differences in access relate to differences in patient experience?
+
 <br>
 4.	How have health policy changes influenced accessibility? 
 
+
 ## Changes in Healthcare Policy and Access
 ***
-
 ### Background
 
 The United States Department of Health and Human Services (HHS) was established in 1953 with the goal to “enhance and protect the health and well-being of all Americans.”  The HHS works alongside lawmakers to pass legislation to support this goal and improve patient outcomes. Over the course of its history it has supported eight pieces of legislation that have impacted the lives of the American people.
@@ -64,13 +79,71 @@ Finally, The Affordable Care Act established the Hospital Readmissions Reduction
 
 These landmark healthcare reform laws have improved patient experience and expanded access to many citizens who were previously excluded from coverage. However, the federal-state partnerships give many states leeway in terms of how they determine who is eligible for these government assistance programs. Although many more people have insurance than before, it can still be seen that there is a long way to go before access is not only affordable, but also equitable. 
 
-***
+```{r us-hospitals}
+## Disparities in Healthcare Access
 
+facilities <- left_join(facilities, states_pop, by = c("state" = "states_abb"))
+
+# filter for hospitals in the contiguous US
+hospitals <- facilities %>% 
+  filter(overall_type == "hospital") %>% 
+  #filter(long > -130 & long < -60) %>% 
+  #filter(lat > 20 & lat < 50) %>% 
+  mutate(owner = as.character(owner)) %>% 
+  mutate(general_owner = case_when(owner %in% c("Government - District/Authority", "Government - Federal",
+                                             "Government - Local", "Government - State") ~ "Government",
+                                   owner == "Proprietary" ~ "For-Profit",
+                                   TRUE ~ owner))
+
+# map of hospitals
+hospital_cnt <- hospitals %>% 
+  group_by(state) %>% 
+  summarize(total_hospitals = n(),
+            total_beds = sum(beds, na.rm = TRUE))
+
+hospital_cnt <- left_join(hospital_cnt, states_pop, by = c("state" = "states_abb"))
+
+hospital_cnt <- hospital_cnt %>% 
+  mutate(hospital_ratio = states_pop / total_hospitals,
+         hospital_percap = total_hospitals / states_pop,
+         bed_percap = total_beds / states_pop)
+
+plot_usmap(data = hospital_cnt, values = 'total_hospitals') + 
+  scale_fill_continuous(low = "white", high = "brown",
+                        name = "# Hospitals", label = scales::comma) + theme(legend.position = "right")
+
+plot_usmap(data = hospital_cnt, values = 'hospital_ratio') + 
+  scale_fill_continuous(low = "white", high = "brown",
+                        name = "Avg. # people served \nper hospital", label = scales::comma) + theme(legend.position = "right")
+
+plot_usmap(data = hospital_cnt, values = 'hospital_percap') + 
+  scale_fill_continuous(low = "white", high = "brown",
+                        name = "# Hospital Per Capita", label = scales::comma) + theme(legend.position = "right")
+
+plot_usmap(data = hospital_cnt, values = 'bed_percap') + 
+  scale_fill_continuous(low = "white", high = "brown",
+                        name = "# Beds Per Capita", label = scales::comma) + theme(legend.position = "right")
+```
+
+```{r hospital-owner}
+# proportion of owner type by state bar graph
+hospitals %>% 
+  filter(general_owner != "Not Available") %>% 
+  filter(state %in% c("NY", "CA", "TX", "NC")) %>% 
+  ggplot(aes(x = state, fill = general_owner)) +
+  geom_bar(position = "fill") +
+  scale_fill_brewer(palette = "Set2") +
+  theme_light() +
+  labs(x = "State", y = "Proportion", fill = "Owner type",
+       title = "Proportion of Hospital Owner Types Differ Largely by State")
+```
+
+## Changes in Healthcare Policy and Access
+
+***
 The previously mentioned policy changes are marked by the consistent goal to improve the health and well-being for all Americans. A particularly vulnerable population within the healthcare arena is low-income individuals, as shown in how many of these policies directly target this demographic. Therefore, it is important to look at how changes in Medicaid policy, as well as other healthcare reform legislation, have influenced coverage on the state-level. The following visualization depicts the relationship between Medicaid spending and enrollee population from 1991 to 2014. 
 
-```{r medicaid-changes, cache = TRUE}
-medicaid <- read_csv("data/Total Medicaid.csv")
-
+```{r medicaid-changes, cache=TRUE}
 medicaid <- medicaid %>%
   rename(
     spending = `Spending (in Millions of Dollars)`,

@@ -1,4 +1,13 @@
 base
+<<<<<<< HEAD
+=======
+methods
+datasets
+utils
+grDevices
+graphics
+stats
+>>>>>>> origin/master
 tidyverse
 ggplot2
 tibble
@@ -10,5 +19,12 @@ stringr
 forcats
 gifski
 gganimate
+<<<<<<< HEAD
 ggmap
+=======
+maps
+usmap
+viridisLite
+viridis
+>>>>>>> origin/master
 patchwork
