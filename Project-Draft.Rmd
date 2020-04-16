@@ -77,7 +77,8 @@ hospital_cnt <- left_join(hospital_cnt, states_pop, by = c("state" = "states_abb
 
 hospital_cnt <- hospital_cnt %>% 
   mutate(hospital_ratio = states_pop / total_hospitals,
-         hospital_percap = total_hospitals / states_pop)
+         hospital_percap = total_hospitals / states_pop,
+         bed_percap = total_beds / states_pop)
 
 plot_usmap(data = hospital_cnt, values = 'total_hospitals') + 
   scale_fill_continuous(low = "white", high = "brown",
@@ -90,6 +91,10 @@ plot_usmap(data = hospital_cnt, values = 'hospital_ratio') +
 plot_usmap(data = hospital_cnt, values = 'hospital_percap') + 
   scale_fill_continuous(low = "white", high = "brown",
                         name = "# Hospital Per Capita", label = scales::comma) + theme(legend.position = "right")
+
+plot_usmap(data = hospital_cnt, values = 'bed_percap') + 
+  scale_fill_continuous(low = "white", high = "brown",
+                        name = "# Beds Per Capita", label = scales::comma) + theme(legend.position = "right")
 ```
 
 ```{r hospital-owner}
