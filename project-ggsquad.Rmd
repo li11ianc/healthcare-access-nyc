@@ -21,6 +21,8 @@ library(maps)
 library(usmap)
 library(viridis)
 library(patchwork)
+library(ggiraph)
+library(sf)
 ```
 
 ```{r load-data}
@@ -66,12 +68,26 @@ plot_usmap(data = hospital_cnt, values = 'hospital_ratio') +
                         name = "Avg. # people served \nper hospital", label = scales::comma) + theme(legend.position = "right")
 ```
 
-```{r hospital-test}
-library(maps)
-library(sf)
+```{r hospital-map-test}
+# try to make the map interactive
+us_map <- st_read("map_data/tl_2017_us_state.shp", stringsAsFactors = FALSE)
+datamap <- left_join(hospital_cnt, us_map, by = c("state" = "STUSPS"))
+class(datamap)
+class(us_map)
 
-us_map <- st_read("data/tl_201_us_state.shp", stringsAsFactors = FALSE)
+glimpse(datamap)
 
+gg_hover <- ggplot(datamap, mapping = aes(fill = hospital_percap, geometry = geometry)) +
+  geom_sf_interactive(aes(data_id = states, tooltip = states), color = "white") +
+  theme(rect = element_blank(), 
+        axis.ticks = element_blank(),
+        axis.text.x = element_blank(), 
+        axis.text.y = element_blank()) +
+  scale_fill_gradient(low = "#fef0d9", high = "#b30000")
+
+hospital_map <- girafe(code = {print(gg_hover)}, height_svg = 6, width_svg = 9)
+
+girafe_options(hospital_map, opts_hover(css = "stroke:black;r:5pt;"))
 ```
 
 
