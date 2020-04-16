@@ -1,6 +1,6 @@
 hospitals <- read.csv("data/hospitals.csv")
 pharmacies <- read.csv("data/pharmacies.csv")
-nursing <- read.csv("data/nursing.csv")
+nursing <- read.csv("data/nursing_homes.csv")
 urgent_care <- read.csv("data/urgent_care.csv")
 medicare <- read.csv("data/medicare.csv")
 
