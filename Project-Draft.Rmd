@@ -37,8 +37,38 @@ The following questions guided our research in investigating nationwide healthca
 4.	How have health policy changes influenced accessibility? 
 
 ## Changes in Healthcare Policy and Access
+***
 
-```{r medicaid-changes}
+### Background
+
+The United States Department of Health and Human Services (HHS) was established in 1953 with the goal to “enhance and protect the health and well-being of all Americans.”  The HHS works alongside lawmakers to pass legislation to support this goal and improve patient outcomes. Over the course of its history it has supported eight pieces of legislation that have impacted the lives of the American people.
+
+The Social Security Amendments of 1965 created Medicaid, a program that assists with medical costs for low-income individuals. As of 2017, Medicaid was the largest source for medical and health-related services, providing free insurance to 74 million low-income and disabled persons. This makes up 23% of all Americans. Although Medicaid is federally and state funded, it is up to each state’s discretion to determine who is eligible and the on-the-ground implementation of the program.
+
+Medicare is a national health insurance program that began in 1966 under the Johnson administration. Medicare primarily provides health insurance to persons above the age of 65, as well as younger constituents with a disability status as determined by the Social Security Administration. Although Medicare does not cover all of the expenses associated with healthcare, it has been shown to cover approximately half of the expenses for those enrolled in the program. 
+
+The Health Care Quality Improvement Act (HCQIA) was enacted in 1986 as a response to the relative relaxation on physician peer review participation because of the threat of litigation. Congress found it necessary to enact this law to: <br>
+•	Reduce the occurrence of medical malpractice <br>
+•	Prevent incompetent physicians from moving from state to state without full disclosure <br>
+•	Incentivize physicians to engage in professional peer review. <br>
+
+The Health Insurance Portability and Accountability Act of 1996 (HIPAA) is a federal law that mandated the creation of national standards to protect sensitive patient health information from being disclosed without their consent. Moreover, HIPAA prevents insurers from discriminating against applicates based on health conditions or prior histories.
+
+In 1997, the Children’s Health Insurance Program (CHIP) was established to deliver health coverage to low-income children. CHIP was implemented to expand coverage to children whose incomes are low, yet not low enough to qualify for Medicaid. Similar to Medicaid, CHIP is a federal-state partnership, but allocation and administration is determined by individual states.
+
+In 2005, the Patient Safety and Quality Improvement Act (PSQIA) established a voluntary reporting system in an effort to improve the assessible data and resolve patient safety and healthcare quality issues. Similar to HCQIA, PSQIA encourages the reporting and analysis of medical errors by providing federal confidentiality protections for patient safety information. 
+
+The Affordable Care Act (ACA) was sanctioned by President Obama in March 2010. ACA increased the number of insured Americans by providing consumers with premium tax credits that lower the costs for households living between 100% and 400% of the federal poverty level. Additionally, it expanded Medicaid to cover all adults with income below 138% of the federal poverty level, although not all states have expanded their programs. ACA requires most citizens to apply for health insurance coverage, but also established that firms with more than 200 employees must provide health insurance.
+
+Finally, The Affordable Care Act established the Hospital Readmissions Reduction Program (HRRP) in 2012. HRRP is a Medicare value-based purchasing program that lowers payments to hospitals with excess readmissions. The goal of this program is to improve patient outcomes and link funding to the quality of hospital care, the idea being that high quality care will reduce the necessity for readmission. 
+
+These landmark healthcare reform laws have improved patient experience and expanded access to many citizens who were previously excluded from coverage. However, the federal-state partnerships give many states leeway in terms of how they determine who is eligible for these government assistance programs. Although many more people have insurance than before, it can still be seen that there is a long way to go before access is not only affordable, but also equitable. 
+
+***
+
+The previously mentioned policy changes are marked by the consistent goal to improve the health and well-being for all Americans. A particularly vulnerable population within the healthcare arena is low-income individuals, as shown in how many of these policies directly target this demographic. Therefore, it is important to look at how changes in Medicaid policy, as well as other healthcare reform legislation, have influenced coverage on the state-level. The following visualization depicts the relationship between Medicaid spending and enrollee population from 1991 to 2014. 
+
+```{r medicaid-changes, cache = TRUE}
 medicaid <- read_csv("data/Total Medicaid.csv")
 
 medicaid <- medicaid %>%
@@ -87,30 +117,4 @@ enrollment <- ggplot() +
 
 spending / enrollment
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
