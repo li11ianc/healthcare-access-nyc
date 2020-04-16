@@ -14,6 +14,8 @@ knitr::opts_chunk$set(echo = FALSE, warning=FALSE, message=FALSE)
 library(tidyverse)
 library(gifski)
 library(gganimate)
+library(ggmap)
+library(patchwork)
 ```
 
 
@@ -54,10 +56,61 @@ ggplot(data = medicaid, mapping = aes(x = spending, y = enrollment, colour = Sta
   scale_y_log10() +
   facet_wrap(~Region, ncol = 4) +
   theme_light(base_size = 11) +
-  labs(title = 'Year: {frame_time}', x = 'Spending (in Millions of Dollars)', y = 'Medicaid Enrollee Population (Thousands)') +
+  labs(title = "Changes in Medicaid Spending and Enrollment",
+    subtitle = 'Year: {frame_time}', x = 'Medicaid Spending', y = 'Medicaid Enrollee Population') +
   transition_time(Year) +
   ease_aes('linear')
 ```
+
+```{r nyc-changes, fig.align = "center"}
+total <- read_csv("data/TM with USA.csv")
+
+ny <- medicaid %>%
+  filter(State == "New York")
+
+usa <- total %>%
+  filter(State == "United States")
+
+spending <- ggplot() +
+  geom_line(data = ny, mapping = aes(x = Year, y = spending), color = "blue") +
+  labs(title = "Changes in Medicaid Spending",
+       subtitle = "for the state of New York from 1991 to 2014",
+       x = "Year", y = "Spending (in Millions of Dollars)") +
+  theme_light()
+
+enrollment <- ggplot() +
+  geom_line(data = ny, mapping = aes(x = Year, y = enrollment), color = "blue") +
+  labs(title = "Changes in Medicaid Enrollee Population",
+       subtitle = "for the state of New York from 1991 to 2014",
+       x = "Year", y = "Enrollment (in Thousands)") +
+  theme_light()
+
+spending / enrollment
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
