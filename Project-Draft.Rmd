@@ -122,13 +122,15 @@ ggplotly(hospital_owner_viz)
 
 The number of hospitals is only a piece of the puzzle in understanding healthcare access. Hospital owner type also influences a patient's ability to receive care. While the federal government requires all hospitals to administer free stabilizing care to all patients who seek help, only non-profit hospitals are obligated to threat all conditions regardless of the patients' financial or health insurance status. They also generally charges a lower rate than for-profit hospitals. Government hospital are even less likely than non-profit hospitals to offer relatively unprofitable services.
 
-The bar graph above shows that the breakdown of hospitla owner type varies dramatically across states. New York has almost exclusively non-profit and government hospitals, the highest proportion in the country, while Texas has less than half, the lowest proportion in the country. California and North Carolina fall in the middle, which serve as references to these two states. Because of the high proportion of non-profit and government hospitals, the healthcare system in New York is relatively more accessible especially to at-risk population during this pandemic.  
+The bar graph above shows that the breakdown of hospital owner type varies dramatically across states. New York has almost exclusively non-profit and government hospitals, the highest proportion in the country, while Texas has less than half, the lowest proportion in the country. California and North Carolina fall in the middle, which serve as references to these two states. Because of the high proportion of non-profit and government hospitals, the healthcare system in New York is relatively more accessible especially to at-risk populations during this pandemic.  
 
 (INSERT SHINYAPP LINK HERE)
 In the interest of consolidating information on healthcare facilities across the country, the above is link to a ShinyApp Healthcare Facilities Finder that allows you to obtain information on all available facilities that fit certain criteria.
 
 ## Disparities in the New York Metropolitan Area
 ***
+
+Although a high proportion of non-profit and government hospitals makes the New York healthcare system more equipped to address the needs of at-risk populations during this crisis, hospitals in the New York City metropolitan area have also been some of the hardest hit. New York City is the epicenter of coronavirus cases in the US and has seen 12,199 of New York State's 14,636 COVID-19 deaths, roughly a third of all the US coronavirus deaths as of April 17. The New York Metropolitan area is facing unprecedented healthcare challenges and provides an excellent stage to examine disparities in health care access.
 
 ```{r}
 ggplot() +
@@ -217,6 +219,7 @@ timeliness_plot <- medicare_ratings_map2 %>%
 medicare_locations_plot / effectiveness_plot / timeliness_plot
 ```
 
+Despite the availability of Medicare providers in the New York City Metro Area, effectiveness of care for many providers closer to the city itself is lacking. Timeliness of medicare providers throughout the metro area lags behind the national average, and as it becomes clear in a viral pandemic, access to timely health care is necessary to ensure the well-being of at-risk Americans.
 
 ## Changes in Healthcare Policy and Access
 ***
