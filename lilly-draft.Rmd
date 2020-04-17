@@ -1,0 +1,102 @@
+---
+title: "lilly-draft"
+author: "Lillian Clark"
+date: "4/16/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r packages}
+library(tidyverse)
+library(gifski)
+library(gganimate)
+library(maps)
+library(usmap)
+library(viridis)
+library(patchwork)
+```
+
+```{r load-data}
+facilities <- read.csv("data/all_health_facilities.csv")
+insurance <- read.csv("data/insurance.csv")
+inpatients <- read.csv("data/medicare_inpatients.csv")
+medicaid <- read_csv("data/Total Medicaid.csv")
+states_pop <- read.csv("data/states_pop.csv")
+medicare <- read_csv("data/medicare.csv")
+us_cities <- read_csv("data/uscities.csv")
+```
+
+```{r}
+label_ny_metro <- function(df) {
+  df <- df %>%
+  mutate(ny_metro = case_when(
+    county == "Bergen" & state == "NJ" ~ "Y",
+    county == "Dutchess" & state == "NY" ~ "Y",
+    county == "Essex" & state == "NJ" ~ "Y",
+    county == "Fairfield" & state == "CT" ~ "Y",
+    county == "Hudson" & state == "NJ" ~ "Y",
+    county == "Hunterdon" & state == "NJ" ~ "Y",
+    county == "Litchfield" & state == "CT" ~ "Y",
+    county == "Mercer" & state == "NJ" ~ "Y",
+    county == "Middlesx" & state == "NJ" ~ "Y",
+    county == "Monmouth" & state == "NJ" ~ "Y",
+    county == "Morris" & state == "NJ" ~ "Y",
+    county == "Nassau" & state == "NY" ~ "Y",
+    county == "New Haven" & state == "CT" ~ "Y",
+    county == "Ocean" & state == "NJ" ~ "Y",
+    county == "Orange" & state == "NY" ~ "Y",
+    county == "Passaic" & state == "NJ" ~ "Y",
+    county == "Pike" & state == "PA" ~ "Y",
+    county == "Putnam" & state == "NY" ~ "Y",
+    county == "Rockland" & state == "NY" ~ "Y",
+    county == "Somerset" & state == "NJ" ~ "Y",
+    county == "Suffolk" & state == "NY" ~ "Y",
+    county == "Sussex" & state == "NJ" ~ "Y",
+    county == "Ulster" & state == "NY" ~ "Y",
+    county == "Union" & state == "NJ" ~ "Y",
+    county == "Westchester" & state == "NY" ~ "Y",
+    city == "New York" ~ "Y",
+    TRUE ~ "N"
+  ))
+  return (df)
+}
+```
+
+```{r}
+facilities <- label_ny_metro(facilities)
+medicare <- label_ny_metro(medicare)
+```
+
+```{r}
+us_cities <- us_cities %>%
+  rename(state = state_id, county = county_name)
+
+us_cities <- label_ny_metro(us_cities)
+```
+
+```{r}
+inpatients <- full_join(inpatients, us_cities, by = c("city", "state"))
+```
+
+```{r}
+facilities_ny <- facilities %>%
+  filter(ny_metro == "Y")
+
+medicare_ny <- medicare %>%
+  filter(ny_metro == "Y")
+
+inpatients_ny <- inpatients %>%
+  filter(ny_metro == "Y")
+```
+
+```{r}
+
+```
+
+
+### References
+
+https://simplemaps.com/data/us-cities
