@@ -18,6 +18,7 @@ library(maps)
 library(usmap)
 library(viridis)
 library(patchwork)
+library(sf)
 ```
 
 ```{r load-data}
@@ -26,6 +27,10 @@ insurance <- read.csv("data/insurance.csv")
 inpatients <- read.csv("data/medicare_inpatients.csv")
 medicaid <- read_csv("data/Total Medicaid.csv")
 states_pop <- read.csv("data/states_pop.csv")
+facilities_ny <- read.csv("data/ny_specific/all_health_facilities_ny.csv")
+inpatients_ny <- read.csv("data/ny_specific/medicare_inpatients_ny.csv")
+medicare_ny <- read_csv("data/ny_specific/medicare_ny.csv")
+ny_metro_map <- st_read("nyc_maps/ny_metro_map/ny_metro_map.shp", stringsAsFactors = FALSE)
 ```
 
 ## Introduction
@@ -113,6 +118,97 @@ The bar graph above shows that the breakdown of hospitla owner type varies drama
 (INSERT SHINYAPP LINK HERE)
 In the interest of consolidating information on healthcare facilities across the country, the above is link to a ShinyApp Healthcare Facilities Finder that allows you to obtain information on all available facilities that fit certain criteria.
 
+## Disparities in Healthcare Access in New York City Metropolitan Area
+***
+
+```{r}
+ggplot() +
+  geom_sf(ny_metro_map, mapping = aes(geometry = geometry)) +
+  geom_point(data = subset(facilities_ny, overall_type == "hospital"), 
+             mapping = aes(x = long, y = lat, alpha = .3, color = "red")) +
+  scale_color_manual(values = "red") +
+  theme(legend.position = "none") +
+  labs(title = "Location of Hospitals in New York City Metro Area")
+```
+
+```{r}
+cols <- c("Below the national average" = "red", "Above the national average" = "#0A97F0", "Same as the national average" = "black")
+```
+
+```{r}
+medicare_locations_plot <- medicare_ny %>%
+  ggplot() +
+  geom_sf(data = ny_metro_map, aes(geometry = geometry),
+                   color="#9EA5A9", fill = "#CED5DA") +
+  geom_point(aes(x = long, y = lat, color = "red"), alpha = .6) +
+  scale_color_manual(values = "red", guide = FALSE) +
+  coord_sf() +
+  theme_void() +
+  theme(plot.caption = element_text(hjust = .5)) +
+  labs(title = "Locations of Medicare Providers")
+```
+
+```{r}
+medicare_ratings_map1 <- medicare_ny %>%
+    filter(!is.na(effectiveness_of_care_national_comparison))
+
+effectiveness_plot <- medicare_ratings_map1 %>%
+  ggplot() +
+  geom_sf(data = ny_metro_map, aes(geometry = geometry),
+                   color="#9EA5A9", fill = "#CED5DA") +
+  geom_point(data = subset(medicare_ratings_map1, 
+                           effectiveness_of_care_national_comparison == "Same as the national average"),
+             aes(x = long, y = lat, color = effectiveness_of_care_national_comparison), 
+             alpha = .4) +
+  geom_point(data = subset(medicare_ratings_map1, 
+                           effectiveness_of_care_national_comparison == "Above the national average"),
+             aes(x = long, y = lat, color = effectiveness_of_care_national_comparison), 
+             alpha = .4) +
+  geom_point(data = subset(medicare_ratings_map1, 
+                           effectiveness_of_care_national_comparison == "Below the national average"),
+             aes(x = long, y = lat, color = effectiveness_of_care_national_comparison), 
+             alpha = .4) +
+  scale_color_manual(values = cols) +
+  coord_sf() +
+  theme_void() +
+  theme(plot.caption = element_text(hjust = .5)) +
+  labs(title = "Effectiveness of Care for Medicare Providers",
+       color = "Effectiveness of care")
+```
+
+```{r}
+medicare_ratings_map2 <- medicare_ny %>%
+    filter(!is.na(timeliness_of_care_national_comparison))
+
+timeliness_plot <- medicare_ratings_map2 %>%
+  ggplot() +
+  geom_sf(data = ny_metro_map, aes(geometry = geometry),
+                   color="#9EA5A9", fill = "#CED5DA") +
+  geom_point(data = subset(medicare_ratings_map2, 
+                           timeliness_of_care_national_comparison == "Same as the national average"),
+             aes(x = long, y = lat, color = timeliness_of_care_national_comparison), 
+             alpha = .4) +
+  geom_point(data = subset(medicare_ratings_map2, 
+                           timeliness_of_care_national_comparison == "Above the national average"),
+             aes(x = long, y = lat, color = timeliness_of_care_national_comparison), 
+             alpha = .4) +
+  geom_point(data = subset(medicare_ratings_map2, 
+                           timeliness_of_care_national_comparison == "Below the national average"),
+             aes(x = long, y = lat, color = timeliness_of_care_national_comparison), 
+             alpha = .4) +
+  scale_color_manual(values = cols) +
+  coord_sf() +
+  theme_void() +
+  theme(plot.caption = element_text(hjust = .5)) +
+  labs(title = "Timeliness of Care for Medicare Providers",
+       color = "Timeliness of care")
+```
+
+```{r fig.width = 8, fig.height = 12}
+medicare_locations_plot / effectiveness_plot / timeliness_plot
+```
+
+
 ## Changes in Healthcare Policy and Access
 ***
 The previously mentioned policy changes are marked by the consistent goal to improve the health and well-being for all Americans. A particularly vulnerable population within the healthcare arena is low-income individuals, as shown in how many of these policies directly target this demographic. Therefore, it is important to look at how changes in Medicaid policy, as well as other healthcare reform legislation, have influenced coverage on the state-level. The following visualization depicts the relationship between Medicaid spending and enrollee population from 1991 to 2014. 
@@ -171,4 +267,5 @@ https://www.who.int/news-room/q-a-detail/q-a-coronaviruses#:~:text=protect
 https://www.worldometers.info/coronavirus/country/us/
 https://www.healthcare-management-degree.net/faq/are-non-profit-or-for-profit-hospitals-better/
 https://www.healthaffairs.org/doi/full/10.1377/hlthaff.24.3.790
+https://simplemaps.com/data/us-cities
 
