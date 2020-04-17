@@ -34,24 +34,25 @@ The beginning of this new decade has been marked by significant uncertainty and 
 
 After Donald Trump declared a national emergency, life as we knew it in America was largely disrupted: schools, colleges and universities closed, restaurants and bars prohibit dining in, and companies have shifted to remote work.  Stay-at-home and shelter-in-place orders have been in place across the nation, but individual responses per state have been largely variable. Responses by state are primarily dependent upon their healthcare system’s capacity. Testing has not been universally accessible and the number of necessary equipment (i.e., ventilators) is not up to standard, across the board.  
 
-Coronavirus has been shown to impact marginalized communities at a more intense rate, but nobody is immune to the virus. Nationwide, access to specialized medical care is highly dependent upon one’s socioeconomic and employment status. Thus, we wanted to take a deeper look into these access disparities in the age of a global pandemic. Changes to healthcare policy, such as the Affordable Care Act of 2010 (ACA), have made inexpensive healthcare available to more constituents.  However, there is still a long way to go, and the virus has brought many of these inequalities to light.
+Coronavirus has been shown to impact marginalized communities at a more intense rate, but nobody is immune to the virus. Nationwide, access to specialized medical care is highly dependent upon one’s socioeconomic and employment status. Thus, we wanted to take a deeper look into these access disparities in the age of a global pandemic. Changes to healthcare policy, such as the Affordable Care Act of 2010 (ACA), have made inexpensive healthcare available to more constituents. However, there is still a long way to go, and the virus has brought many of these inequalities to light.
 
 The following questions guided our research in investigating nationwide healthcare inequity: 
 
 <br>
-1.	Are there disparities in healthcare access across the United States?
+**1.	Are there disparities in healthcare access across the United States?**
 
 <br>
-2.	As New York was one of the first hot spots for the virus, what inequalities to access exist within the state?
+**2.	As New York was one of the first hot spots for the virus, what inequalities to access exist within the state?**
 
 <br>
-3.	How do these differences in access relate to differences in patient experience?
+**3.	How do these differences in access relate to differences in patient experience?**
 
 <br>
-4.	How have health policy changes influenced accessibility? 
+**4.	How have health policy changes influenced accessibility?**
 
 ## Disparities in Healthcare Access
 ***
+From testing, contact tracing to treatment, access to hospitals is critically important in the context of a pandemic such as the coronavirus. According to the World Health Organization, patients with mild symptoms of COVID-19 should self-isolate and take measures such as resting, drinking sufficient fluid and eating nutritious food. However, for those with severe symptoms including fever, cough and difficulty breathing, patients should seek medical care at a hospital immediately. As the demand for care rises dramatically with the spread of the virus, it is more important now than ever to understand the capacity of the healthcare system across different states in the US.
 
 ```{r us-hospitals}
 facilities <- left_join(facilities, states_pop, by = c("state" = "states_abb"))
@@ -80,22 +81,17 @@ hospital_cnt <- hospital_cnt %>%
          hospital_percap = total_hospitals / states_pop,
          bed_percap = total_beds / states_pop)
 
-plot_usmap(data = hospital_cnt, values = 'total_hospitals') + 
-  scale_fill_continuous(low = "white", high = "brown",
-                        name = "# Hospitals", label = scales::comma) + theme(legend.position = "right")
-
-plot_usmap(data = hospital_cnt, values = 'hospital_ratio') + 
-  scale_fill_continuous(low = "white", high = "brown",
-                        name = "Avg. # people served \nper hospital", label = scales::comma) + theme(legend.position = "right")
-
 plot_usmap(data = hospital_cnt, values = 'hospital_percap') + 
   scale_fill_continuous(low = "white", high = "brown",
-                        name = "# Hospital Per Capita", label = scales::comma) + theme(legend.position = "right")
+                        name = "# Hospital Per Capita", label = scales::comma) + theme(legend.position = "right") +
+  labs(title = "Population-Dense Area Along the Coasts Are Low in Hospital Per Capita")
 
-plot_usmap(data = hospital_cnt, values = 'bed_percap') + 
-  scale_fill_continuous(low = "white", high = "brown",
-                        name = "# Beds Per Capita", label = scales::comma) + theme(legend.position = "right")
+#plot_usmap(data = hospital_cnt, values = 'bed_percap') + 
+#  scale_fill_continuous(low = "white", high = "brown",
+#                        name = "# Beds Per Capita", label = scales::comma) + theme(legend.position = "right")
 ```
+
+As illustrated in the map above, the number of hospital per capita is highest in the West North Central region of the Midwest and the Mountain region of the West. This is unfortunate for the current situation because these are areas in the US with relatively low population density and less urgen concern of the coronavirus. On the other hand, densely populated areas along both coasts surrounding major cities have comparatively low hospital per capita. For example, Washington, California and New York have light colors on the map which indicate a low hospital to population ratio. New York in particular has become a hotspot with leading counts of coronavirus cases, surpassing that of China combined. This visualization reveals that hospital over-capacity and lack of supplies is not surprising given the relative number of hospitals adjusted by population is low in a state where risk of contact is high. 
 
 ```{r hospital-owner}
 # proportion of owner type by state bar graph
@@ -110,8 +106,16 @@ hospitals %>%
        title = "Proportion of Hospital Owner Types Differ Largely by State")
 ```
 
+The number of hospitals is only a piece of the puzzle in understanding healthcare access. Hospital owner type also influences a patient's ability to receive care. While the federal government requires all hospitals to administer free stabilizing care to all patients who seek help, only non-profit hospitals are obligated to threat all conditions regardless of the patients' financial or health insurance status. They also generally charges a lower rate than for-profit hospitals. Government hospital are even less likely than non-profit hospitals to offer relatively unprofitable services.
+
+The bar graph above shows that the breakdown of hospitla owner type varies dramatically across states. New York has almost exclusively non-profit and government hospitals, the highest proportion in the country, while Texas has less than half, the lowest proportion in the country. California and North Carolina fall in the middle, which serve as references to these two states. Because of the high proportion of non-profit and government hospitals, the healthcare system in New York is relatively more accessible especially to at-risk population during this pandemic.  
+
+(INSERT SHINYAPP LINK HERE)
+In the interest of consolidating information on healthcare facilities across the country, the above is link to a ShinyApp Healthcare Facilities Finder that allows you to obtain information on all available facilities that fit certain criteria.
+
 ## Changes in Healthcare Policy and Access
 ***
+The previously mentioned policy changes are marked by the consistent goal to improve the health and well-being for all Americans. A particularly vulnerable population within the healthcare arena is low-income individuals, as shown in how many of these policies directly target this demographic. Therefore, it is important to look at how changes in Medicaid policy, as well as other healthcare reform legislation, have influenced coverage on the state-level. The following visualization depicts the relationship between Medicaid spending and enrollee population from 1991 to 2014. 
 
 ```{r medicaid-changes, cache=TRUE}
 medicaid <- medicaid %>%
@@ -136,5 +140,35 @@ ggplot(data = medicaid, mapping = aes(x = spending, y = enrollment, colour = Sta
 
 ```
 
+```{r nyc-changes, fig.align = "center"}
+total <- read_csv("data/TM with USA.csv")
 
+ny <- medicaid %>%
+  filter(State == "New York")
+
+usa <- total %>%
+  filter(State == "United States")
+
+spending <- ggplot() +
+  geom_line(data = ny, mapping = aes(x = Year, y = spending), color = "blue") +
+  labs(title = "Changes in Medicaid Spending",
+       subtitle = "for the state of New York from 1991 to 2014",
+       x = "Year", y = "Spending (in Millions of Dollars)") +
+  theme_light()
+
+enrollment <- ggplot() +
+  geom_line(data = ny, mapping = aes(x = Year, y = enrollment), color = "blue") +
+  labs(title = "Changes in Medicaid Enrollee Population",
+       subtitle = "for the state of New York from 1991 to 2014",
+       x = "Year", y = "Enrollment (in Thousands)") +
+  theme_light()
+
+spending / enrollment
+```
+
+## References
+https://www.who.int/news-room/q-a-detail/q-a-coronaviruses#:~:text=protect
+https://www.worldometers.info/coronavirus/country/us/
+https://www.healthcare-management-degree.net/faq/are-non-profit-or-for-profit-hospitals-better/
+https://www.healthaffairs.org/doi/full/10.1377/hlthaff.24.3.790
 
