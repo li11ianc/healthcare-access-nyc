@@ -19,9 +19,10 @@ library(usmap)
 library(viridis)
 library(patchwork)
 library(sf)
+library(plotly)
 ```
 
-```{r load-data}
+```{r load-data, echo=FALSE}
 facilities <- read.csv("data/all_health_facilities.csv")
 insurance <- read.csv("data/insurance.csv")
 inpatients <- read.csv("data/medicare_inpatients.csv")
@@ -47,7 +48,7 @@ The following questions guided our research in investigating nationwide healthca
 **1.	Are there disparities in healthcare access across the United States?**
 
 <br>
-**2.	As New York was one of the first hot spots for the virus, what inequalities to access exist within the state?**
+**2.	As New York was one of the first hot spots for the virus, what inequalities to access exist within the New York Metropolitan Area?**
 
 <br>
 **3.	How do these differences in access relate to differences in patient experience?**
@@ -59,7 +60,7 @@ The following questions guided our research in investigating nationwide healthca
 ***
 From testing, contact tracing to treatment, access to hospitals is critically important in the context of a pandemic such as the coronavirus. According to the World Health Organization, patients with mild symptoms of COVID-19 should self-isolate and take measures such as resting, drinking sufficient fluid and eating nutritious food. However, for those with severe symptoms including fever, cough and difficulty breathing, patients should seek medical care at a hospital immediately. As the demand for care rises dramatically with the spread of the virus, it is more important now than ever to understand the capacity of the healthcare system across different states in the US.
 
-```{r us-hospitals}
+```{r us-hospitals, fig.align = "center"}
 facilities <- left_join(facilities, states_pop, by = c("state" = "states_abb"))
 
 # filter for hospitals in the contiguous US
@@ -96,20 +97,28 @@ plot_usmap(data = hospital_cnt, values = 'hospital_percap') +
 #                        name = "# Beds Per Capita", label = scales::comma) + theme(legend.position = "right")
 ```
 
-As illustrated in the map above, the number of hospital per capita is highest in the West North Central region of the Midwest and the Mountain region of the West. This is unfortunate for the current situation because these are areas in the US with relatively low population density and less urgen concern of the coronavirus. On the other hand, densely populated areas along both coasts surrounding major cities have comparatively low hospital per capita. For example, Washington, California and New York have light colors on the map which indicate a low hospital to population ratio. New York in particular has become a hotspot with leading counts of coronavirus cases, surpassing that of China combined. This visualization reveals that hospital over-capacity and lack of supplies is not surprising given the relative number of hospitals adjusted by population is low in a state where risk of contact is high. 
+As illustrated in the map above, the number of hospital per capita is highest in the West North Central region of the Midwest and the Mountain region of the West. This is unfortunate for the current situation because these are areas in the US with relatively low population density and less urgen concern of the coronavirus. On the other hand, densely populated areas along both coasts surrounding major cities have comparatively low hospital per capita. For example, Washington, California and New York have light colors on the map which indicate a low hospital to population ratio. New York in particular has become a hot spot with leading counts of coronavirus cases, surpassing that of China combined. This visualization reveals that hospital over-capacity and lack of supplies is not surprising given the relative number of hospitals adjusted by population is low in a state where risk of contact is high. 
 
-```{r hospital-owner}
+```{r hospital-owner, fig.align = "center"}
 # proportion of owner type by state bar graph
-hospitals %>% 
+hospital_owner <- hospitals %>% 
   filter(general_owner != "Not Available") %>% 
   filter(state %in% c("NY", "CA", "TX", "NC")) %>% 
-  ggplot(aes(x = state, fill = general_owner)) +
-  geom_bar(position = "fill") +
-  scale_fill_brewer(palette = "Set2") +
+  group_by(state, general_owner) %>% 
+  summarise(n = n()) %>%
+  mutate(Proportion = n / sum(n)) %>% 
+  rename(Type = general_owner, State = state)
+
+hospital_owner_viz <- hospital_owner %>% 
+  ggplot(aes(x = State, y = Proportion, fill = Type)) +
+  geom_bar(position="stack", stat="identity") +
+  scale_fill_manual(values = c("grey47", "goldenrod1", "darkorange3")) +
   theme_light() +
-  labs(x = "State", y = "Proportion", fill = "Owner type",
-       title = "Proportion of Hospital Owner Types Differ Largely by State")
+  labs(fill = "Owner type",
+       title = "Proportion of Hospital Types Differ Largely by State")
+ggplotly(hospital_owner_viz)
 ```
+
 
 The number of hospitals is only a piece of the puzzle in understanding healthcare access. Hospital owner type also influences a patient's ability to receive care. While the federal government requires all hospitals to administer free stabilizing care to all patients who seek help, only non-profit hospitals are obligated to threat all conditions regardless of the patients' financial or health insurance status. They also generally charges a lower rate than for-profit hospitals. Government hospital are even less likely than non-profit hospitals to offer relatively unprofitable services.
 
@@ -118,7 +127,7 @@ The bar graph above shows that the breakdown of hospitla owner type varies drama
 (INSERT SHINYAPP LINK HERE)
 In the interest of consolidating information on healthcare facilities across the country, the above is link to a ShinyApp Healthcare Facilities Finder that allows you to obtain information on all available facilities that fit certain criteria.
 
-## Disparities in Healthcare Access in New York City Metropolitan Area
+## Disparities in the New York Metropolitan Area
 ***
 
 ```{r}
@@ -263,7 +272,7 @@ spending / enrollment
 ```
 
 ## References
-https://www.who.int/news-room/q-a-detail/q-a-coronaviruses#:~:text=protect
+https://www.who.int/news-room/q-a-detail/q-a-coronaviruses#
 https://www.worldometers.info/coronavirus/country/us/
 https://www.healthcare-management-degree.net/faq/are-non-profit-or-for-profit-hospitals-better/
 https://www.healthaffairs.org/doi/full/10.1377/hlthaff.24.3.790
