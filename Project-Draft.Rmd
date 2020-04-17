@@ -112,6 +112,7 @@ hospitals %>%
 
 ## Changes in Healthcare Policy and Access
 ***
+The previously mentioned policy changes are marked by the consistent goal to improve the health and well-being for all Americans. A particularly vulnerable population within the healthcare arena is low-income individuals, as shown in how many of these policies directly target this demographic. Therefore, it is important to look at how changes in Medicaid policy, as well as other healthcare reform legislation, have influenced coverage on the state-level. The following visualization depicts the relationship between Medicaid spending and enrollee population from 1991 to 2014. 
 
 ```{r medicaid-changes, cache=TRUE}
 medicaid <- medicaid %>%
@@ -136,5 +137,29 @@ ggplot(data = medicaid, mapping = aes(x = spending, y = enrollment, colour = Sta
 
 ```
 
+```{r nyc-changes, fig.align = "center"}
+total <- read_csv("data/TM with USA.csv")
 
+ny <- medicaid %>%
+  filter(State == "New York")
+
+usa <- total %>%
+  filter(State == "United States")
+
+spending <- ggplot() +
+  geom_line(data = ny, mapping = aes(x = Year, y = spending), color = "blue") +
+  labs(title = "Changes in Medicaid Spending",
+       subtitle = "for the state of New York from 1991 to 2014",
+       x = "Year", y = "Spending (in Millions of Dollars)") +
+  theme_light()
+
+enrollment <- ggplot() +
+  geom_line(data = ny, mapping = aes(x = Year, y = enrollment), color = "blue") +
+  labs(title = "Changes in Medicaid Enrollee Population",
+       subtitle = "for the state of New York from 1991 to 2014",
+       x = "Year", y = "Enrollment (in Thousands)") +
+  theme_light()
+
+spending / enrollment
+```
 
