@@ -53,6 +53,9 @@ us_cities <- label_ny_metro(us_cities)
 
 inpatients <- full_join(inpatients, us_cities, by = c("city", "state"))
 
+inpatients <- inpatients[,c(2:13, 17, 31)] %>%
+  rename(county = county.x, ny_metro = ny_metro.x)
+
 facilities_ny <- facilities %>%
   filter(ny_metro == "Y")
 
