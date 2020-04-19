@@ -7,3 +7,4 @@ medicare <- read.csv("data/medicare.csv")
 
 all_health_facilities <- bind_rows(hospitals, pharmacies, nursing, urgent_care)
 write.csv(all_health_facilities, "data/all_health_facilities.csv")
+write.csv(all_health_facilities, "facilities_finder/data/all_health_facilities.csv")

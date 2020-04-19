@@ -124,7 +124,7 @@ The number of hospitals is only a piece of the puzzle in understanding healthcar
 
 The bar graph above shows that the breakdown of hospital owner type varies dramatically across states. New York has almost exclusively non-profit and government hospitals, the highest proportion in the country, while Texas has less than half, the lowest proportion in the country. California and North Carolina fall in the middle, which serve as references to these two states. Because of the high proportion of non-profit and government hospitals, the healthcare system in New York is relatively more accessible especially to at-risk populations during this pandemic.  
 
-(INSERT SHINYAPP LINK HERE)
+https://daisyfang.shinyapps.io/facilities_finder/
 In the interest of consolidating information on healthcare facilities across the country, the above is link to a ShinyApp Healthcare Facilities Finder that allows you to obtain information on all available facilities that fit certain criteria.
 
 ## Disparities in the New York Metropolitan Area

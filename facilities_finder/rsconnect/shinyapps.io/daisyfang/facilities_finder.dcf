@@ -1,0 +1,12 @@
+name: facilities_finder
+title: facilities_finder
+username:
+account: daisyfang
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2143081
+bundleId: 3032739
+url: https://daisyfang.shinyapps.io/facilities_finder/
+when: 1587258044.83669
+asMultiple: FALSE
+asStatic: FALSE
