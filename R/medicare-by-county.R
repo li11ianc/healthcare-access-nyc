@@ -1,6 +1,7 @@
 library(tidyverse)
 
 medicare_ny <- read_csv("data/ny_specific/medicare_ny.csv")
+ny_demog <- read_csv("data/ny_specific/county-level/county_indicators.csv")
 
 medicare_sum <- medicare_ny %>%
   mutate(
@@ -78,3 +79,6 @@ ny_counties <- ny_counties %>%
     )
   )
 
+medicare_by_county <- left_join(ny_counties, ny_demog, by = "county")
+
+write_csv(medicare_by_county, "data/ny_specific/medicare_by_county.csv")

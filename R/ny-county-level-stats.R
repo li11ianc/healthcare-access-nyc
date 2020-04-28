@@ -79,7 +79,8 @@ unemployment <- unemployment %>%
 
 unemployment_clean <- unemployment %>%
   filter(str_detect(area_name, "County")) %>%
-  mutate(area_name = str_remove(area_name, " County")) %>%
+  mutate(area_name = str_remove(area_name, " County"),
+         area_name = str_remove(area_name, ", \\w*")) %>%
   rename(county = area_name)
 
 unemployment_clean <- label_ny_metro(unemployment_clean) %>%
@@ -87,3 +88,10 @@ unemployment_clean <- label_ny_metro(unemployment_clean) %>%
   select(-ny_metro)
 
 ny_demog <- full_join(population_clean, poverty_clean, by = c("state", "county"))
+
+ny_demog <- full_join(ny_demog, unemployment_clean, by = c("state", "county")) 
+
+ny_demog <- ny_demog %>%
+  select(-ny_metro, -fips)
+
+write_csv(ny_demog, "data/ny_specific/county-level/county_indicators.csv")

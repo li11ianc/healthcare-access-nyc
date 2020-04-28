@@ -3,11 +3,13 @@ library(tidyverse)
 library(shinythemes)
 library(sf)
 library(ggplot2)
+library(DT)
 
 #inpatients_ny <- read.csv("../data/ny_specific/medicare_inpatients_ny.csv")
 medicare_ny <- read_csv("../data/ny_specific/medicare_ny.csv")
 ny_metro_map <- st_read("../nyc_maps/ny_metro_map/ny_metro_map.shp", stringsAsFactors = FALSE)
 ny_borough_map <- st_read("../nyc_maps/ny_borough_map/ny_borough_map.shp", stringsAsFactors = FALSE)
+medicare_by_county <- read_csv("../data/ny_specific/medicare_by_county.csv")
 cols <- c("Below the national average" = "red", "Above the national average" = "#0A97F0", "Same as the national average" = "black")
 
 
@@ -71,7 +73,8 @@ ui <- fluidPage(theme = shinytheme("cyborg"),
                                           fluidRow(
                                             column(width = 9,
                                                    plotOutput(outputId = "borough_rating_map")
-                                          )
+                                          ),
+                                          dataTableOutput(outputId = "county_ratings")
                                           )
                                         )
                                         )),
@@ -179,6 +182,12 @@ server <- function(input, output) {
     
   })
   
+  output$county_ratings <- renderDataTable ({
+    
+    medicare_by_county %>%
+      filter(county == input$select_county)
+    
+  })
 
 }
 
