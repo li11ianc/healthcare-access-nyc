@@ -1,7 +1,7 @@
 ---
 title: "Project Draft"
 author: '%>% it Up!: Lilly Clark, Thea Dowrich and Daisy Fang'
-date: "4/15/2020"
+date: "4/30/2020"
 output: 
   html_document:
     keep_md: yes
@@ -96,7 +96,7 @@ plot_usmap(data = hospital_cnt, values = 'bed_per_th') +
   labs(title = "Population-Dense Area Along the Coasts Are Low in Hospital Beds Per 1k Population")
 ```
 
-As illustrated in the map above, the number of hospital beds per 1000 people is highest in the West North Central region of the Midwest and the Mountain region of the West. This is unfortunate for the current situation because these are areas in the US with relatively low population density and less urgen concern of the coronavirus. On the other hand, densely populated areas along both coasts surrounding major cities have comparatively low hospital per capita. For example, Washington, California and New York have relatively lighter colors on the map which indicate a low hospital beds to population ratio. New York in particular has become a hot spot with leading counts of coronavirus cases, surpassing that of China combined. This visualization reveals that hospital over-capacity and lack of supplies is not surprising given the relative number of hospital beds adjusted by population is low in a state where risk of contact is high. 
+As illustrated in the map above, the number of hospital beds per 1000 people is highest in the West North Central region of the Midwest and the Mountain region of the West. This is unfortunate for the current situation because these are areas in the US with relatively low population density and less urgent concern of the coronavirus. On the other hand, densely populated areas along both coasts surrounding major cities have comparatively low hospital per capita. For example, Washington, California and New York have relatively lighter colors on the map which indicate a low hospital beds to population ratio. New York in particular has become a hot spot with leading counts of coronavirus cases, surpassing that of China combined. This visualization reveals that hospital over-capacity and lack of supplies is not surprising given the relative number of hospital beds adjusted by population is low in a state where risk of contact is high. 
 
 ### Hospital Owner Type
 
@@ -261,6 +261,10 @@ ggplot(data = medicaid, mapping = aes(x = spending, y = enrollment, colour = Sta
 
 ```
 
+The above visualization shows that generally, states that increase their Medicaid spending, have an increased enrollment. The data spans over two decades so it is clear that the increased enrollment is also as a result of population increases. 
+
+As mentioned before, New York is leading the nation in terms of confirmed coronavirus cases and deaths, so we wanted to take a closer look at the state's preparedness for the virus. Healthcare inequalities have been brought to light and since Medicaid provides health insurance for low-income individuals we sought to take a closer look at the relationship between spending and enrollment in New York state.
+
 ```{r nyc-changes, fig.align = "center"}
 total <- read_csv("data/TM with USA.csv")
 
@@ -287,10 +291,14 @@ enrollment <- ggplot() +
 spending / enrollment
 ```
 
+Generally, the rate at people are enrolling in Medicaid is faster than the rate at which New York has increased its spending. Granted, some of this can be attributed to inflation, the fact of the matter is that they are still not reaching as many people as they could. Between 1991 and 2014, the state minimum wage in New York has increased from $3.80 to $8.75 to compensate for the increase in the price of living in New York. 
+
+Policy changes have enabled states, such as New York, to support more of their low-income constituents. But events such as the coronavirus outbreak have exasperated existing inequities and have the capacity to put greater pressure on Governor Cuomo and the State of New York to increase high quality access to all of their residents. 
+
 ## References
 https://www.who.int/news-room/q-a-detail/q-a-coronaviruses#   
 https://www.worldometers.info/coronavirus/country/us/     
 https://www.healthcare-management-degree.net/faq/are-non-profit-or-for-profit-hospitals-better/    
 https://www.healthaffairs.org/doi/full/10.1377/hlthaff.24.3.790     
 https://simplemaps.com/data/us-cities    
-
+https://labor.ny.gov/stats/minimum_wage.shtm
