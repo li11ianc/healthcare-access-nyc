@@ -40,13 +40,13 @@ theme_custom <- function() {
 }
 
 ui <- fluidPage(theme = shinytheme("cyborg"),
-                navbarPage(title = "NYC Healthcare Access",
-                           tabPanel("Quality Explorer",
+                navbarPage(title = "Healthcare Access in NYC",
+                           tabPanel("Geographic Explorer",
                                     sidebarLayout(
                                       sidebarPanel(
                                         width = 4,
                                         h3("How does quality of healthcare vary geographically in New York City?"),
-                                        h5("Examine where patient needs are and are not being met"),
+                                        h5("Among Medicare providers"),
                                         radioButtons(inputId = "select_metric",
                                                      label   = "Select a healthcare quality metric:",
                                                      choices = list("Timeliness of Care" = "timeliness_of_care_national_comparison",
@@ -57,17 +57,14 @@ ui <- fluidPage(theme = shinytheme("cyborg"),
                                                                     "Mortality" = "mortality_national_comparison",
                                                                     "Overall Rating" = "hospital_overall_rating"
                                                      ),
-                                                     selected = "Timeliness of Care"),
+                                                     selected = "timeliness_of_care_national_comparison"),
                                         br(),
                                         hr(),
                                         br(),
                                         h5("Select a county of interest"),
-                                        selectizeInput(inputId = "select_metric_county", 
+                                        selectInput(inputId = "select_metric_county", 
                                                        label = "County",
                                                        choices = unique(sort(medicare_ny$county)),
-                                                       options = list(
-                                                         placeholder = 'Select or type in an option',
-                                                         onInitialize = I('function() { this.setValue(""); }')),
                                                        selected = "Bronx")
                                         
                                       ),
@@ -121,6 +118,7 @@ ui <- fluidPage(theme = shinytheme("cyborg"),
                                       ),
                                       fluidRow(
                                         br(),
+                                        hr(),
                                         br(),
                                         h2(textOutput(outputId = "county_name")),
                                         h4("Healthcare Quality Indicators"),
@@ -128,7 +126,13 @@ ui <- fluidPage(theme = shinytheme("cyborg"),
                                                    width = "270px",
                                                    height = "84px"),
                                         br(),
-                                        br()
+                                        br(),
+                                        textOutput(outputId = "county_hospital_rating"),
+                                        tags$head(tags$style("#county_hospital_rating{color: white;
+                                                              font-size: 24px;
+                                                              font-style: italic;}")),
+                                        br(),
+                                        br(),
                                       ),
                                       fluidRow(column(width = 3,
                                                       plotOutput(outputId = "timeliness_indicator",
@@ -136,27 +140,37 @@ ui <- fluidPage(theme = shinytheme("cyborg"),
                                                                  height = "250px"),
                                                       br(),
                                                       br(),
-                                                      plotOutput(outputId = "safety_indicator")),
+                                                      plotOutput(outputId = "safety_indicator",
+                                                                 width = "250px",
+                                                                 height = "250px")),
                                                column(width = 1),
                                                column(width = 3,
-                                                      plotOutput(outputId = "effectiveness_indicator"),
+                                                      plotOutput(outputId = "effectiveness_indicator",
+                                                                 width = "250px",
+                                                                 height = "250px"),
                                                       br(),
                                                       br(),
-                                                      plotOutput(outputId = "readmission_indicator")),
+                                                      plotOutput(outputId = "readmission_indicator",
+                                                                 width = "250px",
+                                                                 height = "250px")),
                                                column(width = 1),
                                                column(width = 3,
-                                                      plotOutput(outputId = "experience_indicator"),
+                                                      plotOutput(outputId = "experience_indicator",
+                                                                 width = "250px",
+                                                                 height = "250px"),
                                                       br(),
                                                       br(),
-                                                      plotOutput(outputId = "mortality_indicator"))),
+                                                      plotOutput(outputId = "mortality_indicator",
+                                                                 width = "250px",
+                                                                 height = "250px"))),
                                       br(),
                                       br()
                                     ))
                            ),
-                           tabPanel("County Level",
+                           tabPanel("Models",
                                     sidebarLayout(
                                       sidebarPanel(
-                                        h3("What does access look like in specific regions"),
+                                        h3("How well can we predict quality of healthcare access given socioeconomic indicators?"),
                                         h5("Explore quality of care summaries by county"),
                                         selectizeInput(inputId = "select_county", 
                                                        label = "County",
@@ -177,7 +191,13 @@ ui <- fluidPage(theme = shinytheme("cyborg"),
                            tabPanel("About",
                                     column(width = 2),
                                     column(width = 8,
-                                           h1("Introduction"))
+                                           h2("Quality of Health Care Access in New York City"),
+                                           h3("How To"),
+                                           p("This is how you use this shiny app"),
+                                           h3("Notes"),
+                                           p("Explanations of how averages were calculated and demographic data"),
+                                           h3("References"),
+                                           p("Cite all data"))
                            )
                 )
 )
@@ -364,6 +384,11 @@ server <- function(input, output) {
     
   })
   
+  output$county_hospital_rating <- renderText({
+    paste0("Average hospital rating: ", 
+           round(subset(medicare_by_county, county == input$select_metric_county)$hospital_overall_rating, 2))
+  })
+  
   # Indicator Plots
   plot_sq_county <- eventReactive(input$select_metric_county, {
     function(factor){
@@ -404,6 +429,121 @@ server <- function(input, output) {
     
     ggplot() +
       labs(tag = str_to_title(str_replace_all("timeliness_of_care", "_", " "))) +
+      theme_custom() +
+      theme(
+        plot.tag.position = c(0.5, 0.5),
+        plot.tag = element_text(color = "white", size = 22, face = "bold"),
+        plot.background = element_rect(fill = sqcolor, color = sqcolor),
+        panel.background = element_rect(fill = sqcolor, color = sqcolor)
+      )
+    
+  })
+  
+  output$effectiveness_indicator <- renderPlot({
+    if (subset(medicare_by_county, county == input$select_metric_county)$effectiveness_of_care == "Below the national average") {
+      sqcolor <- "red"
+    } else if (subset(medicare_by_county, county == input$select_metric_county)$effectiveness_of_care == "Above the national average") {
+      sqcolor <- "#0A97F0"
+    } else if (subset(medicare_by_county, county == input$select_metric_county)$effectiveness_of_care == "Same as the national average") {
+      sqcolor <- "#B8DAEF"
+    } else if (is.na(subset(medicare_by_county, county == input$select_metric_county)$effectiveness_of_care)) {
+      sqcolor <- "#7B7C7C"
+    }
+    
+    ggplot() +
+      labs(tag = str_to_title(str_replace_all("effectiveness_of_care", "_", " "))) +
+      theme_custom() +
+      theme(
+        plot.tag.position = c(0.5, 0.5),
+        plot.tag = element_text(color = "white", size = 22, face = "bold"),
+        plot.background = element_rect(fill = sqcolor, color = sqcolor),
+        panel.background = element_rect(fill = sqcolor, color = sqcolor)
+      )
+    
+  })
+  
+  output$experience_indicator <- renderPlot({
+    if (subset(medicare_by_county, county == input$select_metric_county)$patient_experience == "Below the national average") {
+      sqcolor <- "red"
+    } else if (subset(medicare_by_county, county == input$select_metric_county)$patient_experience == "Above the national average") {
+      sqcolor <- "#0A97F0"
+    } else if (subset(medicare_by_county, county == input$select_metric_county)$patient_experience == "Same as the national average") {
+      sqcolor <- "#B8DAEF"
+    } else if (is.na(subset(medicare_by_county, county == input$select_metric_county)$patient_experience)) {
+      sqcolor <- "#7B7C7C"
+    }
+    
+    ggplot() +
+      labs(tag = str_to_title(str_replace_all("patient_experience", "_", " "))) +
+      theme_custom() +
+      theme(
+        plot.tag.position = c(0.5, 0.5),
+        plot.tag = element_text(color = "white", size = 22, face = "bold"),
+        plot.background = element_rect(fill = sqcolor, color = sqcolor),
+        panel.background = element_rect(fill = sqcolor, color = sqcolor)
+      )
+    
+  })
+  
+  output$safety_indicator <- renderPlot({
+    if (subset(medicare_by_county, county == input$select_metric_county)$safety_of_care == "Below the national average") {
+      sqcolor <- "red"
+    } else if (subset(medicare_by_county, county == input$select_metric_county)$safety_of_care == "Above the national average") {
+      sqcolor <- "#0A97F0"
+    } else if (subset(medicare_by_county, county == input$select_metric_county)$safety_of_care == "Same as the national average") {
+      sqcolor <- "#B8DAEF"
+    } else if (is.na(subset(medicare_by_county, county == input$select_metric_county)$safety_of_care)) {
+      sqcolor <- "#7B7C7C"
+    }
+    
+    ggplot() +
+      labs(tag = str_to_title(str_replace_all("safety_of_care", "_", " "))) +
+      theme_custom() +
+      theme(
+        plot.tag.position = c(0.5, 0.5),
+        plot.tag = element_text(color = "white", size = 22, face = "bold"),
+        plot.background = element_rect(fill = sqcolor, color = sqcolor),
+        panel.background = element_rect(fill = sqcolor, color = sqcolor)
+      )
+    
+  })
+  
+  output$readmission_indicator <- renderPlot({
+    if (subset(medicare_by_county, county == input$select_metric_county)$readmission == "Below the national average") {
+      sqcolor <- "red"
+    } else if (subset(medicare_by_county, county == input$select_metric_county)$readmission == "Above the national average") {
+      sqcolor <- "#0A97F0"
+    } else if (subset(medicare_by_county, county == input$select_metric_county)$readmission == "Same as the national average") {
+      sqcolor <- "#B8DAEF"
+    } else if (is.na(subset(medicare_by_county, county == input$select_metric_county)$readmission)) {
+      sqcolor <- "#7B7C7C"
+    }
+    
+    ggplot() +
+      labs(tag = str_to_title(str_replace_all("readmission", "_", " "))) +
+      theme_custom() +
+      theme(
+        plot.tag.position = c(0.5, 0.5),
+        plot.tag = element_text(color = "white", size = 22, face = "bold"),
+        plot.background = element_rect(fill = sqcolor, color = sqcolor),
+        panel.background = element_rect(fill = sqcolor, color = sqcolor)
+      )
+    
+  })
+  
+  output$mortality_indicator <- renderPlot({
+    if (subset(medicare_by_county, county == input$select_metric_county)$mortality == "Below the national average") {
+      sqcolor <- "red"
+    } else if (subset(medicare_by_county, county == input$select_metric_county)$mortality == "Above the national average") {
+      sqcolor <- "#0A97F0"
+    } else if (subset(medicare_by_county, county == input$select_metric_county)$mortality == "Same as the national average") {
+      sqcolor <- "#B8DAEF"
+    } else if (is.na(subset(medicare_by_county, county == input$select_metric_county)$mortality)) {
+      sqcolor <- "#7B7C7C"
+    }
+    
+    ggplot() +
+      labs(tag = str_to_title(str_replace_all("mortality", "_", " "))) +
       theme_custom() +
       theme(
         plot.tag.position = c(0.5, 0.5),

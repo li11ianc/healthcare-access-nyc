@@ -60,7 +60,7 @@ population_clean <- label_ny_metro(population_clean) %>%
 
 poverty <- poverty %>%
   janitor::clean_names() %>%
-  select(stabr, area_name, povall_2018)
+  select(stabr, area_name, povall_2018, pctpovall_2018)
 
 poverty_clean <- poverty %>%
   filter(str_detect(area_name, "County")) %>%
@@ -75,12 +75,15 @@ poverty_clean <- label_ny_metro(poverty_clean) %>%
 
 unemployment <- unemployment %>%
   janitor::clean_names() %>%
-  select(state, area_name, employed_2017, unemployed_2017, unemployment_rate_2017)
+  select(state, area_name, employed_2017, unemployed_2017, unemployment_rate_2017, median_household_income_2018)
 
 unemployment_clean <- unemployment %>%
   filter(str_detect(area_name, "County")) %>%
   mutate(area_name = str_remove(area_name, " County"),
-         area_name = str_remove(area_name, ", \\w*")) %>%
+         area_name = str_remove(area_name, ", \\w*"),
+         median_household_income_2018 = str_remove(median_household_income_2018, "\\$"),
+         median_household_income_2018 = str_remove_all(median_household_income_2018, ","),
+         median_household_income_2018 = as.numeric(median_household_income_2018)) %>%
   rename(county = area_name)
 
 unemployment_clean <- label_ny_metro(unemployment_clean) %>%

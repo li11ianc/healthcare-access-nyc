@@ -182,4 +182,68 @@ legend <- get_legend(ratings)
 ggdraw(legend)
 ```
 
+```{r}
+library(broom)
+```
+
+```{r}
+model_data <- medicare_by_county %>%
+  select(timeliness_score:hospital_overall_rating)
+```
+
+```{r}
+null_model <- lm(hospital_overall_rating ~ 1, data = model_data)
+full_model <- lm(hospital_overall_rating ~ ., data = model_data)
+```
+
+```{r}
+# Backward selection using AIC
+regfit_backward <- step(full_model, direction = "backward")
+```
+
+```{r}
+glance(regfit_backward)
+regfit_backward$coefficients
+```
+
+```{r}
+model_data2 <- medicare_by_county %>%
+  select(hospital_overall_rating, pop_estimate_2018, pctpovall_2018, unemployment_rate_2017, median_household_income_2018)
+```
+
+```{r}
+null_model <- lm(hospital_overall_rating ~ 1, data = model_data2)
+full_model <- lm(hospital_overall_rating ~ ., data = model_data2)
+```
+
+```{r}
+# Backward selection using AIC
+regfit_backward <- step(full_model, direction = "backward")
+```
+
+```{r}
+glance(regfit_backward)
+regfit_backward$coefficients
+```
+
+```{r}
+model_data2 <- medicare_by_county %>%
+  select(hospital_overall_rating, pop_estimate_2018, pctpovall_2018, unemployment_rate_2017, median_household_income_2018)
+```
+
+```{r}
+null_model <- lm(hospital_overall_rating ~ 1, data = model_data2)
+full_model <- lm(hospital_overall_rating ~ ., data = model_data2)
+```
+
+```{r}
+# Backward selection using AIC
+regfit_backward <- step(full_model, direction = "backward")
+```
+
+```{r}
+glance(regfit_backward)
+regfit_backward$coefficients
+```
+
 

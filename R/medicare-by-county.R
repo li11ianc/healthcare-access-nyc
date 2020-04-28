@@ -45,6 +45,10 @@ ny_counties <- medicare_sum %>%
             readmission_score = sum(readmission_national_comparison)/n(),
             experience_score = sum(patient_experience_national_comparison)/n())
 
+hospital_ratings <- subset(medicare_sum, !is.na(hospital_overall_rating)) %>%
+  group_by(county) %>%
+  summarize(hospital_overall_rating = sum(hospital_overall_rating)/n())
+
 ny_counties <- ny_counties %>%
   mutate(
     timeliness_of_care = case_when(
@@ -79,6 +83,9 @@ ny_counties <- ny_counties %>%
     )
   )
 
-medicare_by_county <- left_join(ny_counties, ny_demog, by = "county")
+
+medicare_by_county <- left_join(ny_counties, hospital_ratings, by = "county")
+
+medicare_by_county <- left_join(medicare_by_county, ny_demog, by = "county")
 
 write_csv(medicare_by_county, "data/ny_specific/medicare_by_county.csv")
