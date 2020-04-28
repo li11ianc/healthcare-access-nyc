@@ -29,3 +29,9 @@ ny_metro_map <- rbind(ny_metro_map, pa_map)
 ny_metro_map <- rbind(ny_metro_map, ct_map)
 
 st_write(ny_metro_map, "nyc_maps/ny_metro_map/ny_metro_map.shp", layer = "ny_metro.shp", driver = "ESRI Shapefile", delete_dsn=TRUE)
+
+ny_borough_map <- ny_map %>%
+  filter(COUNTYFP %in% c("005", "047", "061", "081", "085"))
+
+st_write(ny_borough_map, "nyc_maps/ny_borough_map/ny_borough_map.shp", layer = "ny_borough.shp", driver = "ESRI Shapefile", delete_dsn=TRUE)
+

@@ -1,0 +1,99 @@
+---
+title: "nyc-shiny-app-demo"
+author: "Lillian Clark"
+date: "4/27/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(shiny)
+library(tidyverse)
+library(shinythemes)
+library(sf)
+library(ggplot2)
+```
+
+```{r}
+inpatients_ny <- read.csv("data/ny_specific/medicare_inpatients_ny.csv")
+medicare_ny <- read_csv("data/ny_specific/medicare_ny.csv")
+ny_metro_map <- st_read("nyc_maps/ny_metro_map/ny_metro_map.shp", stringsAsFactors = FALSE)
+ny_borough_map <- st_read("nyc_maps/ny_borough_map/ny_borough_map.shp", stringsAsFactors = FALSE)
+```
+
+```{r}
+cols <- c("Below the national average" = "red", "Above the national average" = "#0A97F0", "Same as the national average" = "black")
+```
+
+```{r}
+medicare_selected_rating <- medicare_ny
+```
+
+```{r}
+medicare_selected_rating %>%
+  ggplot(aes(x = effectiveness_of_care_national_comparison, 
+                                 fill = effectiveness_of_care_national_comparison)) +
+    scale_fill_manual(values = cols, na.value = "grey") +
+    geom_bar()
+```
+
+```{r}
+medicare_selected_rating %>%
+  ggplot() +
+  geom_sf(data = ny_metro_map, aes(geometry = geometry),
+                   color="#9EA5A9", fill = "#CED5DA") +
+  geom_point(data = subset(medicare_selected_rating, 
+                           effectiveness_of_care_national_comparison == "Same as the national average"),
+             aes(x = long, y = lat, color = effectiveness_of_care_national_comparison), 
+             alpha = .4) +
+  geom_point(data = subset(medicare_selected_rating, 
+                           effectiveness_of_care_national_comparison == "Above the national average"),
+             aes(x = long, y = lat, color = effectiveness_of_care_national_comparison), 
+             alpha = .4) +
+  geom_point(data = subset(medicare_selected_rating, 
+                           effectiveness_of_care_national_comparison == "Below the national average"),
+             aes(x = long, y = lat, color = effectiveness_of_care_national_comparison), 
+             alpha = .4) +
+  scale_color_manual(values = cols, na.value = "grey") +
+  coord_sf() +
+  theme_void() +
+  theme(plot.caption = element_text(hjust = .5)) +
+  labs(title = "Effectiveness of Care for Medicare Providers",
+       color = "Effectiveness of care")
+```
+
+```{r}
+medicare_selected_rating <- medicare_selected_rating %>%  
+  filter(county %in% c("Bronx", "New York", "Queens", "Kings", "Richmond"))
+
+medicare_selected_rating %>%
+  ggplot() +
+  geom_sf(data = ny_borough_map, aes(geometry = geometry),
+                   color="#9EA5A9", fill = "#CED5DA") +
+  geom_point(data = subset(medicare_selected_rating, 
+                           is.na(effectiveness_of_care_national_comparison)),
+             aes(x = long, y = lat, color = effectiveness_of_care_national_comparison), 
+             alpha = .6) +
+  geom_point(data = subset(medicare_selected_rating, 
+                           effectiveness_of_care_national_comparison == "Same as the national average"),
+             aes(x = long, y = lat, color = effectiveness_of_care_national_comparison), 
+             alpha = .4) +
+  geom_point(data = subset(medicare_selected_rating, 
+                           effectiveness_of_care_national_comparison == "Above the national average"),
+             aes(x = long, y = lat, color = effectiveness_of_care_national_comparison), 
+             alpha = .4) +
+  geom_point(data = subset(medicare_selected_rating, 
+                           effectiveness_of_care_national_comparison == "Below the national average"),
+             aes(x = long, y = lat, color = effectiveness_of_care_national_comparison), 
+             alpha = .4) +
+  scale_color_manual(values = cols, na.value = "white") +
+  coord_sf() +
+  theme_void() +
+  theme(plot.caption = element_text(hjust = .5)) +
+  labs(title = "Effectiveness of Care for Medicare Providers",
+       color = "Effectiveness of care")
+```
+
