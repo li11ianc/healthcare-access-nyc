@@ -167,25 +167,20 @@ ui <- fluidPage(theme = shinytheme("cyborg"),
                                       br()
                                     ))
                            ),
-                           tabPanel("Models",
+                           tabPanel("Socioeconomic Lens",
                                     sidebarLayout(
                                       sidebarPanel(
                                         h3("How well can we predict quality of healthcare access given socioeconomic indicators?"),
-                                        h5("Explore quality of care summaries by county"),
-                                        selectizeInput(inputId = "select_county", 
-                                                       label = "County",
-                                                       choices = unique(sort(medicare_ny$county)),
-                                                       options = list(
-                                                         placeholder = 'Select or type in an option',
-                                                         onInitialize = I('function() { this.setValue(""); }')),
-                                                       selected = "Bronx")
+                                        ),
+                                      mainPanel()
+                                    ),
+                           ),
+                           tabPanel("Understanding Hospital Rating",
+                                    sidebarLayout(
+                                      sidebarPanel(
+                                        h3("What factors affect an overall hospital rating in the NY metropolitan area?"),
                                       ),
-                                      mainPanel(
-                                        fluidRow(
-                                          dataTableOutput(outputId = "county_ratings"),
-                                          style = "background-color: #4CAF50;color: white;"
-                                        )
-                                      )
+                                      mainPanel()
                                     )
                            ),
                            tabPanel("About",
