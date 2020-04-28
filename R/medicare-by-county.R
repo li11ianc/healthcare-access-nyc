@@ -47,17 +47,17 @@ ny_counties <- medicare_sum %>%
 
 ny_counties <- ny_counties %>%
   mutate(
-    timeliness = case_when(
+    timeliness_of_care = case_when(
     timeliness_score < 0 ~ "Below the national average",
     timeliness_score > 0 ~ "Above the national average",
     round(timeliness_score, 2) == 0 ~ "Same as the national average"
     ),
-    effectiveness = case_when(
+    effectiveness_of_care = case_when(
       effectiveness_score < 0 ~ "Below the national average",
       effectiveness_score > 0 ~ "Above the national average",
       round(effectiveness_score, 2) == 0 ~ "Same as the national average"
     ),
-    safety = case_when(
+    safety_of_care = case_when(
       safety_score < 0 ~ "Below the national average",
       safety_score > 0 ~ "Above the national average",
       round(safety_score, 2) == 0 ~ "Same as the national average"
@@ -72,7 +72,7 @@ ny_counties <- ny_counties %>%
       readmission_score > 0 ~ "Above the national average",
       round(readmission_score, 2) == 0 ~ "Same as the national average"
     ),
-    experience = case_when(
+    patient_experience = case_when(
       experience_score < 0 ~ "Below the national average",
       experience_score > 0 ~ "Above the national average",
       round(experience_score, 2) == 0 ~ "Same as the national average"
