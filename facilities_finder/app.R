@@ -52,7 +52,7 @@ ui <- navbarPage(theme = shinytheme("sandstone"), "US Healthcare Facilities",
                                   # Output: Table ----
                                   dataTableOutput("table"),
                                   h1(""),
-                                  p("Note: Not all information is available for all healhcare facility types"))
+                                  p("Note: Not all information is available for all healthcare facility types"))
                           ) # close sidebar layout
                  ), # close finder tabpanel 
                  ### ABOUT ###
