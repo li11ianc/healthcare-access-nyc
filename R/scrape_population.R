@@ -28,6 +28,6 @@ states_pop <- population[1:56] %>%
 
 states_pop <- data.frame(states, states_abb, states_pop)
 
-write_csv(states_pop, "data/states_pop.csv")
-write_csv(states_pop, "facilities_finder/data/states_pop.csv")
+write_csv(states_pop, "../data/states_pop.csv")
+write_csv(states_pop, "../facilities_finder/data/states_pop.csv")
 

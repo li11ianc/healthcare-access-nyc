@@ -1,6 +1,6 @@
 library(tidyverse)
 
-nursing <- read.csv("data/raw/Nursing_Homes.csv")
+nursing <- read.csv("../data/raw/Nursing_Homes.csv")
 
 nursing_clean <- nursing %>%
   janitor::clean_names(case = "snake") %>%
@@ -45,4 +45,4 @@ nursing_clean <- nursing %>%
          overall_type = "nursing home"
   )
 
-write_csv(nursing_clean, "data/nursing_homes.csv")
+write_csv(nursing_clean, "../data/nursing_homes.csv")

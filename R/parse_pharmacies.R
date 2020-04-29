@@ -1,6 +1,6 @@
 library(tidyverse)
 
-pharmacies <- read.csv("data/raw/facility.csv")
+pharmacies <- read.csv("../data/raw/facility.csv")
 
 pharmacies_clean <- pharmacies %>%
   janitor::clean_names(case = "snake") %>%
@@ -15,4 +15,4 @@ pharmacies_clean <- pharmacies %>%
          overall_type = "pharmacy") %>%
   select(-icon, -formated_phone)
 
-write_csv(pharmacies_clean, "data/pharmacies.csv")
+write_csv(pharmacies_clean, "../data/pharmacies.csv")
