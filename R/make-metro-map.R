@@ -33,5 +33,15 @@ st_write(ny_metro_map, "nyc_maps/ny_metro_map/ny_metro_map.shp", layer = "ny_met
 ny_borough_map <- ny_map %>%
   filter(COUNTYFP %in% c("005", "047", "061", "081", "085"))
 
+ny_borough_map <- ny_borough_map %>%
+  rename(county = NAME)
+
+ny_borough_map <- ny_borough_map %>%
+  mutate(county = case_when(
+    county == "Brooklyn" ~ "Kings",
+    county == "Staten Island" ~ "Richmond",
+    county == "Manhattan" ~ "New York",
+    TRUE ~ county))
+
 st_write(ny_borough_map, "nyc_maps/ny_borough_map/ny_borough_map.shp", layer = "ny_borough.shp", driver = "ESRI Shapefile", delete_dsn=TRUE)
 

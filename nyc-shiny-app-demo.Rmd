@@ -207,6 +207,26 @@ regfit_backward$coefficients
 ```
 
 ```{r}
+model_data3 <- medicare_ny %>%
+  select(owner:timeliness_of_care_national_comparison)
+```
+
+```{r}
+null_model <- lm(hospital_overall_rating ~ 1, data = model_data3)
+full_model <- lm(hospital_overall_rating ~ ., data = model_data3)
+```
+
+```{r}
+# Backward selection using AIC
+regfit_backward <- step(full_model, direction = "backward")
+```
+
+```{r}
+glance(regfit_backward)
+regfit_backward$coefficients
+```
+
+```{r}
 model_data2 <- medicare_by_county %>%
   select(hospital_overall_rating, pop_estimate_2018, pctpovall_2018, unemployment_rate_2017, median_household_income_2018)
 ```
@@ -246,4 +266,69 @@ glance(regfit_backward)
 regfit_backward$coefficients
 ```
 
+```{r}
+ny_metro_map <- ny_metro_map %>%
+  rename(county = NAME)
+ny_borough_map <- ny_borough_map %>%
+  rename(county = NAME)
 
+ny_borough_map <- ny_borough_map %>%
+  mutate(county = case_when(
+    county == "Brooklyn" ~ "Kings",
+    county == "Staten Island" ~ "Richmond",
+    county == "Manhattan" ~ "New York",
+    TRUE ~ county))
+```
+
+```{r}
+datamap <- right_join(medicare_by_county, ny_borough_map, by = "county")
+```
+
+```{r}
+medicare_selected_rating <- medicare_selected_rating %>%  
+  filter(county %in% c("Bronx", "New York", "Queens", "Kings", "Richmond"))
+
+ggplot() +
+  geom_sf(data = datamap, aes(geometry = geometry, fill = pctpovall_2018), color="white") +
+  geom_point(data = subset(medicare_selected_rating, 
+                           effectiveness_of_care_national_comparison == "Same as the national average"),
+             aes(x = long, y = lat, color = effectiveness_of_care_national_comparison), 
+             alpha = .8, size = 4) +
+  geom_point(data = subset(medicare_selected_rating, 
+                           effectiveness_of_care_national_comparison == "Above the national average"),
+             aes(x = long, y = lat, color = effectiveness_of_care_national_comparison), 
+             alpha = .7, size = 4) +
+  geom_point(data = subset(medicare_selected_rating, 
+                           effectiveness_of_care_national_comparison == "Below the national average"),
+             aes(x = long, y = lat, color = effectiveness_of_care_national_comparison), 
+             alpha = .7, size = 4) +
+  geom_point(data = subset(medicare_selected_rating, 
+                           is.na(effectiveness_of_care_national_comparison)),
+             aes(x = long, y = lat, color = effectiveness_of_care_national_comparison), 
+             alpha = .7, size = 4) +
+  scale_color_manual(values = cols, na.value = "#7B7C7C") +
+  scale_fill_gradient(low = "#FCF3DD", high = "#FCB60B") +
+  coord_sf() +
+  theme_custom() +
+  theme(plot.caption = element_text(hjust = .5),
+        plot.title = element_text(size = 16),
+        axis.line=element_blank(),
+            axis.text.x=element_blank(),
+            axis.text.y=element_blank(),
+            axis.ticks=element_blank(),
+            axis.title.x=element_blank(),
+            axis.title.y=element_blank(),
+            panel.border=element_blank(),
+            panel.grid.major=element_blank(),
+            panel.grid.minor=element_blank()) +
+  labs(title = "Effectiveness of Care for Medicare Providers",
+       subtitle = "in New York City",
+       color = "Effectiveness of care", 
+       fill = "Percent in Poverty (2018)",
+       caption = "Hospitals without ratings available shown in grey")
+```
+
+```{r}
+ggplot(datamap, aes(x = county, y = effectiveness_score)) +
+  geom_bar(stat = "identity")
+```

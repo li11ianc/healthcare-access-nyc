@@ -1,4 +1,4 @@
-state,county,pop_estimate_2018,povall_2018,pctpovall_2018,employed_2017,unemployed_2017,unemployment_rate_2017,median_household_income_2018
+state,county,population_in_2018,povall_2018,percent_in_poverty_2018,employed_2017,unemployed_2017,percent_unemployed_in_2017,median_household_income_2018
 CT,Fairfield,943823,92971,10,457520,21850,4.6,91183
 CT,Litchfield,181111,12441,6.9,99542,4536,4.4,76304
 CT,New Haven,857620,96563,11.6,433777,23181,5.1,67720
