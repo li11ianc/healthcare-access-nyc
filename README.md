@@ -2,19 +2,6 @@
 
 ## Project Overview
 
-Update as of 4/3:
-
-Raw data downloaded from the Department of Homeland Security and Centers for Medicare & Medicaid Services is located in /data/raw. Parsed data is located in /data. Scripts to parse data are located in /R. 
-
-Significant datasets:
-   
-   all_health_facilities : combines hospitals, medicare providers, nursing homes, pharmacies, and urgent care locations
-   
-   insurance : provides health insurance information by state
-   
-   medicare_inpatients : provides data on inpatient discharges for Medicare fee-for-service beneficiaries
-
-
 Since the middle of March, life in the United States has been largely upended due to the prevalence and rate of progression of the novel coronavirus disease (COVID-19). The federal government along with state governors have led the charge in protecting the American people from the uncertainty of this pandemic and have been saving lives. 
 
 As with other extreme events in world history, this pandemic has shed light on existing inequalities in the United States, as well as the rest of the world. U.S. health policies have made strides in leveling these inequities, but there are still nationwide inconsistencies in healthcare experiences and outcomes. These landmark healthcare reform laws have improved patient experience and expanded access to many citizens who were previously excluded from coverage. However, the federal-state partnerships give many states leeway in terms of how they determine who is eligible for these government assistance programs. Although many more people have insurance than before, it can still be seen that there is a long way to go before access is not only affordable, but also equitable. 
