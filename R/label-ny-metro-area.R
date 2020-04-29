@@ -69,6 +69,4 @@ write.csv(facilities, "data/all_health_facilities.csv")
 write.csv(medicare, "data/medicare.csv")
 write.csv(inpatients, "data/medicare_inpatients.csv")
 
-write.csv(facilities_ny, "data/ny_specific/all_health_facilities_ny.csv")
 write.csv(medicare_ny, "data/ny_specific/medicare_ny.csv")
-write.csv(inpatients_ny, "data/ny_specific/medicare_inpatients_ny.csv")
