@@ -1,5 +1,5 @@
 ---
-title: "Project Draft"
+title: "Healthcare Inequality in the Age of COVID-19"
 author: '%>% it Up!: Lilly Clark, Thea Dowrich and Daisy Fang'
 date: "4/30/2020"
 output: 
@@ -53,9 +53,9 @@ The following questions guided our research in investigating nationwide healthca
 
 ## Data and Methods
 ***
-The data used for this project mostly comes from the United States Department of Homeland Security. It is obtained and cleaned specifically from [Homeland Infrastructure Foundation-Level Data](https://hifld-geoplatform.opendata.arcgis.com/search?groupIds=2900322cc0b14948a74dca886b7d7cfc). This websites provides datasets on all the hospitals, pharmacies, urgent care facilities and nursing homes in the U.S. including Washington D.C., Puerto Rico and U.S. territories. Additional data on Medicare providers is acquired from Data.Medicare.gov, a site published by the Centers for Medicare and Medicaid Services. The population by state is scrapped from a [Wikipedia page](https://en.wikipedia.org/wiki/List_of_states_and_territories_of_the_United_States_by_population), and county-level socioeconomic data for the New York City metropolitan area originates from the United States Department of Agriculture's Economic Research Service. Maps of the metropolitan area were ontained from data.gov, a service of the United States Census Bureau, Department of Commerce.
+The data used for this project mostly comes from the United States Department of Homeland Security. It is obtained and cleaned specifically from [Homeland Infrastructure Foundation-Level Data](https://hifld-geoplatform.opendata.arcgis.com/search?groupIds=2900322cc0b14948a74dca886b7d7cfc). This websites provides datasets on all the hospitals, pharmacies, urgent care facilities and nursing homes in the U.S. including Washington D.C., Puerto Rico and U.S. territories. Additional data on Medicare providers is acquired from Data.Medicare.gov, a site published by the Centers for Medicare and Medicaid Services. The population by state is scrapped from a [Wikipedia page](https://en.wikipedia.org/wiki/List_of_states_and_territories_of_the_United_States_by_population), and county-level socioeconomic data for the New York City metropolitan area originates from the United States Department of Agriculture's Economic Research Service. Maps of the metropolitan area were ontained from data.gov, a service of the United States Census Bureau, Department of Commerce. Medicaid enrollment and spending data was obtained from the [Center for Medicare and Medicaid Services](https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/NationalHealthExpendData/NationalHealthAccountsStateHealthAccountsResidence).
 
-This project aims to use visualizations as a tool to reveal insights on the healthcare system in the US. We will start by looking at the US healthcare system generally across states, then more closely examine the New York metropolitan area, a coronavirus hot spot. A variety of metrics including effectiveness, timeliness of care and patience experience will be used to assess the quality of the healthcare system. Finally, we will look at Medicaid spending and enrollment to understand if there exist any difficult in access for underprivileged populations.  
+This project aims to use visualizations as a tool to reveal insights on the healthcare system in the US. We will start by looking at the US healthcare system generally across states, then more closely examine the New York metropolitan area, a coronavirus hot spot. A variety of metrics including effectiveness, timeliness of care and patient experience will be used to assess the quality of the healthcare system. Finally, we will look at Medicaid spending and enrollment to understand if there exist any difficult in access for underprivileged populations.  
 
 ## Disparities in Healthcare Access
 ***
@@ -148,7 +148,7 @@ Although a high proportion of non-profit and government hospitals make the New Y
 
 This Shiny App allows for a deep exploration of healthcare quality inequities in the New York metropolitan area.
 
-The 'Geographic Explorer' section provides a broad view of the discrepancies in care quality across the metro area. It reveals, among other things, that nearly all New York's Medicare hospitals lag behind the nation in providing timely care - they are also lacking in the ability to provide a positive patient experience and see high readmission rates. Generally, hospitals in the five New York City boroughs rank below the metro area as a whole. As a county to note, the Bronx tends to also perform significantly worse than both the city and the metro area.
+The 'Geographic Explorer' section provides a broad view of the discrepancies in care quality across the metro area. It reveals, among other things, that nearly all New York's Medicare hospitals lag behind the nation in providing timely care - they are also lacking in the ability to provide a positive patient experience and see high readmission rates. We wanted to pay closer attention to Medicare hospitals since elderly persons are the demographic with the largest death rate from coronavirus, nationwide. Medicare primarily provides health insurance to persons above the age of 65, as well as younger constituents with a disability status as determined by the Social Security Administration. Generally, hospitals in the five New York City boroughs rank below the metro area as a whole. As a county to note, the Bronx tends to also perform significantly worse than both the city and the metro area.
 
 The 'Socioeconomic Lens' section specifically facilitates examination of the intersection of socioeconomic indicators with healthcare quality at the county-level. It also provides a look into the values of specific healthcare quality indicators at the county level for quick comparisons - note, for example, the stark contrast in indicators between the Bronx and Litchfield County or Morris County. However, even counties which appear to exceed national averages for most quality metrics receive poor ratings for timeliness of care.
 
@@ -171,7 +171,7 @@ Despite the availability of Medicare providers in the New York City Metro Area, 
 
 ## Changes in Healthcare Policy and Access
 ***
-The previously mentioned policy changes are marked by the consistent goal to improve the health and well-being for all Americans. A particularly vulnerable population within the healthcare arena is low-income individuals, as shown in how many of these policies directly target this demographic. Therefore, it is important to look at how changes in Medicaid policy, as well as other healthcare reform legislation, have influenced coverage on the state-level. The following visualization depicts the relationship between Medicaid spending and enrollee population from 1991 to 2014. 
+The previously mentioned policy changes are marked by the consistent goal to improve the health and well-being for all Americans. A particularly vulnerable population within the healthcare arena is low-income individuals, as shown in how many of these policies directly target this demographic. Therefore, it is important to look at how changes in Medicaid policy, as well as other healthcare reform legislation, have influenced coverage on the state-level. As of 2017, Medicaid was the largest source for medical and health-related services, providing free insurance to 74 million low-income and disabled persons. The following visualization depicts the relationship between Medicaid spending and enrollee population from 1991 to 2014. 
 
 ```{r medicaid-changes, , fig.align = "center", cache=TRUE}
 medicaid <- medicaid %>%
@@ -249,3 +249,11 @@ https://www.healthcare-management-degree.net/faq/are-non-profit-or-for-profit-ho
 https://www.healthaffairs.org/doi/full/10.1377/hlthaff.24.3.790     
 https://simplemaps.com/data/us-cities    
 https://labor.ny.gov/stats/minimum_wage.shtm
+https://www.who.int/news-room/detail/30-01-2020-statement-on-the-second-meeting-of-the-international-health-regulations-(2005)-emergency-committee-regarding-the-outbreak-of-novel-coronavirus-(2019-ncov)
+https://www.who.int/dg/speeches/detail/who-director-general-s-opening-remarks-at-the-media-briefing-on-covid-19---11-march-2020
+https://www.whitehouse.gov/presidential-actions/proclamation-declaring-national-emergency-concerning-novel-coronavirus-disease-covid-19-outbreak/
+https://www.nytimes.com/2020/03/11/us/colleges-cancel-classes-coronavirus.html
+https://www.nytimes.com/interactive/2020/us/coronavirus-stay-at-home-order.html
+https://www.nytimes.com/2020/04/06/health/coronavirus-testing-us.html
+https://www.healthcare.gov/glossary/affordable-care-act/
+
