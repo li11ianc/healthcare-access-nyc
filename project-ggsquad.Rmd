@@ -28,9 +28,10 @@ library(plotly)
 
 ```{r load-data, results="hide"}
 facilities <- read.csv("data/all_health_facilities.csv")
-insurance <- read.csv("data/insurance.csv")
+#insurance <- read.csv("data/insurance.csv")
 medicaid <- read_csv("data/Total Medicaid.csv")
 states_pop <- read.csv("data/states_pop.csv")
+total <- read_csv("data/TM with USA.csv")
 ```
 
 ## Introduction
@@ -201,8 +202,6 @@ The above visualization shows that generally, states that increase their Medicai
 As mentioned before, New York is leading the nation in terms of confirmed coronavirus cases and deaths, making the state's preparedness for the virus particularly important. Healthcare inequalities have been brought to light and since Medicaid provides health insurance for low-income individuals we sought to take a closer look at the relationship between spending and enrollment in New York state.
 
 ```{r nyc-changes, fig.align = "center"}
-total <- read_csv("data/TM with USA.csv")
-
 ny <- medicaid %>%
   filter(State == "New York")
 
