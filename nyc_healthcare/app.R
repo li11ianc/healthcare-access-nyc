@@ -295,7 +295,7 @@ ui <- fluidPage(theme = shinytheme("cyborg"),
                                     column(width = 8,
                                            h2("Quality of Health Care Access in New York City"),
                                            h4("How To"),
-                                           p("You can use this shiny app to explore quality of care offered at Medicare-providing hospitals throughout the New York City Metropolitan Area."),
+                                           p("You can use this shiny app to explore quality of care offered at Medicare-providing hospitals throughout the New York City metropolitan area."),
                                            p("The 'Geographic Explorer' section provides a broad view of the discrepancies in care quality across the metro area. It reveals, among other things, that nearly all New York's Medicare hospitals lag behind the nation in providing timely care - they are also lacking in the ability to provide a positive patient experience and see high readmission rates. Generally, hospitals in the five New York City boroughs rank below the metro area as a whole. As a county to note, the Bronx tends to also perform significantly worse than both the city and the metro area."),
                                            p("The 'Socioeconomic Lens' section specifically facilitates examination of the intersection of socioeconomic indicators with healthcare quality at the county-level. It also provides a look into the values of specific healthcare quality indicators at the county level for quick comparisons - note, for example, the stark contrast in indicators between the Bronx and Litchfield County or Morris County. However, even counties which appear to exceed national averages for most quality metrics receive poor ratings for timeliness of care."),
                                            p("The 'Understanding Hospital Rating' section includes a linear model to better explain which specific hospital quality metrics are most important in determining a hospital's overall score."),
@@ -691,8 +691,8 @@ server <- function(input, output) {
       score_var <- "safety_score"
     } else if (input$select_metric_ses == "mortality_national_comparison") {
       score_var <- "mortality_score"
-    } else if (input$select_metric_ses == "hospital_overall_rating") {
-      score_var <- "hospital_overall_rating"
+    } else if (input$select_metric_ses == "patient_experience_national_comparison") {
+      score_var <- "experience_score"
     }
     
     ggplot(datamap, aes(x = county, y = get(score_var), fill = get(input$select_demog_ses))) +

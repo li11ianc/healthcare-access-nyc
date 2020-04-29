@@ -5,8 +5,8 @@ account: li11ianc
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 2204856
-bundleId: 3080405
+bundleId: 3080497
 url: https://li11ianc.shinyapps.io/nyc_healthcare/
-when: 1588147193.96894
+when: 1588149309.05309
 asMultiple: FALSE
 asStatic: FALSE
