@@ -1,5 +1,5 @@
-Project-Draft.html: Project-Draft.Rmd
-    Rscript -e "library(rmarkdown);render('Project-Draft.Rmd')"
+project-ggsquad.html: project-ggsquad.Rmd
+    Rscript -e "library(rmarkdown);render('project-ggsquad.Rmd')"
 
 # For New York metro area analysis/shiny app
 medicare_ny.csv: medicare.csv label-ny-metro-area.R
