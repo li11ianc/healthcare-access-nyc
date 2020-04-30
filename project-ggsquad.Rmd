@@ -154,7 +154,7 @@ The 'Socioeconomic Lens' section specifically facilitates examination of the int
 
 The 'Understanding Hospital Rating' section includes a linear model to better explain which specific hospital quality metrics are most important in determining a hospital's overall score.
 
-The application is also available [here](https://li11ianc.shinyapps.io/nyc_healthcare/).
+The application is also available [here](https://li11ianc.shinyapps.io/nyc_healthcare/). (Following the link is recommended due to cramped rendering of embedded app.)
 </br>
 
 <center>
