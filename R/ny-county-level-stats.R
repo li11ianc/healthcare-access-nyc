@@ -1,8 +1,8 @@
 library(tidyverse)
 
-population <- read_csv("data/ny_specific/county-level/PopulationEstimates.csv")
-poverty <- read_csv("data/ny_specific/county-level/PovertyEstimates.csv")
-unemployment <- read_csv("data/ny_specific/county-level/Unemployment.csv")
+population <- read_csv("../data/ny_specific/county-level/PopulationEstimates.csv")
+poverty <- read_csv("../data/ny_specific/county-level/PovertyEstimates.csv")
+unemployment <- read_csv("../data/ny_specific/county-level/Unemployment.csv")
 
 label_ny_metro <- function(df) {
   df <- df %>%
@@ -101,4 +101,4 @@ ny_demog <- ny_demog %>%
   rename(percent_in_poverty_2018 = pctpovall_2018, percent_unemployed_in_2017 = unemployment_rate_2017,
          population_in_2018 = pop_estimate_2018)
 
-write_csv(ny_demog, "data/ny_specific/county-level/county_indicators.csv")
+write_csv(ny_demog, "../data/ny_specific/county-level/county_indicators.csv")

@@ -1,4 +1,4 @@
-project-ggsquad.html: project-ggsquad.Rmd data/all_health_facilities.csv data/states_pop.csv data/Total Medicaid.csv data/TM with USA.csv
+project-ggsquad.html: project-ggsquad.Rmd data/all_health_facilities.csv data/states_pop.csv data/Total Medicaid.csv data/TM with USA.csv nyc_healthcare/app.R
     Rscript -e "library(rmarkdown);render('project-ggsquad.Rmd')"
 
 # For disparities in the US analysis
@@ -24,26 +24,48 @@ data/states_pop.csv: R/scrape_population.R
 	cd R; Rscript scrape_population.R
 
 
-# For New York metro area analysis/shiny app
-medicare_ny.csv: medicare.csv label-ny-metro-area.R
-	Rscript label-ny-metro-area.R
-
-medicare_by_county.csv: county_indicators.csv medicare_ny.csv
-	Rscript medicare-by-county.R
-
-county_indicators.csv: Unemployment.csv PovertyEstimates.csv PopulationEstimates.csv ny-county-level-stats.R
-	Rscript ny-county-level-stats.R
-
-medicare.csv: raw/medicare.csv parse_medicare.R medicare-cleanup.R label-ny-metro-area.R
-	Rscript parse_medicare.R
-	Rscript medicare-cleanup.R
-	Rscript label-ny-metro-area.R
+# For New York metro area analysis and Shiny app
+nyc_healthcare/app.R: R/copy_files_nyc_shinyapp.R data/ny_specific/medicare_ny.csv data/ny_specific/medicare_by_county.csv nyc_maps/ny_metro_map/ny_metro_map.shp nyc_maps/ny_borough_map/ny_borough_map.shp    
+	Rscript R/copy_files_nyc_shinyapp.R
 	
-ny_borough_map: make-metro-map.R
+R/copy_files_nyc_shinyapp.R: data/ny_specific/medicare_ny.csv data/ny_specific/medicare_by_county.csv nyc_maps/ny_metro_map/ny_metro_map.shp nyc_maps/ny_borough_map/ny_borough_map.shp
+	Rscript R/copy_files_nyc_shinyapp.R
 
-ny_metro_map: make-metro-map.R
+data/ny_specific/medicare_ny.csv: data/medicare.csv R/label-ny-metro-area.R
+	cd R; Rscript label-ny-metro-area.R
 
-make-metro-map: ny_map, nj_map, ct_map, pa_map
+R/label-ny-metro-area.R: data/medicare.csv data/uscities.csv
+	cd R; Rscript label-ny-metro-area.R
+	
+data/medicare.csv: data/raw/medicare.csv R/parse_medicare.R
+	cd R; Rscript parse_medicare.R
+
+data/ny_specific/medicare_by_county.csv: R/medicare-by-county.R data/ny_specific/medicare_ny.csv data/ny_specific/county-level/county_indicators.csv
+	cd R; Rscript medicare-by-county.R
+	
+R/medicare-by-county.R: data/ny_specific/medicare_ny.csv data/ny_specific/county-level/county_indicators.csv
+	cd R; Rscript medicare-by-county.R
+
+data/ny_specific/county-level/county_indicators.csv: R/ny-county-level-stats.R data/ny_specific/county-level/PopulationEstimates.csv data/ny_specific/county-level/PovertyEstimates.csv data/ny_specific/county-level/Unemployment.csv 
+	cd R; Rscript ny-county-level-stats.R
+
+R/ny-county-level-stats.R: data/ny_specific/county-level/PopulationEstimates.csv data/ny_specific/county-level/PovertyEstimates.csv data/ny_specific/county-level/Unemployment.csv 
+	cd R; Rscript ny-county-level-stats.R
+
+medicare.csv: data/raw/medicare.csv R/parse_medicare.R R/medicare-cleanup.R
+	cd R; Rscript parse_medicare.R; Rscript medicare-cleanup.R
+	
+R/medicare-cleanup.R: data/raw/medicare.csv
+	cd R; Rscript medicare-cleanup.R
+
+nyc_maps/ny_metro_map/ny_metro_map.shp: R/make-metro-map.R
+	cd R; Rscript make-metro-map.R
+
+nyc_maps/ny_borough_map/ny_borough_map.shp: R/make-metro-map.R
+	cd R; Rscript make-metro-map.R
+
+make-metro-map: nyc_maps/ny_map/tl_2016_36_cousub.shp nyc_maps/nj_map/tl_2016_34_cousub.shp nyc_maps/ct_map/tl_2016_09_cousub.shp nyc_maps/pa_map/tl_2016_42_cousub.shp
+	cd R; Rscript make-metro-map.R
 
 # Clean file
 .PHONY: clean_html

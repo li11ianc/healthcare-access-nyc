@@ -1,15 +1,6 @@
 library(tidyverse)
 
-medicare <- read_csv("data/medicare.csv")
-
-#clean_rating_variable <- function(x, na.rm = FALSE){
-#  case_when(
-#    x == "Not Available" ~ as.character(NA),
-#    TRUE ~ as.character(x))
-#}
-
-#medicare <- medicare %>%
-#  mutate_at(c("timeliness_of_care_national_comparison"), clean_rating_variable)
+medicare <- read_csv("../data/medicare.csv")
 
 medicare <- medicare %>%
   mutate(
@@ -84,4 +75,4 @@ medicare <- medicare %>%
          -effectiveness_of_care_national_comparison_footnote, -timeliness_of_care_national_comparison_footnote, 
          -efficient_use_of_medical_imaging_national_comparison_footnote)
 
-write.csv(medicare, "data/medicare.csv")
+write.csv(medicare, "../data/medicare.csv")

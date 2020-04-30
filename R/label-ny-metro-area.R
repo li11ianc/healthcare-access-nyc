@@ -1,9 +1,7 @@
 library(tidyverse)
 
-facilities <- read.csv("data/all_health_facilities.csv")
-inpatients <- read.csv("data/medicare_inpatients.csv")
-medicare <- read_csv("data/medicare.csv")
-us_cities <- read_csv("data/uscities.csv")
+medicare <- read_csv("../data/medicare.csv")
+us_cities <- read_csv("../data/uscities.csv")
 
 label_ny_metro <- function(df) {
   df <- df %>%
@@ -43,7 +41,6 @@ label_ny_metro <- function(df) {
   return (df)
 }
 
-facilities <- label_ny_metro(facilities)
 medicare <- label_ny_metro(medicare)
 
 us_cities <- us_cities %>%
@@ -51,22 +48,9 @@ us_cities <- us_cities %>%
 
 us_cities <- label_ny_metro(us_cities)
 
-inpatients <- full_join(inpatients, us_cities, by = c("city", "state"))
-
-inpatients <- inpatients[,c(2:13, 17, 31)] %>%
-  rename(county = county.x, ny_metro = ny_metro.x)
-
-facilities_ny <- facilities %>%
-  filter(ny_metro == "Y")
-
 medicare_ny <- medicare %>%
   filter(ny_metro == "Y")
 
-inpatients_ny <- inpatients %>%
-  filter(ny_metro == "Y")
+write.csv(medicare, "../data/medicare.csv")
 
-write.csv(facilities, "data/all_health_facilities.csv")
-write.csv(medicare, "data/medicare.csv")
-write.csv(inpatients, "data/medicare_inpatients.csv")
-
-write.csv(medicare_ny, "data/ny_specific/medicare_ny.csv")
+write.csv(medicare_ny, "../data/ny_specific/medicare_ny.csv")

@@ -1,6 +1,6 @@
 library(tidyverse)
 
-medicare <- read.csv("data/raw/medicare.csv")
+medicare <- read.csv("../data/raw/medicare.csv")
 
 medicare_clean <- medicare %>%
   janitor::clean_names(case = "snake") %>%
@@ -15,4 +15,4 @@ medicare_clean <- medicare %>%
          overall_type = "medicare") %>%
   separate(location, c("long", "lat"), " ")
 
-write_csv(medicare_clean, "data/medicare.csv")
+write_csv(medicare_clean, "../data/medicare.csv")
