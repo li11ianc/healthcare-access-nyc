@@ -37,8 +37,8 @@ data/ny_specific/medicare_ny.csv: data/medicare.csv R/label-ny-metro-area.R
 R/label-ny-metro-area.R: data/medicare.csv data/uscities.csv
 	cd R; Rscript label-ny-metro-area.R
 	
-data/medicare.csv: data/raw/medicare.csv R/parse_medicare.R
-	cd R; Rscript parse_medicare.R
+data/medicare.csv: data/raw/medicare.csv R/parse_medicare.R R/medicare-cleanup.R
+	cd R; Rscript parse_medicare.R; Rscript medicare-cleanup.R
 
 data/ny_specific/medicare_by_county.csv: R/medicare-by-county.R data/ny_specific/medicare_ny.csv data/ny_specific/county-level/county_indicators.csv
 	cd R; Rscript medicare-by-county.R
