@@ -1,7 +1,7 @@
 library(tidyverse)
 
-medicare_ny <- read_csv("data/ny_specific/medicare_ny.csv")
-ny_demog <- read_csv("data/ny_specific/county-level/county_indicators.csv")
+medicare_ny <- read_csv("../data/ny_specific/medicare_ny.csv")
+ny_demog <- read_csv("../data/ny_specific/county-level/county_indicators.csv")
 
 medicare_sum <- medicare_ny %>%
   mutate(
@@ -47,7 +47,7 @@ ny_counties <- medicare_sum %>%
 
 hospital_ratings <- subset(medicare_sum, !is.na(hospital_overall_rating)) %>%
   group_by(county) %>%
-  summarize(hospital_overall_rating = sum(hospital_overall_rating)/n())
+  summarize(hospital_overall_rating = sum(as.numeric(hospital_overall_rating))/n())
 
 ny_counties <- ny_counties %>%
   mutate(
@@ -88,4 +88,4 @@ medicare_by_county <- left_join(ny_counties, hospital_ratings, by = "county")
 
 medicare_by_county <- left_join(medicare_by_county, ny_demog, by = "county")
 
-write_csv(medicare_by_county, "data/ny_specific/medicare_by_county.csv")
+write_csv(medicare_by_county, "../data/ny_specific/medicare_by_county.csv")

@@ -1,5 +1,5 @@
-project-ggsquad.html: project-ggsquad.Rmd data/all_health_facilities.csv data/states_pop.csv data/Total Medicaid.csv data/TM with USA.csv nyc_healthcare/app.R
-    Rscript -e "library(rmarkdown);render('project-ggsquad.Rmd')"
+project-ggsquad.html: project-ggsquad.Rmd data/all_health_facilities.csv data/states_pop.csv data/Total_Medicaid.csv data/TM_with_USA.csv nyc_healthcare/app.R
+	Rscript -e "library(rmarkdown);render('project-ggsquad.Rmd')"
 
 # For disparities in the US analysis
 data/all_health_facilities.csv: R/data-acquisition.R
@@ -26,10 +26,10 @@ data/states_pop.csv: R/scrape_population.R
 
 # For New York metro area analysis and Shiny app
 nyc_healthcare/app.R: R/copy_files_nyc_shinyapp.R data/ny_specific/medicare_ny.csv data/ny_specific/medicare_by_county.csv nyc_maps/ny_metro_map/ny_metro_map.shp nyc_maps/ny_borough_map/ny_borough_map.shp    
-	Rscript R/copy_files_nyc_shinyapp.R
+	cd R; Rscript copy_files_nyc_shinyapp.R
 	
 R/copy_files_nyc_shinyapp.R: data/ny_specific/medicare_ny.csv data/ny_specific/medicare_by_county.csv nyc_maps/ny_metro_map/ny_metro_map.shp nyc_maps/ny_borough_map/ny_borough_map.shp
-	Rscript R/copy_files_nyc_shinyapp.R
+	cd R; Rscript copy_files_nyc_shinyapp.R
 
 data/ny_specific/medicare_ny.csv: data/medicare.csv R/label-ny-metro-area.R
 	cd R; Rscript label-ny-metro-area.R
@@ -64,7 +64,7 @@ nyc_maps/ny_metro_map/ny_metro_map.shp: R/make-metro-map.R
 nyc_maps/ny_borough_map/ny_borough_map.shp: R/make-metro-map.R
 	cd R; Rscript make-metro-map.R
 
-make-metro-map: nyc_maps/ny_map/tl_2016_36_cousub.shp nyc_maps/nj_map/tl_2016_34_cousub.shp nyc_maps/ct_map/tl_2016_09_cousub.shp nyc_maps/pa_map/tl_2016_42_cousub.shp
+R/make-metro-map.R: nyc_maps/ny_map/tl_2016_36_cousub.shp nyc_maps/nj_map/tl_2016_34_cousub.shp nyc_maps/ct_map/tl_2016_09_cousub.shp nyc_maps/pa_map/tl_2016_42_cousub.shp
 	cd R; Rscript make-metro-map.R
 
 # Clean file

@@ -28,10 +28,9 @@ library(plotly)
 
 ```{r load-data, results="hide"}
 facilities <- read.csv("data/all_health_facilities.csv")
-#insurance <- read.csv("data/insurance.csv")
-medicaid <- read_csv("data/Total Medicaid.csv")
+medicaid <- read_csv("data/Total_Medicaid.csv")
 states_pop <- read.csv("data/states_pop.csv")
-total <- read_csv("data/TM with USA.csv")
+total <- read_csv("data/TM_with_USA.csv")
 ```
 
 ## Introduction

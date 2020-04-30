@@ -95,9 +95,6 @@ ny_demog <- full_join(population_clean, poverty_clean, by = c("state", "county")
 ny_demog <- full_join(ny_demog, unemployment_clean, by = c("state", "county")) 
 
 ny_demog <- ny_demog %>%
-  select(-ny_metro, -fips)
-
-ny_demog <- ny_demog %>%
   rename(percent_in_poverty_2018 = pctpovall_2018, percent_unemployed_in_2017 = unemployment_rate_2017,
          population_in_2018 = pop_estimate_2018)
 
